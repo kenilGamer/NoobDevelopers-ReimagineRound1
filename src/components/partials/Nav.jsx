@@ -4,12 +4,12 @@ function Nav() {
   return (
     <div className="w-full h-24 flex items-center justify-between p-6 relative overflow-hidden">
       <div className="nav-l ">
-        <div className="absolute top-3 left-6">
+        <div className="absolute top-[1vw] left-6">
           <img src="/Group 5.svg" className="w-[20vw]" alt="" />
         </div>
-        <div className="absolute top-[1.1vw] logo left-[3.8vw]">
+        <div className="absolute top-[1.7vw] logo left-[4.5vw]">
           {/* <img src="/Rectangle 8.svg" className='w-92 top-0' alt="" /> */}
-          <h1 className="text-[4vw]">NOTHING</h1>
+          <h1 className="text-[3.5vw]">NOTHING</h1>
         </div>
       </div>
       <div className="n-c flex gap-5 ml-20 items-center justify-center">

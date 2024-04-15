@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-   /* border: 2px solid red; */
-}
+/* *{
+   border: 1px solid red;
+} */
 @font-face {
    font-family: ndot;
    src: url(/public/nothingfont/Ndot-55.ttf);
