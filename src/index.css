@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+   /* border: 2px solid red; */
+}
+@font-face {
+   font-family: ndot;
+   src: url(/public/nothingfont/Ndot-55.ttf);
+}
+@font-face {
+   font-family: NH;
+   src: url(/public/nothingfont/NType82-Headline.ttf);
+}
+.heading{
+   font-family: NH;
+}
+.logo{
+   font-family: ndot;
+}
