@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page2setup() {
   return (
-    <div className='w-full h-full bg-red-200' >Page2setup</div>
+    <div className='w-full h-full bg-zinc-900' >Page2setup</div>
   )
 }
 
