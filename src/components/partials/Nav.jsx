@@ -15,7 +15,7 @@ function Nav() {
       <div className=" flex gap-5 ml-20 items-center justify-center">
         <div className="relative nav-c overflow-hidden mt-[.9vw] ml-[15vw] flex items-center ">
           <div>
-            <img src="/public/Group 4.png" className="w-80 " alt="" />
+            <img src="/Group 4.png" className="w-80 " alt="" />
           </div>
           <div className="absolute top-[.4vw] left-[1vw] ">
             <input
@@ -30,13 +30,13 @@ function Nav() {
         </div>
         <div className="relative nav-c">
           <div className="ab">
-            <img src="/public/button/Group 22.svg" className="w-[6vw]" alt="" />
+            <img src="/button/Group 22.svg" className="w-[6vw]" alt="" />
           </div>
           <div className="absolute top-[0.001vw]">
-            <img src="/public/button/Group 23.svg" className=" w-[3vw] " alt="" />
+            <img src="/button/Group 23.svg" className=" w-[3vw] " alt="" />
           </div>
           <div className="absolute top-[0.5vw] left-[0.5vw]">
-            <img src="/public/button/Rectangle 12.svg" className=" w-[2.4vw] " alt="" />
+            <img src="/button/Rectangle 12.svg" className=" w-[2.4vw] " alt="" />
           </div>
         </div>
       </div>
