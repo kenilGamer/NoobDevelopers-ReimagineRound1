@@ -15,8 +15,8 @@ function Homeline() {
         <div className=' line9 h-[2px] line-2 w-[0vw] absolute top-[14.2vw] left-[73.4vw] bg-white rotate-[117.7deg]'></div>
         <div className=' line10 h-[2px] line-2 w-[0vw] absolute top-[12vw] left-[77vw] bg-white '></div>
         {/* mobile */}
-        <div><img className='mobile1 absolute top-[2vw] left-[55vw] z-20 ' src="/public/Rectangle_13-removebg-preview.png" alt="" /></div>
-        <div><img className='mobile2 absolute w-[50vw] -top-[8vw] left-[42vw] z-10' src="/public/Rectangle 11.svg" alt="" /></div> 
+        <div><img className='mobile1 absolute top-[2vw] left-[55vw] z-20 ' src="/Rectangle_13-removebg-preview.png" alt="" /></div>
+        <div><img className='mobile2 absolute w-[50vw] -top-[8vw] left-[42vw] z-10' src="/Rectangle 11.svg" alt="" /></div> 
         {/* end lines*/}
         <div className=' line11 h-[2px] line-2 w-[0vw] absolute top-[35vw] left-[0vw] bg-white '></div>
         <div className=' line12 h-[2px] line-2 w-[0vw] absolute top-[33.59vw] left-[43.48vw] bg-white rotate-[144.8deg]'></div>
