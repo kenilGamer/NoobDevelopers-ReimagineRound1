@@ -1,9 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-   /* border: 2px solid red; */
-}
+/* *{
+   border: 1px solid red;
+} */
+
+::-webkit-scrollbar{
+   background: #000000;
+   width: 10px;
+ }
+ ::-webkit-scrollbar-thumb{
+   background: linear-gradient(transparent,#c5c5c59f);
+   border-radius: 500px;
+   width: 10px;
+   height: 20px;
+   /* box-shadow: 0px 0px 10px #cc71ff; */
+ }
+ ::-webkit-scrollbar-thumb:hover{
+   background: linear-gradient(transparent,#d082fd);
+ }
 @font-face {
    font-family: ndot;
    src: url(/public/nothingfont/Ndot-55.ttf);
@@ -14,7 +29,9 @@
 }
 .heading{
    font-family: NH;
+   overflow: hidden;
 }
 .logo{
    font-family: ndot;
+   box-shadow: 0;
 }
