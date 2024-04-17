@@ -4,16 +4,16 @@ function Nav() {
   return (
     <div className="w-full h-24 flex items-center justify-between p-6 relative overflow-hidden">
       <div className="nav-l ">
-        <div className="absolute top-[1vw] left-6">
+        <div className="absolute top-[1vw] left-6 logo-img">
           <img src="/Group 5.svg" className="w-[20vw]" alt="" />
         </div>
-        <div className="absolute top-[1.7vw] logo left-[4.5vw]">
+        <div className="absolute top-[1.7vw] logo logo-nav left-[4.5vw]">
           {/* <img src="/Rectangle 8.svg" className='w-92 top-0' alt="" /> */}
           <h1 className="text-[3.5vw]">NOTHING</h1>
         </div>
       </div>
-      <div className="n-c flex gap-5 ml-20 items-center justify-center">
-        <div className="relative overflow-hidden mt-[.9vw] ml-[15vw] flex items-center ">
+      <div className=" flex gap-5 ml-20 items-center justify-center">
+        <div className="relative nav-c overflow-hidden mt-[.9vw] ml-[15vw] flex items-center ">
           <div>
             <img src="/public/Group 4.png" className="w-80 " alt="" />
           </div>
@@ -28,7 +28,7 @@ function Nav() {
             />
           </div>
         </div>
-        <div className="relative">
+        <div className="relative nav-c">
           <div className="ab">
             <img src="/public/button/Group 22.svg" className="w-[6vw]" alt="" />
           </div>
@@ -41,9 +41,9 @@ function Nav() {
         </div>
       </div>
 
-      <div className="n-r flex gap-10">
+      <div className=" flex gap-10">
         {["store", "suport", "community"].map((i, k) => (
-          <div className="relative">
+          <div className="relative nav-r">
             <img src="/Group 1.svg" width={140} alt="" />
             <div
               className={`absolute top-[0.46vw] text-lg  ${
