@@ -6,14 +6,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Page2() {
   gsap.registerPlugin(useGSAP,ScrollTrigger);
+
   const tl = gsap.timeline({scrollTrigger: {
     trigger: ".page2",
     start: "top 0%",
     // end: "bottom bottom",
     // scrub: true,
     boxShadow: "0px 0px 20px #fff",
+}});
 
-  },});
   useGSAP(() => {
     tl.from(".boxs",{
       opacity: 0,
