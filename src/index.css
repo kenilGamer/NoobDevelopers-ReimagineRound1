@@ -4,7 +4,9 @@
 /* *{
    border: 1px solid red;
 } */
-
+*{
+   scroll-behavior: smooth;
+}
 ::-webkit-scrollbar{
    background: #000000;
    width: 10px;
@@ -27,11 +29,18 @@
    font-family: NH;
    src: url(/public/korataki/korataki-rg-3cf0d889.ttf);
 }
+@font-face {
+   font-family: NP;
+   src: url(/public/sansation/Sansation_Regular.ttf);
+}
 .heading{
    font-family: NH;
    overflow: hidden;
 }
 .logo{
    font-family: ndot;
-   box-shadow: 0;
+   /* box-shadow: 0; */
+}
+.np{
+   font-family: NP;
 }
