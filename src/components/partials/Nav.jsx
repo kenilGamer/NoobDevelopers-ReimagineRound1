@@ -3,7 +3,7 @@ import React from "react";
 function Nav() {
   return (
     <div className="w-full h-24 flex items-center justify-between p-6 relative overflow-hidden">
-      <div className="nav-l ">
+      <div className="nav-l hover:animate-pulse ">
         <div className="absolute top-[1vw] left-6 logo-img">
           <img src="/Group 5.svg" className="w-[20vw]" alt="" />
         </div>
@@ -17,19 +17,19 @@ function Nav() {
           <div>
             <img src="/Group 4.png" className="w-80 " alt="" />
           </div>
-          <div className="absolute top-[.4vw] left-[1vw] ">
+          <div className="absolute top-[.4vw] hover:animate-pulse left-[1vw] ">
             <input
-              className="bg-transparent border-none outline-none rounded-full px-10 text-xl py-2 w-72"
+              className="bg-transparent border-none hover:animate-pulse outline-none rounded-full px-10 text-xl py-2 w-72"
               color="transparent"
-              placeholder="Sarch Here..."
+              placeholder="Search Here..."
               type="search"
               name="search"
               id="search"
             />
           </div>
         </div>
-        <div className="relative nav-c">
-          <div className="ab">
+        <div className="relative nav-c hover:animate-pulse">
+          <div className="ab hover:animate-pulse">
             <img src="/button/Group 22.svg" className="w-[6vw]" alt="" />
           </div>
           <div className="absolute top-[0.001vw]">
@@ -43,7 +43,7 @@ function Nav() {
 
       <div className=" flex gap-10">
         {["store", "suport", "community"].map((i, k) => (
-          <div className="relative nav-r">
+          <div className="relative nav-r hover:animate-pulse">
             <img src="/Group 1.svg" width={140} alt="" />
             <div
               className={`absolute top-[0.46vw] text-lg  ${
