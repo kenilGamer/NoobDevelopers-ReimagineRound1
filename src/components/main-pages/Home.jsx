@@ -129,7 +129,7 @@ function Home() {
   return (
     <div className='w-full h-full bg-black overflow-hidden'>
       <Nav/>
-      <div className='w-full h-full relative '>
+      <div className='w-full h-full pointer-events-none relative '>
         <Homeline/>
       </div>
     </div>
