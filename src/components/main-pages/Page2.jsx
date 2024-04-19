@@ -16,14 +16,19 @@ function Page2() {
 }});
 
   useGSAP(() => {
+    tl.from(".text-2",{
+      opacity:0,
+      duration: 2
+    })
     tl.from(".boxs",{
       opacity: 0,
       // y: -300,
       width:0,
       height:0,
       // scrollBehavior:smooth ,
-      stagger: .2
+      stagger: 0.1
     })
+    
   })
   return (
     <div  className='w-full page2 h-[100vh] overflow-hidden bg-black flex items-center relative top-0 left-0 justify-center p-2'>

@@ -3,8 +3,8 @@ import React from "react";
 function Page2setup() {
   return (
     <div className="w-full min-h-full text-white overflow-hidden">
-      <div className="text-center absolute boxs w-full top-[7vw] -left-[2.7vw] heading ">
-        <h1 className="text-7xl shadows shadow-white">Features</h1>
+      <div className="text-center absolute text-2  w-full top-[5vw] -left-[2.7vw] heading ">
+        <h1 className="text-[70px] shadows shadow-white">Features</h1>
       </div>
       <div className="relative box hover:cursor-pointer hover:animate-pulse ml-[8.7vw] -mt-[2vw]">
         <div className="absolute boxs top-[7vw] w-[16vw] h-[26vh] left-12 text-3 z-30 flex flex-col gap-12">
