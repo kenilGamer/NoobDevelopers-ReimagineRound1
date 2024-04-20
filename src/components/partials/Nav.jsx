@@ -1,6 +1,18 @@
 import React from "react";
+import  { useState } from 'react';
+
 
 function Nav() {
+  const [dark_theme, setDark_theme] = useState(true);
+  const theme = () => {
+    dark_theme ==true? setDark_theme(false) : setDark_theme(true);
+    
+  
+  };
+  
+  
+  
+  
   return (
     <div className="w-full h-24 flex items-center justify-between p-6 relative overflow-hidden">
       <div className="nav-l hover:animate-pulse ">
@@ -28,15 +40,16 @@ function Nav() {
             />
           </div>
         </div>
-        <div className="relative nav-c hover:animate-pulse">
-          <div className="ab hover:animate-pulse">
+        <div onClick={theme} className="moon_btn relative nav-c  ">
+          <div className={`ab hover:animate-pulse`}>
+
             <img src="/button/Group 22.svg" className="w-[6vw]" alt="" />
           </div>
-          <div className="absolute top-[0.001vw]">
-            <img src="/button/Group 23.svg" className=" w-[3vw] " alt="" />
+          <div className={`absolute top-[0.001vw] ${dark_theme ? 'right-[0]' : ''}`}>
+            <img src="/button/Group 23.svg" className=" w-[3vw]  " alt="" />
           </div>
-          <div className="absolute top-[0.5vw] left-[0.5vw]">
-            <img src="/button/Rectangle 12.svg" className=" w-[2.4vw] " alt="" />
+          <div className={` absolute top-[0.5vw]   ${dark_theme ? 'right-[0.1vw]' : 'left-[0.5vw]'}`}>
+            <img src="/button/Rectangle 12.svg" className=" w-[2.4vw] min-w-[2.4vw] " alt="" />
           </div>
         </div>
       </div>
