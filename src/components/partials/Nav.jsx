@@ -45,10 +45,10 @@ function Nav() {
 
             <img src="/button/Group 22.svg" className="w-[6vw]" alt="" />
           </div>
-          <div className={`absolute top-[0.001vw] ${dark_theme ? 'right-[0]' : ''}`}>
+          <div className={`absolute top-[0.001vw] ${dark_theme ? 'right-[6px]' : ''}`}>
             <img src="/button/Group 23.svg" className=" w-[3vw]  " alt="" />
           </div>
-          <div className={` absolute top-[0.5vw]   ${dark_theme ? 'right-[0.1vw]' : 'left-[0.5vw]'}`}>
+          <div className={` absolute top-[0.5vw]   ${dark_theme ? 'right-[0.5vw]' : 'left-[0.5vw]'}`}>
             <img src="/button/Rectangle 12.svg" className=" w-[2.4vw] min-w-[2.4vw] " alt="" />
           </div>
         </div>
