@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Page2setup() {
+  useEffect(() => {
+    // Function to reload content
+    const reloadContent = () => {
+      // Reload the page
+      window.location.reload();
+    };
+
+    // Event listener for window resize
+    const handleResize = () => {
+      // Call reloadContent function when resize event occurs
+      reloadContent();
+    };
+
+    // Add event listener when component mounts
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
   return (
     <div className="w-full min-h-full text-white overflow-hidden">
       <div className="text-center absolute text-2  w-full top-[5vw] -left-[2.7vw] heading ">
@@ -93,7 +114,7 @@ function Page2setup() {
       </div>
 
       <div className=" relative box hover:cursor-pointer hover:animate-pulse mt-[45.3vw]  ml-[65vw] bg-slate boxs-line-100 w-80 rotate-180 ">
-        <div className="absolute boxs top-[6vw] w-[16vw] h-[26vh] left-[1vw] text-3 z-30 flex flex-col gap-8 -rotate-180">
+        <div className="absolute boxs top-[7vw] w-[16vw] h-[26vh] bg-zinc-00 justify-center items-center left-[2vw] text-3 z-30 flex flex-col gap-8 -rotate-180">
           <h1 className="text-3xl np">Performance</h1>
           <p className="text-xl">Essential power for speed and gaming</p>
         </div>
