@@ -33,6 +33,7 @@ function App() {
       <Home/>
       <Page2/>
       {/* <Page3/> */}
+      
     </div>
   )
 }
