@@ -1,31 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Box from '../partials/Box';
-import Box_1 from '../partials/Box_1';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-
-
-
-
-
-
+import React from "react";
 
 function Page2setup() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  return isMobile==false ? (
+  return (
     <div className="w-full min-h-full text-white overflow-hidden">
       <div className="text-center absolute text-2  w-full top-[5vw] -left-[2.7vw] heading ">
         <h1 className="text-[70px] shadows shadow-white">Features</h1>
@@ -128,103 +104,7 @@ function Page2setup() {
         <div className="w-[2px] h-[5.7vw] absolute boxs bg-white boxs-line top-[4.96vw] left-[18vw] rotate-[-52deg]"></div>
       </div>
     </div>
-    
-  ) : (
-    <>
-    <Swiper 
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper" className="w-[100vw] relative flex gap-[2vw] p-1  h-[100vh] min-h-[100vh] text-white bg-white  ">
-    
-    <SwiperSlide className="relative rounded-2xl h-full w-[100vw] min-w-full bg-black ">
-    
-    <div className="absolute top-[22.5vw] left-[15vw]"> 
-      <div className="relative w-full h-full ">
-      <Box w="40vw"  type="type_1"/>
-      <div className="absolute  boxs top-[0vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
-          <h1 className="text-xs np">Chipset</h1>
-          <p className="text-[2vw]">Snapdragon 778G+ accelerated by 5G</p>
-        </div>
-      </div>
-      </div>
-    
-        <div className="absolute top-[55vw] left-[5vw] "> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_1"/>
-      </div>
-      </div>
-    
-     <div className="absolute top-[40.5vw] right-[5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_4"/>
-
-      </div>
-      </div>
-      
-       <div className="absolute top-[75vw] left-[38.5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_4"/>
-      </div>
-      </div>
-    
-    </SwiperSlide>
-    
-     <SwiperSlide className="relative rounded-2xl h-full w-[100vw] min-w-full  bg-black">
-     
-     <div className="absolute top-[22.5vw] right-[15vw]"> 
-      <div className="relative w-full h-full ">
-      <Box w="40vw"  type="type_2"/>
-      <div className="absolute  boxs top-[0vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
-          <h1 className="text-xs np">Chipset</h1>
-          <p className="text-[2vw]">Snapdragon 778G+ accelerated by 5G</p>
-        </div>
-      </div>
-      </div>
-    
-        <div className="absolute top-[55vw] right-[5vw] "> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_2"/>
-      </div>
-      </div>
-    
-     <div className="absolute top-[40.5vw] left-[5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_3"/>
-
-      </div>
-      </div>
-      
-       <div className="absolute top-[75vw] right-[38.5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_3"/>
-      </div>
-      </div>
-     
-     
-     </SwiperSlide>
-    
-    
-    
-      
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-      
-      </Swiper>
-      </>
-      )
+  );
 }
+
 export default Page2setup;
