@@ -25,9 +25,9 @@ function Page2setup() {
   }, []);
 
   return isMobile == false ? (
-    <div className="w-full min-h-full text-white overflow-hidden">
-      <div className="text-center absolute boxs w-full top-[7vw] -left-[2.7vw] heading ">
-        <h1 className="text-7xl shadows shadow-white">Features</h1>
+     <div className="w-full min-h-full text-white overflow-hidden">
+      <div className="text-center absolute text-2  w-full top-[5vw] -left-[2.7vw] heading ">
+        <h1 className="text-[70px] shadows shadow-white">Features</h1>
       </div>
       <div className="relative box hover:cursor-pointer hover:animate-pulse ml-[8.7vw] -mt-[2vw]">
         <div className="absolute boxs top-[7vw] w-[16vw] h-[26vh] left-12 text-3 z-30 flex flex-col gap-12">
@@ -116,7 +116,7 @@ function Page2setup() {
       </div>
 
       <div className=" relative box hover:cursor-pointer hover:animate-pulse mt-[45.3vw]  ml-[65vw] bg-slate boxs-line-100 w-80 rotate-180 ">
-        <div className="absolute boxs top-[6vw] w-[16vw] h-[26vh] left-[1vw] text-3 z-30 flex flex-col gap-8 -rotate-180">
+        <div className="absolute boxs top-[7vw] w-[16vw] h-[26vh] bg-zinc-00 justify-center items-center left-[2vw] text-3 z-30 flex flex-col gap-8 -rotate-180">
           <h1 className="text-3xl np">Performance</h1>
           <p className="text-xl">Essential power for speed and gaming</p>
         </div>
