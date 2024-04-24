@@ -14,9 +14,9 @@ function Nav() {
 
 
   return (
-    <div className="w-full h-24 flex items-center justify-between p-6 relative overflow-hidden">
-      <div className="nav-l hover:animate-pulse ">
-        <div className="absolute top-[1vw] left-6 logo-img">
+    <div className="w-full  h-24 flex items-center justify-between p-6 relative overflow-hidden">
+      <div className="nav-l">
+      <div className="absolute top-[1vw] left-6 logo-img">
           <img src="/Group 5.svg" className="w-[20vw]" alt="" />
         </div>
         <div className="absolute top-[1.7vw] logo logo-nav left-[4.5vw]">

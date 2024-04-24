@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Box from '../partials/Box';
-import Box_1 from '../partials/Box_1';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-
-
-
-
-
-
+import Box from "../partials/Box";
+import Box_1 from "../partials/Box_1";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 function Page2setup() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -25,7 +19,7 @@ function Page2setup() {
   }, []);
 
   return isMobile == false ? (
-     <div className="w-full min-h-full text-white overflow-hidden">
+    <div className="w-full min-h-full text-white overflow-hidden">
       <div className="text-center absolute text-2  w-full top-[5vw] -left-[2.7vw] heading ">
         <h1 className="text-[70px] shadows shadow-white">Features</h1>
       </div>
@@ -127,106 +121,124 @@ function Page2setup() {
         <div className="w-[2px] h-[5.7vw] absolute boxs bg-white boxs-line top-[4.96vw] left-[18vw] rotate-[-52deg]"></div>
       </div>
     </div>
-
   ) : (
     <>
-    <Swiper 
+      <Swiper
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper" className="w-[100vw] relative flex gap-[2vw] p-1  h-[100vh] min-h-[100vh] text-white bg-white  ">
-    
-    <SwiperSlide className="relative rounded-2xl h-full w-[100vw] min-w-full bg-black ">
-    
-    <div className="absolute top-[22.5vw] left-[15vw]"> 
-      <div className="relative w-full h-full ">
-      <Box w="40vw"  type="type_1"/>
-      <div className="absolute  boxs top-[0vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
-          <h1 className="text-xs np">Chipset</h1>
-          <p className="text-[2vw]">Snapdragon 778G+ accelerated by 5G</p>
-        </div>
-      </div>
-      </div>
-    
-        <div className="absolute top-[55vw] left-[5vw] "> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_1"/>
-      </div>
-      </div>
-    
-     <div className="absolute top-[40.5vw] right-[5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_4"/>
+        className=" mySwiper w-[100vw] relative flex  gap-[2vw]  h-[80vh] text-white bg-white  "
+      >
+        <SwiperSlide className="relative h-full min-w-full flex items-center justify-center bg-black ">
+        <h1 className="text-2 top-0 left-[30%] text-5xl absolute">Features</h1>
+          <div className="absolute top-[22.5vw] left-[15vw]">
+            <div className="relative w-full h-full ">
+              <Box w="40vw" type="type_1" />
+              <div className="absolute  boxs top-[4vw] w-full h-full left-[2vw] text-3 z-30 flex flex-col gap-6">
+                <h1 className="text-xl np">Design</h1>
+                <p className="text-[2.5vw]">
+                  Design that goes beyond the surface.
+                </p>
+              </div>
+            </div>
+          </div>
 
-      </div>
-      </div>
-      
-       <div className="absolute top-[75vw] left-[38.5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_4"/>
-      </div>
-      </div>
-    
-    
-    
-    
-    </SwiperSlide>
-    
-     <SwiperSlide className="relative rounded-2xl h-full w-[100vw] min-w-full  bg-black">
-     
-     <div className="absolute top-[22.5vw] right-[15vw]"> 
-      <div className="relative w-full h-full ">
-      <Box w="40vw"  type="type_2"/>
-      <div className="absolute  boxs top-[0vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
-          <h1 className="text-xs np">Chipset</h1>
-          <p className="text-[2vw]">Snapdragon 778G+ accelerated by 5G</p>
-        </div>
-      </div>
-      </div>
-    
-        <div className="absolute top-[55vw] right-[5vw] "> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_2"/>
-      </div>
-      </div>
-    
-     <div className="absolute top-[40.5vw] left-[5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_3"/>
+          <div className="absolute top-[55vw] left-[5vw] ">
+            <div className="relative w-full h-full">
+              <Box w="40vw" type="type_1" />
+              <div className="absolute  boxs top-[4vw]  w-full h-full left-[5vw] text-3 z-30 flex flex-col gap-6 ">
+                <h1 className="text-xl np">Display</h1>
+                <p className="text-[2.9vw]"> 6.55” AMOLED display. HDR10+</p>
+              </div>
+            </div>
+          </div>
 
-      </div>
-      </div>
-      
-       <div className="absolute top-[75vw] right-[38.5vw]"> 
-      <div className="relative w-full h-full">
-      <Box w="40vw"  type="type_3"/>
-      </div>
-      </div>
-     
-     
-     </SwiperSlide>
-    
-    
-    
-      
-    
-    
-    
-    
-    
+          <div className="absolute top-[40.5vw] right-[5vw]">
+            <div className="relative w-full h-full">
+              <Box w="40vw" type="type_4" />
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[14vw] text-3 z-30 flex flex-col gap-12">
+                <h1 className="text-xl np">Camera</h1>
+                
+              </div>
+              <div className="absolute top-[17vw] w-32 left-2">
+              <p className="text-[2.7vw]">
+                  50MP dual camera with Sony IMX sensor
+                </p>
+              </div>
+            </div>
+          </div>
 
-    
-    
-    
-    
-    
-    
-    
-      
+          <div className="absolute top-[75vw] left-[38.5vw]">
+            <div className="relative w-full h-full">
+              <Box w="40vw" type="type_4" />
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[8vw] text-3 z-30 flex flex-col gap-1 ">
+                <h1 className="text-lg np">Sustainability</h1>
+                {/* <p className="text-[2vw]">Made with 100% recycled aluminium.</p> */}
+              </div>
+              <div className="absolute top-[17vw] w-32 left-2">
+              <p className="text-[3vw]">Made with 100% recycled aluminium.</p>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="relative  h-full w-[100vw] min-w-full  bg-black">
+          
+          <div className="absolute top-[22.5vw] right-[15vw]">
+            <div className="relative w-full h-full ">
+              <Box w="40vw" type="type_2" />
+              <div className="absolute  boxs mt-[10vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
+                <h1 className="text-xs np">chipset</h1>
+                <p className="text-[2vw]">
+                  {" "}
+                  Snapdragon 778G+ accelerated by 5G
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute top-[55vw] right-[5vw] ">
+            <div className="relative w-full h-full">
+              <Box w="40vw" type="type_2" />
+              <div className="absolute  boxs top-[0vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
+                <h1 className="text-xs np">performance</h1>
+                <p className="text-[2vw]">
+                  {" "}
+                  Essential power for speed and gaming
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute top-[40.5vw] left-[5vw]">
+            <div className="relative w-full h-full">
+              <Box w="40vw" type="type_3" />
+              <div className="absolute  boxs top-[0vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
+                <h1 className="text-xs np">Battery</h1>
+                <p className="text-[2vw]">
+                  {" "}
+                  Fuel everything you need. Enjoy as you want. Charge Fast
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute top-[75vw] right-[38.5vw]">
+            <div className="relative w-full h-full">
+              <Box w="40vw" type="type_3" />
+              <div className="absolute  boxs top-[0vw] w-full h-full left-[1vw] text-3 z-30 flex flex-col gap-1 ">
+                <h1 className="text-xs np">Glyph Interface</h1>
+                <p className="text-[2vw]">
+                  A new way to communicate. Unique light patterns
+                </p>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
-      </>
-  )
+    </>
+  );
 }
 export default Page2setup;
