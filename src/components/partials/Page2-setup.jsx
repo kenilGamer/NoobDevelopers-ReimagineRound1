@@ -137,7 +137,7 @@ function Page2setup() {
             <div className="relative w-full h-full ">
               <Box w="40vw" type="type_1" />
               <div className="absolute  boxs top-[4vw] w-full h-full left-[2vw] text-3 z-30 flex flex-col gap-6">
-                <h1 className="text-xl np">Design</h1>
+                <h1 className="text-2xl ml-3 np">Design</h1>
                 <p className="text-[2.5vw]">
                   Design that goes beyond the surface.
                 </p>
@@ -149,7 +149,7 @@ function Page2setup() {
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_1" />
               <div className="absolute  boxs top-[4vw]  w-full h-full left-[5vw] text-3 z-30 flex flex-col gap-6 ">
-                <h1 className="text-xl np">Display</h1>
+                <h1 className="text-2xl np">Display</h1>
                 <p className="text-[2.9vw]"> 6.55” AMOLED display. HDR10+</p>
               </div>
             </div>
@@ -159,7 +159,7 @@ function Page2setup() {
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_4" />
               <div className="absolute  boxs top-[3vw] w-full h-full left-[14vw] text-3 z-30 flex flex-col gap-12">
-                <h1 className="text-xl np">Camera</h1>
+                <h1 className="text-2xl np">Camera</h1>
                 
               </div>
               <div className="absolute boxs top-[17vw] w-44 left-2">
@@ -174,10 +174,10 @@ function Page2setup() {
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_4" />
               <div className="absolute  boxs top-[3vw] w-full h-full left-[8vw] text-3 z-30 flex flex-col gap-1 ">
-                <h1 className="text-lg np">Sustainability</h1>
+                <h1 className="text-xl ml-5 np">Sustainability</h1>
                 {/* <p className="text-[2vw]">Made with 100% recycled aluminium.</p> */}
               </div>
-              <div className="absolute boxs top-[17vw] w-48 left-2">
+              <div className="absolute boxs top-[17vw] w-48 left-4">
               <p className="text-[3vw]">Made with 100% recycled aluminium.</p>
               </div>
             </div>
