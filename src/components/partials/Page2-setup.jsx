@@ -189,7 +189,7 @@ function Page2setup() {
           <div className="absolute top-[22.5vw] right-[15vw]">
             <div className="relative w-full h-full ">
               <Box w="40vw" type="type_2" />
-              <div className="absolute  boxs top-[3vw] w-full h-full left-[5vw] text-3 z-30 flex flex-col gap-12 ">
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[5vw] text-3 z-30 flex flex-col gap-5 ">
                 <h1 className="text-3xl np">Chipset</h1>
                 <div className="w-48 ml-6">
                 <p className="text-[3vw]">
@@ -203,7 +203,7 @@ function Page2setup() {
           <div className="absolute top-[55vw] right-[5vw] ">
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_2" />
-              <div className="absolute  boxs top-[3vw] w-full h-full left-[6vw] text-3 z-30 flex flex-col gap-12 ">
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[4vw] text-3 z-30 flex flex-col gap-6 ">
                 <h1 className="text-3xl np">Performance</h1>
               <div className="w-44">
               <p className="text-[3vw] ml-5">
@@ -217,8 +217,8 @@ function Page2setup() {
           <div className="absolute top-[40.5vw] left-[5vw]">
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_3" />
-              <div className="absolute  boxs top-[3vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-10 ">
-                <h1 className="text-3xl text-center np">Battery</h1>
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-5 ">
+                <h1 className="text-3xl np">Battery</h1>
                 <p className=" text-[3vw]">
                   Fuel everything you need. Enjoy as you want. Charge Fast
                 </p>
@@ -229,9 +229,9 @@ function Page2setup() {
           <div className="absolute top-[75vw] right-[38.5vw]">
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_3" />
-              <div className="absolute  boxs top-[3vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-10 ">
-                <h1 className="text-2xl text-nowrap np">Glyph Interface</h1>
-               <div className="w-48">
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-6 ">
+                <h1 className="text-xl text-nowrap np">Glyph Interface</h1>
+               <div className="w-44">
                <p className="text-[3vw] np">
                   A new way to communicate. Unique light patterns
                 </p>
