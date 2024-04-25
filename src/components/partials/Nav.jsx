@@ -14,15 +14,15 @@ function Nav() {
 
 
   return (
-    <div className="w-full  h-24 flex items-center justify-between p-6 relative ">
-       <div className="nav-l">
-        <div className="absolute top-[1vw] z-20 left-6 logo-img">
-          <img src="/Group5.svg" className="w-[20vw]" alt="" />
-        </div>
-        <div className="absolute top-[1.7vw] logo logo-nav left-[4.5vw]">
+    <div className="w-full  h-24 flex items-center justify-between p-6 relative overflow-hidden">
+       <div className="nav-l ">
+        {/* <div className="absolute top-[1vw] left-6 logo-img"> */}
+          <img src="/Group5.svg" className="w-[20vw] absolute top-[1vw] logo-nav left-6" alt="" />
+        {/* </div> */}
+        {/* <div className="absolute top-[1.7vw] logo logo-nav left-[4.5vw]"> */}
           {/* <img src="/Rectangle 8.svg" className='w-92 top-0' alt="" /> */}
-          <h1 className="text-[3.5vw]">NOTHING</h1>
-        </div>
+          <h1 className="text-[3.5vw] logo absolute top-[1.7vw] left-[4.5vw] logo-nav">NOTHING</h1>
+        {/* </div> */}
       </div>
       <div className=" flex gap-5 ml-20 items-center justify-center">
         <div className="relative nav-c overflow-hidden mt-[.9vw] ml-[15vw] flex items-center ">

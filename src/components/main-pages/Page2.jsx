@@ -20,7 +20,7 @@ function Page2() {
       opacity:0,
       duration: 2
     })
-    tl.from(".boxs,h1,h2,h3,h4,h5,h6",{
+    tl.from(".boxs",{
       opacity: 0,
       // y: -300,
       width:0,
