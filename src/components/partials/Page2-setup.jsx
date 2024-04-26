@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Box from "../partials/Box";
-import Box_1 from "../partials/Box_1";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import Box from '../partials/Box';
+import Box_1 from '../partials/Box_1';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
+
+
+
+
+
 
 function Page2setup() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -19,7 +25,7 @@ function Page2setup() {
   }, []);
 
   return isMobile == false ? (
-    <div className="w-full min-h-full text-white overflow-hidden">
+     <div className="w-full min-h-full text-white overflow-hidden">
       <div className="text-center absolute text-2  w-full top-[5vw] -left-[2.7vw] heading ">
         <h1 className="text-[70px] shadows shadow-white">Features</h1>
       </div>
@@ -123,9 +129,10 @@ function Page2setup() {
         <div className="w-[2px] h-[5.7vw] absolute boxs bg-white boxs-line top-[4.96vw] left-[18vw] rotate-[-52deg]"></div>
       </div>
     </div>
+
   ) : (
     <>
-      <Swiper
+    <Swiper 
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -138,7 +145,7 @@ function Page2setup() {
           <div className="absolute top-[22.5vw] left-[15vw]">
             <div className="relative w-full h-full ">
               <Box w="40vw" type="type_1" />
-              <div className="absolute  boxs top-[4vw] w-full h-full left-[2vw] text-3 z-30 flex flex-col gap-4">
+              <div className="absolute  boxs top-[4vw] w-full h-full left-[2vw] text-3 z-30 flex flex-col gap-6">
                 <h1 className="text-2xl ml-3 np">Design</h1>
                 <p className="text-[2.5vw]">
                   Design that goes beyond the surface.
@@ -150,7 +157,7 @@ function Page2setup() {
           <div className="absolute top-[55vw] left-[5vw] ">
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_1" />
-              <div className="absolute  boxs top-[4vw]  w-full h-full left-[5vw] text-3 z-30 flex flex-col gap-6 max-sm:gap-4 ">
+              <div className="absolute  boxs top-[4vw]  w-full h-full left-[5vw] text-3 z-30 flex flex-col gap-6 ">
                 <h1 className="text-2xl np">Display</h1>
                 <p className="text-[2.9vw]"> 6.55” AMOLED display. HDR10+</p>
               </div>
@@ -160,12 +167,12 @@ function Page2setup() {
           <div className="absolute top-[40.5vw] right-[5vw]">
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_4" />
-              <div className="absolute  boxs top-[3vw] w-full h-full left-[14vw] text-3 z-30 flex flex-col gap-12 max-sm:gap-10">
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[14vw] text-3 z-30 flex flex-col gap-12">
                 <h1 className="text-2xl np">Camera</h1>
                 
               </div>
-              <div className="absolute boxs top-[16vw] w-36 max-sm:w-26 left-3 max-sm:left-3 max-sm:p-1">
-              <p className="text-[3vw] max-sm:text-[3vw]">
+              <div className="absolute boxs top-[17vw] w-44 left-2">
+              <p className="text-[2.7vw]">
                   50MP dual camera with Sony IMX sensor
                 </p>
               </div>
@@ -176,10 +183,10 @@ function Page2setup() {
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_4" />
               <div className="absolute  boxs top-[3vw] w-full h-full left-[8vw] text-3 z-30 flex flex-col gap-1 ">
-                <h1 className="text-xl mt-1 ml-1 max-sm:ml-0 np max-sm:text-lg">Sustainability</h1>
+                <h1 className="text-xl ml-5 np">Sustainability</h1>
                 {/* <p className="text-[2vw]">Made with 100% recycled aluminium.</p> */}
               </div>
-              <div className="absolute boxs top-[15vw] w-48 left-2 p-2">
+              <div className="absolute boxs top-[17vw] w-48 left-4">
               <p className="text-[3vw]">Made with 100% recycled aluminium.</p>
               </div>
             </div>
@@ -193,7 +200,7 @@ function Page2setup() {
               <Box w="40vw" type="type_2" />
               <div className="absolute  boxs top-[3vw] w-full h-full left-[5vw] text-3 z-30 flex flex-col gap-5 ">
                 <h1 className="text-3xl np">Chipset</h1>
-                <div className="ml-6">
+                <div className="w-48 ml-6">
                 <p className="text-[3vw]">
                   Snapdragon 778G+ accelerated by 5G
                 </p>
@@ -206,9 +213,9 @@ function Page2setup() {
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_2" />
               <div className="absolute  boxs top-[3vw] w-full h-full left-[4vw] text-3 z-30 flex flex-col gap-6 ">
-                <h1 className="text-2xl max-sm:-ml-3 np">Performance</h1>
-              <div className="w-36">
-              <p className="text-[3vw] ml-6">
+                <h1 className="text-3xl np">Performance</h1>
+              <div className="w-44">
+              <p className="text-[3vw] ml-5">
                   Essential power for speed and gaming
                 </p>
               </div>
@@ -219,7 +226,7 @@ function Page2setup() {
           <div className="absolute top-[40.5vw] left-[5vw]">
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_3" />
-              <div className="absolute  boxs top-[3vw] max-sm:top-[1.5vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-3 ">
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-5 ">
                 <h1 className="text-3xl np">Battery</h1>
                 <p className=" text-[3vw]">
                   Fuel everything you need. Enjoy as you want. Charge Fast
@@ -231,10 +238,10 @@ function Page2setup() {
           <div className="absolute top-[75vw] right-[38.5vw]">
             <div className="relative w-full h-full">
               <Box w="40vw" type="type_3" />
-              <div className="absolute  boxs top-[3vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-4 ">
-                <h1 className="text-xl max-sm:text-[4.5vw] -ml-2 text-nowrap np">Glyph Interface</h1>
-               <div className="w-36 p-0.5 max-sm:-ml-2">
-               <p className="text-[3vw] p-[0.2vw] np">
+              <div className="absolute  boxs top-[3vw] w-full h-full left-[3vw] text-3 z-30 flex flex-col gap-6 ">
+                <h1 className="text-xl text-nowrap np">Glyph Interface</h1>
+               <div className="w-44">
+               <p className="text-[3vw] np">
                   A new way to communicate. Unique light patterns
                 </p>
                </div>
@@ -243,7 +250,7 @@ function Page2setup() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
-  );
+      </>
+  )
 }
 export default Page2setup;
