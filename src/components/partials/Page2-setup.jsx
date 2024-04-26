@@ -5,13 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-
-
-
-
-
-
-
 function Page2setup() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   useEffect(() => {
@@ -130,7 +123,7 @@ function Page2setup() {
       </div>
     </div>
 
-  ) : (
+  ):(
     <>
     <Swiper 
         spaceBetween={30}

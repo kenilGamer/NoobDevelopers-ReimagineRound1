@@ -6,13 +6,14 @@ import gsap from 'gsap'
 function Home() {
   const tl = gsap.timeline();
   useGSAP(() => {
-    tl.from(".logo-img",{
-      scale: 0,
-      duration: 0.3,
-    })
+    // tl.from(".logo-img",{
+    //   scale: 0,
+    //   duration: 0.3,
+    // })
     tl.from(".logo-nav",{
       scale: 0,
       duration: 0.8,
+      stagger:0.5,
     })
     tl.to(".line1",{
       width: '11vw',
