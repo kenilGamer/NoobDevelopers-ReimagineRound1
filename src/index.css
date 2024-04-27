@@ -4,6 +4,9 @@
 /* *{
    border: 1px solid red;
 } */
+::selection{
+   display: none  ;
+}
 *{
    scroll-behavior: smooth;
 }
