@@ -63,13 +63,13 @@ function Nav() {
             <img src="/button/Group 23.svg" className=" w-[3vw]  " alt="" />
           </div>
           <div
-            className={` absolute top-[0.5vw]   ${
-              dark_theme ? "right-[0.5vw]" : "left-[0.5vw]"
+            className={` absolute  ${!dark_theme ? "top-[0.5vw]" : "top-[0.2vw]"}   ${
+              dark_theme ? "right-[0.9vw] -top-[0.0001vw]" : "left-[0.5vw]"
             }`}
           >
             <img
-              src="/button/Rectangle 12.svg"
-              className=" w-[2.4vw] min-w-[2.4vw] "
+              src={`${!dark_theme ? "/button/Rectangle 12.svg" : "/sun_PNG13425.webp"} `}
+              className={`${!dark_theme ? 'w-[2.4vw]' : "w-[2.1vw]"} `}
               alt=""
             />
           </div>
@@ -110,7 +110,7 @@ function Nav() {
             />
             <img
               onClick={theme}
-              src={dark_theme ? "light-mode-svgrepo-com.svg" : "moon.svg"}
+              src={dark_theme ? "/sun_PNG13425.webp" : "moon.svg"}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-fill fill-white scale-50"
             />
           </div>
