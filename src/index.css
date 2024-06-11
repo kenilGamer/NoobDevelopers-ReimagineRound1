@@ -46,7 +46,19 @@
 }
 .np{
    font-family: NP;
+  
 }
+
+.text_border{
+  -webkit-text-stroke-width: 11px;
+  -webkit-text-stroke-color: white;
+  
+  
+}
+
+
+
+
 .boxs-line{
    box-shadow: 0px 0px 10px #ffffff;
 }

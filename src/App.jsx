@@ -7,6 +7,7 @@ import Home from './components/main-pages/Home';
 import Page2 from './components/main-pages/Page2';
 import LocomotiveScroll from 'locomotive-scroll';
 import Page3 from './components/main-pages/page3';
+// import Page3d from './components/main-pages/page-3d';
 
 function App() {
   gsap.registerPlugin(useGSAP,ScrollTrigger);
@@ -32,7 +33,7 @@ function App() {
     <div className='w-full h-screen text-white select-none bg-black '>
       <Home/>
       <Page2/>
-      {/* <Page3/> */}
+      <Page3/>
     </div>
   )
 }
