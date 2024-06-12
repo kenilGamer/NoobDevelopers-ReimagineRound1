@@ -17,7 +17,7 @@ const Page3 = () => {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".page3",
-        markers: true,
+        // markers: true,
         start: "top 0%",
         end: "top -200%",
         scrub: 3,
@@ -79,16 +79,16 @@ const Page3 = () => {
         left: "50%",
         transform: "translate(-50%,-50%) rotate(0deg) scale(1)",
       });
-    gsap.to(".cube", {
-      top: 0,
-      rotate: 0,
-      left: 0,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".page3",
-        scrub: 2,
-      },
-    });
+    // gsap.to(".cube", {
+    //   top: 0,
+    //   rotate: 0,
+    //   left: 0,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: ".page3",
+    //     scrub: 2,
+    //   },
+    // });
 
     return () => {
       if (timeline.scrollTrigger) timeline.scrollTrigger.kill();
@@ -124,10 +124,10 @@ const Page3 = () => {
             IP53
           </h1>
         </div>
-        <div className="cube w-full h-full absolute top-[70%] -left-[60%] rotate-45 z-10" >
+        {/* <div className="cube w-full h-full absolute top-[70%] -left-[60%] rotate-45 z-10" >
           <Cube rotate={rotate} />
         </div>
-        <button className="p-5 absolute top-0 right-0 z-50" onClick={showfront}>Rotate</button>
+        <button className="p-5 absolute top-0 right-0 z-50" onClick={showfront}>Rotate</button> */}
       </div>
     </div>
   );
