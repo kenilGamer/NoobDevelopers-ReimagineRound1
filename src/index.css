@@ -48,7 +48,10 @@
    font-family: NP;
   
 }
-
+.shadow{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-shadow: 2px 1px #fff;
+}
 .text_border{
   -webkit-text-stroke-width: 11px;
   -webkit-text-stroke-color: white;
