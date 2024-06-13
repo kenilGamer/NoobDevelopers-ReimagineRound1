@@ -190,6 +190,20 @@ const Page3 = () => {
             <div className="w-32 h-[2px] absolute top-[65.2%] left-[25.2%] bg-white"></div>
           </div>
         </div>
+
+        <div className="flash">
+          <div className="absolute top-[45%] left-[43.6%] w-[7%] h-[1px] bg-white rotate-[90deg] z-50 "></div>
+          <div className="box w-full min-h-full ">
+            <h1 className="absolute top-[30.8%] left-[45%] text-xl">Flash</h1>
+            <div className="w-20 h-[2px] absolute top-[29.9%] left-[43.7%] bg-white"></div>
+            <div className="w-4 h-[2px] absolute top-[30.9%] left-[49.5%] rotate-[40deg] bg-white"></div>
+            <div className="w-4 h-[2px] absolute top-[33.2%] left-[49.9%] rotate-[90deg] bg-white"></div>
+            <div className="w-5 h-[2px] absolute top-[35.4%] left-[49.2%] -rotate-[37deg] bg-white"></div>
+            <div className="w-7 h-[2px] absolute top-[34.3%] left-[41.8%] rotate-[90deg]  bg-white"></div>
+            <div className="w-[1.5%] h-[2px] absolute top-[31.1%] left-[42.5%] -rotate-[45deg]  bg-white"></div>
+            <div className="w-[6.5%] h-[2px] absolute top-[36.5%] left-[42.9%] bg-white"></div>
+          </div>
+        </div>
       </div>
     </div>
   );
