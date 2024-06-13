@@ -58,7 +58,7 @@ const Cube = ({rotate}) => {
   };
 
   return (
-    <div id="tridiv">
+    <div id="tridiv" style={{  fontSize: "300.5%"}}>
       <div className="scene"  style={{
           transform: "rotateX(-100deg) rotateY(180deg) rotateZ(180deg)",
         }}>
