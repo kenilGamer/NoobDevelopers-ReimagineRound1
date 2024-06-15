@@ -7,9 +7,9 @@
 ::selection{
    display: none  ;
 }
-*{
+/* *{
    scroll-behavior: smooth;
-}
+} */
 ::-webkit-scrollbar{
    background: #000000;
    width: 10px;

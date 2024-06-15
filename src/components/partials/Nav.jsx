@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Slider from "../partials/Slider";
 function Nav() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -11,6 +12,9 @@ function Nav() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+
+  
   const [dark_theme, setDark_theme] = useState(true);
   const theme = () => {
     dark_theme == true ? setDark_theme(false) : setDark_theme(true);
@@ -21,7 +25,6 @@ function Nav() {
   const handleDataFromChild = (data) => {
     setSd(data);
   };
-
 
   return isMobile == false ? (
     <div className="w-full h-24 flex items-center justify-between p-6 relative overflow-hidden">

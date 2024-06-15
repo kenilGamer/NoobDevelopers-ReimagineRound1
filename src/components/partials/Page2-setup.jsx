@@ -18,7 +18,7 @@ function Page2setup() {
   }, []);
 
   return isMobile == false ? (
-     <div className="w-full min-h-full text-white overflow-hidden">
+     <div className="w-full h-full text-white  overflow-hidden">
       <div className="text-center absolute text-2  w-full top-[5vw] -left-[2.7vw] heading ">
         <h1 className="text-[70px] shadows shadow-white">Features</h1>
       </div>
@@ -246,4 +246,5 @@ function Page2setup() {
       </>
   )
 }
+
 export default Page2setup;

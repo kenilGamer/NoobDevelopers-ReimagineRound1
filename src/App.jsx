@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
     
@@ -7,9 +7,6 @@ import Home from './components/main-pages/Home';
 import Page2 from './components/main-pages/Page2';
 import LocomotiveScroll from 'locomotive-scroll';
 import Page3 from './components/main-pages/page3';
-
-import Cube from './components/partials/Cube';
-// import Page3d from './components/main-pages/page-3d';
 
 function App() {
 
@@ -31,9 +28,25 @@ function App() {
   //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   //   },
   // });
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+      duration: 3,
+      multiplier: 1, // Adjust the scroll speed if needed
+    });
+
+    // Clean up on unmount
+    return () => {
+      if (scroll) scroll.destroy();
+    };
+  }, []);
+  
 
   return (
-    <div id='main' className='w-full h-screen text-white select-none bg-black ' >
+    <div  id='main' className='w-full h-screen text-white select-none bg-black ' >
       <Home/>
       <Page2/>
       <Page3/>
