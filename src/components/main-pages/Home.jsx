@@ -128,7 +128,7 @@ function Home() {
     })
   })
   return (
-    <div className='w-full h-full overflow-hidden'>
+    <div className='w-full h-full overflow-hidden page'>
       <Nav/>
       <div className='w-full h-full pointer-events-none relative '>
         <Homeline/>

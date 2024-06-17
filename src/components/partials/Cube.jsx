@@ -42,17 +42,6 @@ const Cube = ({rotate}) => {
     };
   }, [rotate]);
 
-  useEffect(() => {
-   
-      gsap.from("tridiv", { 
-        x: "-50%", 
-        y:"40%",
-        rotate:1, 
-        duration: 3,
-        
-      });
-    }, []);
-
   const showfront = () => {
     setState(state === '1' ? '0' : '1');
   };

@@ -10,24 +10,6 @@ import Page3 from './components/main-pages/page3';
 
 function App() {
 
-  // const locomotiveScroll = new LocomotiveScroll({
-  //   lenisOptions: {
-  //     autoResize: true,
-  //     smoothScrolling: true,
-  //     wrapper: window,
-  //     content: document.documentElement,
-  //     lerp: 0.1,
-  //     duration: 3,
-  //     orientation: "vertical",
-  //     gestureOrientation: "vertical",
-  //     smoothWheel: true,
-  //     smoothTouch: true,
-  //     wheelMultiplier: 1,
-  //     touchMultiplier: 2,
-  //     normalizeWheel: true,
-  //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  //   },
-  // });
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -46,7 +28,7 @@ function App() {
   
 
   return (
-    <div  id='main' className='w-full h-screen text-white select-none bg-black ' >
+    <div  id='main' className='w-full snap-y snap-mandatory h-screen text-white select-none bg-black ' >
       <Home/>
       <Page2/>
       <Page3/>

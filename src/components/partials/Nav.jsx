@@ -81,7 +81,7 @@ function Nav() {
 
       <div className=" flex gap-10">
         {["store", "suport", "community"].map((i, k) => (
-          <div className="relative nav-r hover:animate-pulse">
+          <div key={k} className="relative nav-r hover:animate-pulse">
             <img src="/Group 1.svg" width={140} alt="" />
             <div
               className={`absolute top-[0.46vw] text-lg  ${

@@ -11,15 +11,24 @@ const Page3 = () => {
   const sectionRef = useRef(null);
   const cube = useRef(null)
   const cube1 = useRef(null)
+  const target = useRef(null)
   const [rotate, setRotate] = useState("0");
   const { scrollYProgress } = useScroll({
     target: cube,
     offset: ["start end", "end end"]
   })
-
-  scrollYProgress.on('change', (data) => {
-    console.log(data);
+  const { scrollY } = useScroll({
+    target: target,
+    offset: ["start end", "end end"]
   })
+  const data1 = useScroll()
+  // console.log(data1);
+  // scrollY.on('change', (data) => {
+  //   console.log(data % 6);
+  //   if(data == 1177){
+  //     alert("op")
+  //   }
+  // })
   useEffect(() => {
     const section = sectionRef.current;
 
@@ -35,6 +44,11 @@ const Page3 = () => {
     });
 
     timeline
+    .to(".btn",{
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out",
+    })
       .to(section.querySelector(".element3"), {
         top: "50%",
         left: "50%",
@@ -125,7 +139,7 @@ const Page3 = () => {
   };
 
   return (
-    <div className="relative w-full min-h-[200vh]">
+    <div ref={target} className="relative page w-full min-h-[200vh]">
       <div className="page3 w-full min-h-[100vh] overflow-hidden ">
         <div
           ref={sectionRef}
@@ -168,7 +182,7 @@ const Page3 = () => {
           className="cube w-full min-h-full fixed top-[30vh] text-lg -left-[0vw]  z-10" >
           <Cube rotate={rotate} />
         </motion.div>
-        <button className="p-5 fixed top-0 right-0 z-50" onClick={showfront}>Rotate</button>
+        <button title="rotate a phone for a 3d model "  className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
       </div>
       <div ref={cube} className="page4  overflow-hidden w-full min-h-[100vh] bg-black relative">
         <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
