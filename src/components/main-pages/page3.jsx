@@ -17,6 +17,7 @@ const Page3 = () => {
     target: cube,
     offset: ["start end", "end end"]
   })
+ 
   const { scrollY } = useScroll({
     target: target,
     offset: ["start end", "end end"]
@@ -24,11 +25,15 @@ const Page3 = () => {
   const data1 = useScroll()
   // console.log(data1);
   // scrollY.on('change', (data) => {
-  //   console.log(data % 6);
+  //   // console.log(data % 6);
   //   if(data == 1177){
   //     alert("op")
   //   }
   // })
+  scrollYProgress.on('change', (data) => {
+    console.log(data );
+    
+  })
   useEffect(() => {
     const section = sectionRef.current;
 
@@ -173,26 +178,27 @@ const Page3 = () => {
         </div>
         {/* page3 end */}
       </div>
-      <div className="3d-modle">
+     
+      <div ref={cube} className="page4  overflow-hidden w-full min-h-[100vh] bg-black relative">
+      <div className="3d-modle absolute">
         <motion.div style={{ scale: scrollYProgress }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
 
-          className="cube w-full min-h-full fixed top-[30vh] text-lg -left-[0vw]  z-10" >
+          className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-0" >
           <Cube rotate={rotate} />
         </motion.div>
         <button title="rotate a phone for a 3d model "  className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
       </div>
-      <div ref={cube} className="page4  overflow-hidden w-full min-h-[100vh] bg-black relative">
         <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
-          <motion.h1
-            className="text-[#2c2b2b] shadow ">Shoot Every Detail</motion.h1>
-          <motion.h1
+          <h1
+            className="text-[#2c2b2b] shadow ">Shoot Every Detail</h1>
+          <h1
              whileHover={{ scale: 1.2 }}
              whileTap={{ scale: 0.8 }}
              style={{ x: 100 }}
-            className="text-[#353333] shadow "> Feel Every Emotion</motion.h1>
+            className="text-[#353333] shadow "> Feel Every Emotion</h1>
         </div>
 
 
@@ -241,6 +247,17 @@ const Page3 = () => {
             <div className="w-[1.5vw] h-[2px] absolute top-[31.1%] left-[42.5%] -rotate-[45deg]  bg-white"></div>
             <div className="w-[6.5vw] h-[2px] absolute top-[36.5%] left-[42.9%] bg-white"></div>
           </div>
+        </div>
+        <div className="back-light">
+          <h1 className=" absolute top-[31vh] left-[60.8vw] font-semibold ">Back Light</h1>
+        <div className="absolute top-[42vh] left-[54.4vw] w-[7%] h-[2px] bg-white -rotate-[50deg] z-50 "></div>
+        <div className="absolute left-[60.1vw] top-[36vh] bg-white h-[2px] w-[6vw] "></div>
+        <div className=" absolute h-[2px] w-[1.7vw] top-[34vh] left-[59.2vw] rotate-90 bg-white "></div>
+        <div className=" absolute h-[2px] w-[1.7vw] top-[31vh] left-[59.8vw] -rotate-45 bg-white "></div>
+        <div className="absolute left-[61.1vw] top-[29.89vh] bg-white h-[2px] w-[5vw] "></div>
+        <div className=" absolute h-[2px] w-[1.2vw] top-[30.9vh] left-[65.9vw] rotate-45 bg-white "></div>
+        <div className=" absolute h-[2px] w-[1.2vw] top-[33vh] left-[66.3vw] rotate-90 bg-white "></div>
+        <div className=" absolute h-[2px] w-[1.2vw] top-[35vh] left-[65.9vw] -rotate-45 bg-white "></div>
         </div>
       </div>
     </div>

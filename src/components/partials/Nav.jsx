@@ -27,7 +27,7 @@ function Nav() {
   };
 
   return isMobile == false ? (
-    <div className="w-full h-24 flex items-center justify-between p-6 relative overflow-hidden">
+    <div className="w-full min-h-24 flex items-center justify-between relative overflow-hidden">
       <div className="nav-l ">
         {/* <div className="absolute top-[1vw] left-6 logo-img"> */}
           <img src="/Group5.svg" className="w-[20vw] absolute logo-nav top-[1vw] left-6 " alt="" />
