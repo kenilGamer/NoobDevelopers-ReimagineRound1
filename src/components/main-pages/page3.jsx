@@ -17,7 +17,7 @@ const Page3 = () => {
     target: cube,
     offset: ["start end", "end end"]
   })
- 
+
   const { scrollY } = useScroll({
     target: target,
     offset: ["start end", "end end"]
@@ -31,8 +31,8 @@ const Page3 = () => {
   //   }
   // })
   scrollYProgress.on('change', (data) => {
-    console.log(data );
-    
+    console.log(data);
+
   })
   useEffect(() => {
     const section = sectionRef.current;
@@ -49,11 +49,11 @@ const Page3 = () => {
     });
 
     timeline
-    .to(".btn",{
-      opacity: 1,
-      duration: 1,
-      ease: "power3.out",
-    })
+      .to(".btn", {
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+      })
       .to(section.querySelector(".element3"), {
         top: "50%",
         left: "50%",
@@ -102,8 +102,8 @@ const Page3 = () => {
         left: "60%",
         transform: "translate(-50%,-50%) rotate(0deg) scale(2)",
       })
-      .to(cube1.current,{
-        opacity:0
+      .to(cube1.current, {
+        opacity: 0
       })
       .to(section.querySelector(".element3"), {
         top: "50%",
@@ -170,34 +170,34 @@ const Page3 = () => {
             </h1>
           </div>
 
-        <div 
-        ref={cube1}
-          className="cube w-full min-h-full absolute top-[70vh] -left-[55vw] rotate-45 " >
-          <Cube rotate={rotate} />
-        </div>
+          <div
+            ref={cube1}
+            className="cube w-full min-h-full absolute top-[70vh] -left-[55vw] rotate-45 " >
+            <Cube rotate={rotate} />
+          </div>
         </div>
         {/* page3 end */}
       </div>
-     
-      <div ref={cube} className="page4  overflow-hidden w-full min-h-[100vh] bg-black relative">
-      <div className="3d-modle absolute">
-        <motion.div style={{ scale: scrollYProgress }}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
 
-          className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-0" >
-          <Cube rotate={rotate} />
-        </motion.div>
-        <button title="rotate a phone for a 3d model "  className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
-      </div>
+      <div ref={cube} className="page4  overflow-hidden w-full min-h-[100vh] bg-black relative">
+        <div className="3d-modle absolute">
+          <motion.div style={{ scale: scrollYProgress }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+
+            className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-0" >
+            <Cube rotate={rotate} />
+          </motion.div>
+          <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
+        </div>
         <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
           <h1
             className="text-[#2c2b2b] shadow ">Shoot Every Detail</h1>
           <h1
-             whileHover={{ scale: 1.2 }}
-             whileTap={{ scale: 0.8 }}
-             style={{ x: 100 }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            style={{ x: 100 }}
             className="text-[#353333] shadow "> Feel Every Emotion</h1>
         </div>
 
@@ -250,14 +250,28 @@ const Page3 = () => {
         </div>
         <div className="back-light">
           <h1 className=" absolute top-[31vh] left-[60.8vw] font-semibold ">Back Light</h1>
-        <div className="absolute top-[42vh] left-[54.4vw] w-[7%] h-[2px] bg-white -rotate-[50deg] z-50 "></div>
-        <div className="absolute left-[60.1vw] top-[36vh] bg-white h-[2px] w-[6vw] "></div>
-        <div className=" absolute h-[2px] w-[1.7vw] top-[34vh] left-[59.2vw] rotate-90 bg-white "></div>
-        <div className=" absolute h-[2px] w-[1.7vw] top-[31vh] left-[59.8vw] -rotate-45 bg-white "></div>
-        <div className="absolute left-[61.1vw] top-[29.89vh] bg-white h-[2px] w-[5vw] "></div>
-        <div className=" absolute h-[2px] w-[1.2vw] top-[30.9vh] left-[65.9vw] rotate-45 bg-white "></div>
-        <div className=" absolute h-[2px] w-[1.2vw] top-[33vh] left-[66.3vw] rotate-90 bg-white "></div>
-        <div className=" absolute h-[2px] w-[1.2vw] top-[35vh] left-[65.9vw] -rotate-45 bg-white "></div>
+          <div className="absolute top-[42vh] left-[54.4vw] w-[7%] h-[1px] bg-white -rotate-[50deg] z-50 "></div>
+          <div className="absolute left-[60.1vw] top-[36vh] bg-white h-[2px] w-[6vw] "></div>
+          <div className=" absolute h-[2px] w-[1.7vw] top-[34vh] left-[59.2vw] rotate-90 bg-white "></div>
+          <div className=" absolute h-[2px] w-[1.7vw] top-[31vh] left-[59.8vw] -rotate-45 bg-white "></div>
+          <div className="absolute left-[61.1vw] top-[29.89vh] bg-white h-[2px] w-[5vw] "></div>
+          <div className=" absolute h-[2px] w-[1.2vw] top-[30.9vh] left-[65.9vw] rotate-45 bg-white "></div>
+          <div className=" absolute h-[2px] w-[1.2vw] top-[33vh] left-[66.3vw] rotate-90 bg-white "></div>
+          <div className=" absolute h-[2px] w-[1.2vw] top-[35vh] left-[65.9vw] -rotate-45 bg-white "></div>
+        </div>
+        <div className="Glyph-Fil-Lights">
+
+          <div className=" absolute top-[54vh] left-[57vw] bg-white h-[1px] w-[6vw]  "></div>
+
+          <h1 className="absolute top-[49vh] left-[63.6vw] font-semibold ">Glyph Fil Lights</h1>
+          <div className=" absolute h-[2px] w-[2vw] top-[52vh] left-[62.2vw] rotate-90 bg-white "></div>
+          <div className="absolute left-[63.2vw] top-[54.2vh] bg-white h-[2px] w-[8.4vw] "></div>
+          <div className=" absolute h-[2px] w-[2vw] top-[48.4vh] left-[62.9vw] -rotate-45 bg-white "></div>
+          <div className="absolute left-[64.4vw] top-[47.05vh] bg-white h-[2px] w-[7vw] "></div>
+          <div className=" absolute h-[2px] w-[1.5vw] top-[48.3vh] left-[71.1vw] rotate-45 bg-white "></div>
+          <div className=" absolute h-[2px] w-[1.5vw] top-[51vh] left-[71.6vw] rotate-90 bg-white "></div>
+          <div className=" absolute h-[2px] w-[1.3vw] top-[53.5vh] left-[71.2vw] -rotate-[43deg] bg-white "></div>
+
         </div>
       </div>
     </div>
