@@ -10,8 +10,7 @@ function Page2() {
   const tl = gsap.timeline({scrollTrigger: {
     trigger: ".page2",
     start: "top 0%",
-    // end: "bottom bottom",
-    matches:true,
+    // end: "bottom bottom"
     // scrub: true,
     boxShadow: "0px 0px 20px #fff",
 }});
@@ -32,7 +31,7 @@ function Page2() {
     
   })
   return (
-    <div  className='w-full  page2 page h-[100vh] overflow-hidden bg-black flex items-center relative top-0 left-0 justify-center p-2'>
+    <div  className='w-full  page2 h-[100vh] overflow-hidden bg-black flex items-center relative top-0 left-0 justify-center p-2'>
         <Page2setup/>
     </div>
   )

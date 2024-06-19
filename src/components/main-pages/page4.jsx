@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Cube from "../partials/Cube";
 import { motion, useScroll } from "framer-motion"
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 function Page4({ cube }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     useEffect(() => {
@@ -15,38 +13,10 @@ function Page4({ cube }) {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-    gsap.registerPlugin(useGSAP, ScrollTrigger);
-
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".page4",
-            start: "top 0%",
-            boxShadow: "0px 0px 20px #fff",
-        }
-    });
-
-    useGSAP(() => {
-       
-        tl.from(".boxs2", {
-            opacity: 0,
-            // y: -300,
-            width: 0,
-            height: 0,
-            // scrollBehavior:smooth ,
-            stagger: 0.1
-        })
-        tl.from(".text-6", {
-            opacity: 0,
-            duration: 2,
-            stagger: 0.1
-        })
-        tl.from(".text-5", {
-            opacity: 0,
-            duration: 2
-        })
-    })
+ 
+  
     return (
-        <div ref={cube} className="Page4  overflow-hidden w-full min-h-[100vh] bg-black relative">
+        <div ref={cube} className=" overflow-hidden w-full min-h-[100vh] bg-black relative">
 
             <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
                 <h1

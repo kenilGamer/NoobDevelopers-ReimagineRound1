@@ -6,9 +6,13 @@ import "../../cube.css";
 import Cube from "../partials/Cube";
 import { motion, useScroll } from "framer-motion"
 import Page4 from "./page4";
-gsap.registerPlugin(ScrollTrigger);
+import { useGSAP } from "@gsap/react";
+
+// import gsap from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Page3 = () => {
+  // gsap.registerPlugin(ScrollTrigger);
   const sectionRef = useRef(null);
   const cube = useRef(null)
   const cube1 = useRef(null)
@@ -41,9 +45,8 @@ const Page3 = () => {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".page3",
-        // markers: true,
         start: "top 0%",
-        end: "top -200%",
+        end: "top -100%",
         scrub: 3,
         pin: true,
       },
@@ -143,7 +146,47 @@ const Page3 = () => {
   const showfront = () => {
     setRotate(rotate === '1' ? '0' : '1');
   };
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+  // const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //         trigger: ".gfghn",
+  //         markers: true,
+  //         start: "top 0%",
+  //         boxShadow: "0px 0px 20px #fff",
+  //         pin:true
+  //     }
+  // });
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page3",
+      start: "bottom -300%",
+      // markers: true,
+      // end: "top -100%",
+      // scrub: 3,
+      // pin: true,
+    },
+  });
+  useGSAP(() => {
+       
+    tl.from(".boxs2", {
+        opacity: 0,
+        // y: -300,
+        width: 0,
+        height: 0,
+        // scrollBehavior:smooth ,
+        stagger: 0.1
+    })
+    tl.from(".text-6", {
+        opacity: 0,
+        duration: 2,
+        stagger: 0.1
+    })
+    tl.from(".text-5", {
+        opacity: 0,
+        duration: 2
+    })
+})
   return (
     <div ref={target} className="relative page w-full min-h-[200vh]">
       <div className="page3 w-full min-h-[100vh] overflow-hidden ">
