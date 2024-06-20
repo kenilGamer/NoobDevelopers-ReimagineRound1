@@ -1,14 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
-import img1 from '../../assets/1edd2008-8ef7-41b7-bc2d-359674e8f26d-removebg-preview.png';
-import img2 from '../../assets/963f4090-1cff-49ed-aa20-84f30c6068e2-removebg-preview.png';
-import img3 from '../../assets/blackpowerbtn.png';
-import img4 from '../../assets/black-volume.png';
-import img5 from '../../assets/227f1c44-b181-4558-a1c9-7952b4382156-removebg-preview.png';
-import img6 from '../../assets/nothing_frame-removebg-preview.png';
-import '../../cube.css'; // Ensure this path is correct
+import img1 from '/assets/1edd2008-8ef7-41b7-bc2d-359674e8f26d-removebg-preview.png';
+import img2 from '/assets/963f4090-1cff-49ed-aa20-84f30c6068e2-removebg-preview.png';
+import img3 from '/assets/blackpowerbtn.png';
+import img4 from '/assets/black-volume.png';
+import img5 from '/Page_3_img/Rectangle 41.png';
+import img6 from '/assets/nothing_frame-removebg-preview.png';
 
-const Cube = ({rotate}) => {
+const Cube = ({ rotate, rotateZ,target }) => {
   const [state, setState] = useState('0');
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const sceneRef = useRef(null);
@@ -16,29 +15,42 @@ const Cube = ({rotate}) => {
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (rotate === '1') {
-        let x = e.clientY / window.innerHeight * 360; // Adjusted to match rotateX
-        let y = e.clientX / window.innerWidth * 360; // Adjusted to match rotateY
+        let x = (e.clientY / window.innerHeight) * 360; // Adjusted to match rotateX
+        let y = (e.clientX / window.innerWidth) * 360; // Adjusted to match rotateY
         setRotation({ x, y });
-      }else{
-        setRotation({ x: 0, y: 0 })
+      } else {
+        setRotation({ x: 0, y: 0 });
       }
     };
 
     const handleTouchMove = (e) => {
       if (rotate === '1') {
         let touch = e.touches[0];
-        let x = touch.clientY / window.innerHeight * 360; // Adjusted to match rotateX
-        let y = touch.clientX / window.innerWidth * 360; // Adjusted to match rotateY
+        let x = (touch.clientY / window.innerHeight) * 360; // Adjusted to match rotateX
+        let y = (touch.clientX / window.innerWidth) * 360; // Adjusted to match rotateY
+        setRotation({ x, y });
+      }
+    };
+
+    const handleScroll = () => {
+      if (rotate === '1') {
+        const scrollTop = window.scrollY;
+        const maxScroll = document.body.scrollHeight - window.innerHeight;
+        const scrollPercent = scrollTop / maxScroll;
+        const x = scrollPercent * 360; // Adjust as needed
+        const y = scrollPercent * 360; // Adjust as needed
         setRotation({ x, y });
       }
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [rotate]);
 
@@ -47,11 +59,13 @@ const Cube = ({rotate}) => {
   };
 
   return (
-    <div id="tridiv" style={{  fontSize: "300.5%"}}>
-      <div className="scene"  style={{
-          transform: "rotateX(-100deg) rotateY(180deg) rotateZ(180deg)",
+    <div id="tridiv" style={{ fontSize: '300.5%' }}>
+      <div ref={target} className="scene"
+        style={{
+          transform: `rotateX(-100deg) rotateY(180deg) rotateZ(180deg)`,
         }}>
-        <div className={`shape cuboid-1 cub-1 box state-${state}`} data-state={state} style={{ transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)` }}>
+        <div className={`shape cuboid-1 cub-1 box state-${state}`} data-state={state}
+          style={{ transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)` }}>
           <div className="face ft">
             <div className="photon-shader-ft" style={{ backgroundColor: '#36363A' }}>
               <img src={img1} alt="" />
@@ -128,7 +142,6 @@ const Cube = ({rotate}) => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

@@ -7,6 +7,7 @@ import Cube from "../partials/Cube";
 import { motion, useScroll } from "framer-motion"
 import Page4 from "./page4";
 import { useGSAP } from "@gsap/react";
+import Page5 from "./page5";
 
 // import gsap from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -17,7 +18,9 @@ const Page3 = () => {
   const cube = useRef(null)
   const cube1 = useRef(null)
   const target = useRef(null)
+  const target2 = useRef(null)
   const [rotate, setRotate] = useState("0");
+  const [rotateZ, setRotateZ] = useState(null);
   const { scrollYProgress } = useScroll({
     target: cube,
     offset: ["start end", "end end"]
@@ -36,8 +39,6 @@ const Page3 = () => {
   //   }
   // })
   scrollYProgress.on('change', (data) => {
-    console.log(data);
-
   })
   useEffect(() => {
     const section = sectionRef.current;
@@ -142,7 +143,20 @@ const Page3 = () => {
       if (timeline.scrollTrigger) timeline.scrollTrigger.kill();
     };
   }, []);
-
+  const timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page5",
+      start: "top 0%",
+      end: "top -100%",
+      scrub: 3,
+      pin: true,
+      onUpdate: (self) => {
+        // Calculate rotation based on scroll progress
+        const newRotateZ = self.progress * 360; // Adjust this value as needed
+        setRotateZ(newRotateZ);
+      },
+    },
+  });
   const showfront = () => {
     setRotate(rotate === '1' ? '0' : '1');
   };
@@ -157,38 +171,10 @@ const Page3 = () => {
   //         pin:true
   //     }
   // });
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".page3",
-      start: "bottom -300%",
-      // markers: true,
-      // end: "top -100%",
-      // scrub: 3,
-      // pin: true,
-    },
-  });
-  useGSAP(() => {
-       
-    tl.from(".boxs2", {
-        opacity: 0,
-        // y: -300,
-        width: 0,
-        height: 0,
-        // scrollBehavior:smooth ,
-        stagger: 0.1
-    })
-    tl.from(".text-6", {
-        opacity: 0,
-        duration: 2,
-        stagger: 0.1
-    })
-    tl.from(".text-5", {
-        opacity: 0,
-        duration: 2
-    })
-})
+
+ 
   return (
-    <div ref={target} className="relative page w-full min-h-[200vh]">
+    <div ref={target} className="relative page w-full min-h-[200vh] snap-y snap-mandatory ">
       <div className="page3 w-full min-h-[100vh] overflow-hidden ">
         <div
           ref={sectionRef}
@@ -222,6 +208,10 @@ const Page3 = () => {
         </div>
         {/* page3 end */}
       </div>
+      
+      <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
+
+        <div className="page4">
       <div className="3d-modle absolute">
           <motion.div style={{ scale: scrollYProgress }}
             initial="hidden"
@@ -229,11 +219,12 @@ const Page3 = () => {
             viewport={{ once: true }}
 
             className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-50" >
-            <Cube rotate={rotate} />
+            <Cube rotate={rotate} rotatez={rotateZ} target={target2} />
           </motion.div>
-          <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
         </div>
       <Page4 cube={cube} />
+        </div>
+      <Page5 />
     </div>
   );
 };

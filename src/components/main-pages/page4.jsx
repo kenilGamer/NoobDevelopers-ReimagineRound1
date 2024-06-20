@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Cube from "../partials/Cube";
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 function Page4({ cube }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -13,10 +15,39 @@ function Page4({ cube }) {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
- 
-  
+
+    
+    useGSAP(() => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".page4",
+            start: "top 0%",
+            markers: true,
+            end: "top -60%",
+            // scrub: 3,
+            pin: true,
+          },
+        });
+        tl.from(".boxs2", {
+            opacity: 0,
+            // y: -300,
+            width: 0,
+            height: 0,
+            // scrollBehavior:smooth ,
+            stagger: 0.1
+        })
+        tl.from(".text-6", {
+            opacity: 0,
+            duration: 1,
+            stagger: 0.1
+        })
+        tl.from(".text-5", {
+            opacity: 0,
+            duration: 1
+        })
+    })
     return (
-        <div ref={cube} className=" overflow-hidden w-full min-h-[100vh] bg-black relative">
+        <div ref={cube} className="overflow-hidden w-full min-h-[100vh] bg-black relative ">
 
             <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
                 <h1
@@ -30,8 +61,8 @@ function Page4({ cube }) {
 
 
             <div className="main-camera">
-                <div className="w-[5vw] h-[1px] bg-white boxs2 absolute top-[46vh] left-[38.9vw] z-50 "></div>
-                <div className="w-[3.5vw] h-[1px] bg-white boxs2 absolute top-[43.4vh] left-[35.8vw] z-50 rotate-[40deg] "></div>
+                <div className="w-[5vw] h-[1px] bg-white boxs2 absolute top-[46vh] left-[38.9vw] z-[999] "></div>
+                <div className="w-[3.5vw] h-[1px] bg-white boxs2 absolute top-[43.4vh] left-[35.8vw] z-[999] rotate-[40deg] "></div>
                 <h1 className="text-[13vw] absolute top-[30%] text-5 -left-36 font-semibold text-[#252525] shadow -rotate-[90deg]">50 MP</h1>
                 <div className="box w-full min-h-full ">
                     <h1 className="absolute text-3xl text-[#646363] shadow  top-[27vh] left-[24vw] text-6">Main Camera</h1>
@@ -77,7 +108,7 @@ function Page4({ cube }) {
             </div>
             <div className="back-light">
                 <h1 className=" absolute top-[31vh] left-[60.8vw] font-semibold text-6">Back Light</h1>
-                <div className="absolute top-[42vh] left-[54.4vw] w-[7%] h-[1px] bg-white boxs2 -rotate-[50deg] z-50 "></div>
+                <div className="absolute top-[42vh] left-[54.2vw] w-[7%] h-[1px] bg-white boxs2 -rotate-[47deg] z-50 "></div>
                 <div className="absolute left-[60.1vw] top-[36vh] bg-white boxs2 h-[2px] w-[6vw] "></div>
                 <div className=" absolute h-[2px] w-[1.7vw] top-[34vh] left-[59.2vw] rotate-90 bg-white boxs2 "></div>
                 <div className=" absolute h-[2px] w-[1.7vw] top-[31vh] left-[59.8vw] -rotate-45 bg-white boxs2 "></div>
@@ -88,10 +119,10 @@ function Page4({ cube }) {
             </div>
             <div className="Glyph-Fil-Lights">
 
-                <div className=" absolute top-[54vh] left-[57vw] bg-white boxs2 h-[1px] w-[6vw] z-50 "></div>
+                <div className=" absolute top-[53.9vh] left-[57vw] bg-white boxs2 h-[1px] w-[6vw] z-50 "></div>
 
-                <h1 className="absolute top-[51vh] left-[63.6vw] font-semibold text-6">Glyph Fil Lights</h1>
-                <div className=" absolute top-[2vh] -left-[0.3vw] ">
+                <h1 className="absolute top-[50vh] left-[63.6vw] font-semibold text-6">Glyph Fil Lights</h1>
+                <div className=" absolute top-[1.5vh] -left-[0.3vw] ">
                     <div className=" absolute h-[2px] w-[2vw] top-[52vh] left-[62.2vw] rotate-90 bg-white boxs2 "></div>
                     <div className="absolute left-[63.2vw] top-[54.2vh] bg-white boxs2 h-[2px] w-[8.4vw] "></div>
                     <div className=" absolute h-[2px] w-[2vw] top-[48.4vh] left-[62.9vw] -rotate-45 bg-white boxs2 "></div>
