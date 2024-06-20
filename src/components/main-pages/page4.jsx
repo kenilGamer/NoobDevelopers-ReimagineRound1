@@ -18,44 +18,38 @@ function Page4({ cube }) {
 
     
     useGSAP(() => {
-        const tl = gsap.timeline({
+        const tl6 = gsap.timeline({
           scrollTrigger: {
             trigger: ".page4",
             start: "top 0%",
             markers: true,
-            end: "top -60%",
-            // scrub: 3,
+            end: "top 0%",
             pin: true,
           },
         });
-        tl.from(".boxs2", {
+        tl6.from(".boxs2", {
             opacity: 0,
-            // y: -300,
             width: 0,
             height: 0,
-            // scrollBehavior:smooth ,
             stagger: 0.1
         })
-        tl.from(".text-6", {
+        tl6.from(".text-6", {
             opacity: 0,
             duration: 1,
             stagger: 0.1
         })
-        tl.from(".text-5", {
+        tl6.from(".text-5", {
             opacity: 0,
             duration: 1
         })
     })
     return (
-        <div ref={cube} className="overflow-hidden w-full min-h-[100vh] bg-black relative ">
+        <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
 
             <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
                 <h1
                     className="text-[#2c2b2b] shadow text-6 ">Shoot Every Detail</h1>
                 <h1
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.8 }}
-                    style={{ x: 100 }}
                     className="text-[#353333] shadow text-6"> Feel Every Emotion</h1>
             </div>
 

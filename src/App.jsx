@@ -7,6 +7,7 @@ import Home from './components/main-pages/Home';
 import Page2 from './components/main-pages/Page2';
 import LocomotiveScroll from 'locomotive-scroll';
 import Page3 from './components/main-pages/page3';
+import Page5 from './components/main-pages/page5';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Home/>
       <Page2/>
       <Page3/>
+      <Page5/>
     </div>
   )
 }

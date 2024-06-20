@@ -143,36 +143,13 @@ const Page3 = () => {
       if (timeline.scrollTrigger) timeline.scrollTrigger.kill();
     };
   }, []);
-  const timeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".page5",
-      start: "top 0%",
-      end: "top -100%",
-      scrub: 3,
-      pin: true,
-      onUpdate: (self) => {
-        // Calculate rotation based on scroll progress
-        const newRotateZ = self.progress * 360; // Adjust this value as needed
-        setRotateZ(newRotateZ);
-      },
-    },
-  });
+
   const showfront = () => {
     setRotate(rotate === '1' ? '0' : '1');
   };
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-  // const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //         trigger: ".gfghn",
-  //         markers: true,
-  //         start: "top 0%",
-  //         boxShadow: "0px 0px 20px #fff",
-  //         pin:true
-  //     }
-  // });
 
- 
   return (
     <div ref={target} className="relative page w-full min-h-[200vh] snap-y snap-mandatory ">
       <div className="page3 w-full min-h-[100vh] overflow-hidden ">
@@ -208,11 +185,11 @@ const Page3 = () => {
         </div>
         {/* page3 end */}
       </div>
-      
+
       <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
 
-        <div className="page4">
-      <div className="3d-modle absolute">
+      <div className="page4">
+        <div className="3d-modle absolute">
           <motion.div style={{ scale: scrollYProgress }}
             initial="hidden"
             whileInView="visible"
@@ -222,9 +199,9 @@ const Page3 = () => {
             <Cube rotate={rotate} rotatez={rotateZ} target={target2} />
           </motion.div>
         </div>
-      <Page4 cube={cube} />
-        </div>
-      <Page5 />
+        <Page4 cube={cube} />
+      </div>
+      {/* <Page5 /> */}
     </div>
   );
 };

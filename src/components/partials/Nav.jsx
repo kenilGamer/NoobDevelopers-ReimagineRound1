@@ -53,7 +53,7 @@ function Nav() {
             />
           </div>
         </div>
-        <div onClick={theme} className="moon_btn relative nav-c  ">
+        {/* <div onClick={theme} className="moon_btn relative nav-c  ">
           <div className={`ab hover:animate-pulse`}>
 
             <img src="/button/Group 22.svg" className="w-[6vw]" alt="" />
@@ -76,7 +76,7 @@ function Nav() {
               alt=""
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className=" flex gap-10">
@@ -107,7 +107,7 @@ function Nav() {
         </div>
         <div className="h-full flex gap-4">
           <div className=" relative h-full  w-[10vw] ">
-            <img
+            {/* <img
               src="/button/Group 23.svg"
               className="w-full h-full object-fill"
             />
@@ -115,7 +115,7 @@ function Nav() {
               onClick={theme}
               src={dark_theme ? "/sun_PNG13425.webp" : "moon.svg"}
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-fill fill-white scale-50"
-            />
+            /> */}
           </div>
           <div className=" relative h-full  w-[10vw]">
             <img
