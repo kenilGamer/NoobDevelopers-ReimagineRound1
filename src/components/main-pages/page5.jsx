@@ -27,7 +27,7 @@ function Page5() {
   //       transform: "rotateX(-100deg) rotateY(180deg) rotateZ(0deg)",
   //       duration:2,
   //     })
-  //     tl.from(".boxs", {
+  //     tl.from(".boxs1", {
   //       opacity: 0,
   //       // y: -300,
   //       width: 0,
@@ -50,7 +50,7 @@ function Page5() {
       scrollTrigger: {
         trigger: target2.current,
         start: "top top",
-        end: "bottom top",
+        end: "top -100%",
         scrub: 3,
         // markers: true,
         pin: true,
@@ -62,9 +62,8 @@ function Page5() {
       transform: "rotateX(-100deg) rotateY(180deg) rotateZ(0deg)",
       duration:2,
     })
-    tl.from(".boxs", {
+    tl.from(".boxs1", {
       opacity: 0,
-      // y: -300,
       width: 0,
       height: 0,
   })
@@ -88,14 +87,14 @@ function Page5() {
           <h1 className='absolute  z-[50] text-1 top-[25vh] left-[17vw] heading '>Front camere</h1>
           <p className=' absolute  z-[50] text-1 top-[25vh] left-[50vw] text-6xl font-black w-[40vw] text-[#1d1d1c] shadow font2'>Include yourself with every moment</p>
           <p className=' absolute  z-[50] text-1 top-[70vh] left-[50vw] font-black text-4xl w-[40vw] heading'>Say nothing and have a click</p>
-          <div className='absolute z-[50]  h-[1px] w-[6vw] top-[17.5vh] left-[27vw] bg-white '></div>
-          <div className='absolute z-[50]  h-[2px] w-[7.5vw] top-[13.5vh] left-[18.5vw] bg-white  '></div>
-          <div className='absolute z-[50]  h-[2px] w-[1.5vw] top-[14.8vh] left-[25.7vw] bg-white rotate-[45deg] '></div>
-          <div className='absolute z-[50]  h-[2px] w-[2vw] top-[17.8vh] left-[26vw] bg-white rotate-[90deg] '></div>
-          <div className='absolute z-[50]  h-[2px] w-[1.5vw] top-[20.8vh] left-[25.7vw] bg-white -rotate-[45deg] '></div>
-          <div className='absolute z-[50]  h-[2px] w-[8.6vw] top-[21.9vh] left-[17.4vw] bg-white  '></div>
-          <div className='absolute z-[50]  h-[2px] w-[2.5vw] top-[19.4vh] left-[16vw] bg-white rotate-[90deg] '></div>
-          <div className='absolute z-[50]  h-[2px] w-[2vw] top-[15vh] left-[16.9vw] bg-white -rotate-[45deg] '></div>
+          <div className='absolute boxs1 z-[50]  h-[1px] w-[6vw] top-[17.5vh] left-[27vw] bg-white '></div>
+          <div className='absolute boxs1 z-[50]  h-[2px] w-[7.5vw] top-[13.5vh] left-[18.5vw] bg-white  '></div>
+          <div className='absolute boxs1 z-[50]  h-[2px] w-[1.5vw] top-[14.8vh] left-[25.7vw] bg-white rotate-[45deg] '></div>
+          <div className='absolute boxs1 z-[50]  h-[2px] w-[2vw] top-[17.8vh] left-[26vw] bg-white rotate-[90deg] '></div>
+          <div className='absolute boxs1 z-[50]  h-[2px] w-[1.5vw] top-[20.8vh] left-[25.7vw] bg-white -rotate-[45deg] '></div>
+          <div className='absolute boxs1 z-[50]  h-[2px] w-[8.6vw] top-[21.9vh] left-[17.4vw] bg-white  '></div>
+          <div className='absolute boxs1 z-[50]  h-[2px] w-[2.5vw] top-[19.4vh] left-[16vw] bg-white rotate-[90deg] '></div>
+          <div className='absolute boxs1 z-[50]  h-[2px] w-[2vw] top-[15vh] left-[16.9vw] bg-white -rotate-[45deg] '></div>
         </div>
     </div>
   )

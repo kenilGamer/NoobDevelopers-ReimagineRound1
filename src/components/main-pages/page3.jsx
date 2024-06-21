@@ -70,6 +70,7 @@ useGSAP(()=>{
         start: "top 0%",
         end: "top -100%",
         scrub: 3,
+        markers:true,
         pin: true,
       },
     });
@@ -155,12 +156,8 @@ useGSAP(()=>{
 
 
   return (
-    <div ref={target} className="relative page w-full h-[200vh]">
-      <div className="page3 w-full min-h-[100vh] overflow-hidden ">
-        <div
-          ref={sectionRef}
-          className="my-section w-full h-full relative bg-black"
-        >
+    <div    ref={sectionRef} className="page3 my-section w-full min-h-[100vh] overflow-hidden relative bg-black">
+        
           <div className="element4 w-[60vw] h-auto absolute top-[50%] left-[-20%] -translate-x-1/2 -translate-y-1/2 rotate-90 z-[12]">
             <img
               id="page_3_moin_img"
@@ -187,26 +184,8 @@ useGSAP(()=>{
             <Cube rotate={rotate}  video={video} />
           </div>
         </div>
-        {/* page3 end */}
-      </div>
 
-      <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
 
-      {/* <div className="page4">
-        <div className="3d-modle absolute">
-          <motion.div style={{ scale: scrollYProgress }}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-
-            className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-50" >
-            <Cube rotate={rotate} rotatez={rotateZ} target={target2} />
-          </motion.div>
-        </div>
-        <Page4 cube={cube} />
-      </div> */}
-
-    </div>
   );
 };
 
