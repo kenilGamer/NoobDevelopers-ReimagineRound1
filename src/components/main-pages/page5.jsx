@@ -9,40 +9,72 @@ function Page5() {
   const [rotate, setRotate] = useState("0");
   const target = useRef(null)
   const target2 = useRef(null)
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: target2.current,
-          start: "top top",
-          end: "bottom top",
-          scrub: 3,
-          // markers: true,
-          pin: true,
-          pinSpacing: false, 
-          toggleActions: "play none none reverse",
-      }}) 
-      tl.to(target.current,{
-        // fontSize: "100%",
-        transform: "rotateX(-100deg) rotateY(180deg) rotateZ(0deg)",
-        duration:2,
-      })
-      tl.from(".boxs", {
-        opacity: 0,
-        // y: -300,
-        width: 0,
-        height: 0,
+  // useLayoutEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     const tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: target2.current,
+  //         start: "top top",
+  //         end: "bottom top",
+  //         scrub: 3,
+  //         // markers: true,
+  //         pin: true,
+  //         pinSpacing: false, 
+  //         toggleActions: "play none none reverse",
+  //     }}) 
+  //     tl.to(target.current,{
+  //       // fontSize: "100%",
+  //       transform: "rotateX(-100deg) rotateY(180deg) rotateZ(0deg)",
+  //       duration:2,
+  //     })
+  //     tl.from(".boxs", {
+  //       opacity: 0,
+  //       // y: -300,
+  //       width: 0,
+  //       height: 0,
+  //   })
+  //   tl.from(".text-1", {
+  //       opacity: 0,
+  //       duration: 1,
+  //       stagger: 0.1
+  //   })
+  //   // tl.to(".cube", {
+  //   //   opacity: 0
+  //   // })
+  // })
+  // return () => ctx.revert();
+  // })
+  useGSAP(()=>{
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: target2.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: 3,
+        // markers: true,
+        pin: true,
+        // pinSpacing: false, 
+        toggleActions: "play none none reverse",
+    }}) 
+    tl.to(target.current,{
+      // fontSize: "100%",
+      transform: "rotateX(-100deg) rotateY(180deg) rotateZ(0deg)",
+      duration:2,
     })
-    tl.from(".text-1", {
-        opacity: 0,
-        duration: 1,
-        stagger: 0.1
-    })
-    // tl.to(".cube", {
-    //   opacity: 0
-    // })
+    tl.from(".boxs", {
+      opacity: 0,
+      // y: -300,
+      width: 0,
+      height: 0,
   })
-  return () => ctx.revert();
+  tl.from(".text-1", {
+      opacity: 0,
+      duration: 1,
+      stagger: 0.1
+  })
+  // tl.to(".cube", {
+  //   opacity: 0
+  // })
   })
   return (
     <div ref={target2} className='w-full h-screen bg-black relative'>

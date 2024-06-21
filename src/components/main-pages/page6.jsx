@@ -10,32 +10,34 @@ function Page6() {
     
     const target = useRef(null)
     const target2 = useRef(null)
-    useLayoutEffect(() => {
-        let ctx = gsap.context(() => {
-          const tl = gsap.timeline({
-            scrollTrigger: {
-              trigger: target2.current,
-              start: "top top",
-              end: "bottom top",
-              scrub: 3,
-              markers: true,
-              pin: true,
-              pinSpacing: false, 
-              toggleActions: "play none none reverse",
-          }}) 
-          tl.to(target.current,{
-            // fontSize: "100%",
-            transform: "rotateX(-100deg) rotateY(-90deg) rotateZ(0deg)",
-            duration:2 ,
-          })
-          tl.to(".text-2",{
-            opacity: 1,
-            duration: 2 ,
-            ease: "power3.out",
+    // useLayoutEffect(() => {
+    //     let ctx = gsap.context(() => {
+          
+    //   })
+    //   return () => ctx.revert();
+    //   })
+    useGSAP(()=>{
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: target2.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 3,
+          markers: true,
+          pin: true,
+          toggleActions: "play none none reverse",
+      }}) 
+      tl.to(target.current,{
+        // fontSize: "100%",
+        transform: "rotateX(-100deg) rotateY(-90deg) rotateZ(0deg)",
+        duration:2 ,
       })
-      })
-      return () => ctx.revert();
-      })
+      tl.to(".text-2",{
+        opacity: 1,
+        duration: 2 ,
+        ease: "power3.out",
+  })
+    })
   return (
     <div ref={target2} className='w-full h-screen bg-black relative'>
        <div
@@ -49,7 +51,7 @@ function Page6() {
         <div className=''>
             <h1 className='text-[10vw] absolute top-[40vh] left-[17vw] heading text-black text_border2 tracking-widest text-2 opacity-0'>HDR10+</h1>
         </div>
-            <img className='w-[40vw] absolute top-[70vh] left-[30vw] text-2 opacity-0 ' src="/public/Page_3_img/Rectangle 80.svg"  alt="" />
+            <img className='w-[40vw] absolute top-[70vh] left-[30vw] text-2 opacity-0 ' src="/Page_3_img/Rectangle 80.svg"  alt="" />
         <div>
         </div>
     </div>

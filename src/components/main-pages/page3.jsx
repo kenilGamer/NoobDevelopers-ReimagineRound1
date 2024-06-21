@@ -1,5 +1,5 @@
 // Page3.js
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../../cube.css";
@@ -40,8 +40,28 @@ const Page3 = () => {
   // })
   scrollYProgress.on('change', (data) => {
   })
-  useEffect(() => {
-    const section = sectionRef.current;
+  // useLayoutEffect(() => {
+    
+
+    
+  //   // gsap.to(".cube", {
+  //   //   top: 200,
+  //   //   fontSize: "120%",
+  //   //   ease: "none",
+  //   //   scrollTrigger: {
+  //   //     trigger: ".page4",
+  //   //     start: "top 0%",
+  //   //     end: "top -100%",
+  //   //     markers:true,
+  //   //     scrub: 2,
+  //   //   },
+  //   // });
+  //   return () => {
+  //     if (timeline.scrollTrigger) timeline.scrollTrigger.kill();
+  //   };
+  // }, []);
+useGSAP(()=>{
+  const section = sectionRef.current;
 
     const timeline = gsap.timeline({
       scrollTrigger: {
@@ -115,35 +135,18 @@ const Page3 = () => {
         left: "50%",
         transform: "translate(-50%,-50%) rotate(0deg) scale(1)",
       })
-
-    gsap.to(cube1.current, {
-      top: 0,
-      rotate: 0,
-      left: 0,
-      scrollTrigger: {
-        trigger: ".page3",
-        start: "top 0%",
-        end: "top -100%",
-        scrub: 2,
-      },
-    });
-    // gsap.to(".cube", {
-    //   top: 200,
-    //   fontSize: "120%",
-    //   ease: "none",
-    //   scrollTrigger: {
-    //     trigger: ".page4",
-    //     start: "top 0%",
-    //     end: "top -100%",
-    //     markers:true,
-    //     scrub: 2,
-    //   },
-    // });
-    return () => {
-      if (timeline.scrollTrigger) timeline.scrollTrigger.kill();
-    };
-  }, []);
-
+      gsap.to(cube1.current, {
+        top: 0,
+        rotate: 0,
+        left: 0,
+        scrollTrigger: {
+          trigger: ".page3",
+          start: "top 0%",
+          end: "top -100%",
+          scrub: 2,
+        },
+      });
+})
   const showfront = () => {
     setRotate(rotate === '1' ? '0' : '1');
   };
@@ -151,7 +154,7 @@ const Page3 = () => {
 
 
   return (
-    <div ref={target} className="relative page w-full min-h-[200vh] snap-y snap-mandatory ">
+    <div ref={target} className="relative page w-full h-[200vh]">
       <div className="page3 w-full min-h-[100vh] overflow-hidden ">
         <div
           ref={sectionRef}
@@ -188,7 +191,7 @@ const Page3 = () => {
 
       <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
 
-      <div className="page4">
+      {/* <div className="page4">
         <div className="3d-modle absolute">
           <motion.div style={{ scale: scrollYProgress }}
             initial="hidden"
@@ -200,7 +203,7 @@ const Page3 = () => {
           </motion.div>
         </div>
         <Page4 cube={cube} />
-      </div>
+      </div> */}
 
     </div>
   );

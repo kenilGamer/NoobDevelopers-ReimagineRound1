@@ -9,9 +9,7 @@ function Page2() {
 
   const tl = gsap.timeline({scrollTrigger: {
     trigger: ".page2",
-    start: "top 0%",
-    // end: "bottom bottom"
-    // scrub: true,
+
     boxShadow: "0px 0px 20px #fff",
 }});
 
@@ -20,7 +18,7 @@ function Page2() {
       opacity:0,
       duration: 2
     })
-    tl.from(".boxs",{
+    tl.from(".boxs-line bos ",{
       opacity: 0,
       // y: -300,
       width:0,

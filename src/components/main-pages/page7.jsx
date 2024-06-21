@@ -10,36 +10,37 @@ function Page7() {
 
     const target = useRef(null)
     const target2 = useRef(null)
-    useLayoutEffect(() => {
-        let ctx = gsap.context(() => {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: target2.current,
-                    start: "top top",
-                    end: "bottom top",
-                    scrub: 3,
-                    markers: true,
-                    pin: true,
-                    pinSpacing: false,
-                    // toggleActions: "play none none reverse",
-                }
-            })
-            tl.to(target.current, {
-                // fontSize: "100%",
-                transform: "rotateX(-100deg) rotateY(-90deg) rotateZ(0deg)",
-                duration: 2,
-            })
+    // useLayoutEffect(() => {
+    //     let ctx = gsap.context(() => {
+          
+    //     })
+    //     return () => ctx.revert();
+    // })
+    useGSAP(()=>{
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: target2.current,
+                start: "top top",
+                end: "bottom top",
+                scrub: 3,
+                markers: true,
+                pin: true,
+                // pinSpacing: false,
+                // toggleActions: "play none none reverse",
+            }
         })
-        return () => ctx.revert();
+        tl.to(target.current, {
+            // fontSize: "100%",
+            transform: "rotateX(-100deg) rotateY(-90deg) rotateZ(0deg)",
+            duration: 2,
+        })
     })
     return (
-        <div ref={target2} className='w-full h-[200vh] bg-black relative'>
-            <div className='h-[100vh]'>
-            <div
-                className="cube1 w-full h-full absolute -top-[50vh] z-20  " >
-                <Cube rotate={rotate} target={target} />
-            </div>
-            </div>
+        <div ref={target2} className='w-full h-[100vh] bg-black relative'>
+                <div
+                    className="cube1 w-full h-full absolute  z-20  " >
+                    <Cube rotate={rotate} target={target} />
+                </div>        
         </div>
 
     )

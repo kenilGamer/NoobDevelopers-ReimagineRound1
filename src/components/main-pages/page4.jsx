@@ -1,10 +1,10 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Cube from "../partials/Cube";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-function Page4({ cube }) {
+function Page4() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     useEffect(() => {
         const handleResize = () => {
@@ -15,47 +15,79 @@ function Page4({ cube }) {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-
+    const cube = useRef(null)
+    const target = useRef(null)
+    const target2 = useRef(null)
+    const data1 = useScroll()
+    const [rotate, setRotate] = useState("0");
+    const { scrollYProgress } = useScroll({
+        target: cube,
+        offset: ["start end", "end end"]
+      })
+    
+      const { scrollY } = useScroll({
+        target: target,
+        offset: ["start end", "end end"]
+      })
   gsap.registerPlugin(ScrollTrigger);
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
+//   useLayoutEffect(() => {
+//     // let ctx = gsap.context(() => {
+//         const tl = gsap.timeline({
+//             scrollTrigger: {
+//               trigger: ".page4",
+//               start: "top top",
+//               end: "bottom top",
+//               scrub: 3,
+//               markers: true, 
+//               pin: true,
+//             },
+//         //   });
+           
+//         // tl.from(".boxs2", {
+//         //     opacity: 0,
+//         //     // y: -300,
+//         //     width: 0,
+//         //     height: 0,
+//         //     // scrollBehavior:smooth ,
+//         //     stagger: 0.1
+//         // })
+//         // tl.from(".text-6", {
+//         //     opacity: 0,
+//         //     duration: 1,
+//         //     stagger: 0.1
+//         // })
+//         // tl.from(".text-5", {
+//         //     opacity: 0,
+//         //     duration: 1
+//         // })
+       
+//   })
+//   return () => ctx.revert();
+// })
+    useGSAP(() => {
         const tl = gsap.timeline({
-            snap:{snapTo: "labels", duration: 0.3, delay: 0.1, ease: "power1.inOut"},
             scrollTrigger: {
               trigger: ".page4",
               start: "top top",
-              end: "bottom",
+              end: "bottom top",
               scrub: 3,
+              markers: true, 
               pin: true,
-            },
-          });
-           
-        tl.from(".boxs2", {
-            opacity: 0,
-            // y: -300,
-            width: 0,
-            height: 0,
-            // scrollBehavior:smooth ,
-            stagger: 0.1
-        })
-        tl.from(".text-6", {
-            opacity: 0,
-            duration: 1,
-            stagger: 0.1
-        })
-        tl.from(".text-5", {
-            opacity: 0,
-            duration: 1
-        })
-  })
-  return () => ctx.revert();
-})
-    useGSAP(() => {
-      
+            },})
+         
     })  
     return (
         <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
+        <div className="3d-modle absolute">
+          <motion.div style={{ scale: scrollYProgress }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
 
+            className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-50" >
+            <Cube rotate={rotate} target={target2} />
+          </motion.div>
+        </div>
             <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
                 <h1
                     className="text-[#2c2b2b] shadow text-6 ">Shoot Every Detail</h1>
