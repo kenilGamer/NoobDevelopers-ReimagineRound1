@@ -3,7 +3,7 @@ import Cube from "../partials/Cube";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 function Page4({ cube }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     useEffect(() => {
@@ -16,33 +16,37 @@ function Page4({ cube }) {
         };
     }, []);
 
+  gsap.registerPlugin(ScrollTrigger);
     
     useGSAP(() => {
-        const tl6 = gsap.timeline({
+        const tl = gsap.timeline({
           scrollTrigger: {
             trigger: ".page4",
-            start: "top 0%",
-            markers: true,
-            end: "top 0%",
+            // start: "top 0%",
+            // markers: true,
+            // end: "top 0%",
+            // scrub: 3,
             pin: true,
           },
         });
-        tl6.from(".boxs2", {
+        tl.from(".boxs2", {
             opacity: 0,
+            // y: -300,
             width: 0,
             height: 0,
+            // scrollBehavior:smooth ,
             stagger: 0.1
         })
-        tl6.from(".text-6", {
+        tl.from(".text-6", {
             opacity: 0,
             duration: 1,
             stagger: 0.1
         })
-        tl6.from(".text-5", {
+        tl.from(".text-5", {
             opacity: 0,
             duration: 1
         })
-    })
+    })  
     return (
         <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
 
@@ -55,8 +59,8 @@ function Page4({ cube }) {
 
 
             <div className="main-camera">
-                <div className="w-[5vw] h-[1px] bg-white boxs2 absolute top-[46vh] left-[38.9vw] z-[999] "></div>
-                <div className="w-[3.5vw] h-[1px] bg-white boxs2 absolute top-[43.4vh] left-[35.8vw] z-[999] rotate-[40deg] "></div>
+            <div className="w-[5vw] h-[1px] bg-white boxs2 absolute top-[46vh] left-[38.9vw] z-50 "></div>
+            <div className="w-[3.5vw] h-[1px] bg-white boxs2 absolute top-[43.4vh] left-[35.8vw] z-50 rotate-[40deg] "></div>
                 <h1 className="text-[13vw] absolute top-[30%] text-5 -left-36 font-semibold text-[#252525] shadow -rotate-[90deg]">50 MP</h1>
                 <div className="box w-full min-h-full ">
                     <h1 className="absolute text-3xl text-[#646363] shadow  top-[27vh] left-[24vw] text-6">Main Camera</h1>

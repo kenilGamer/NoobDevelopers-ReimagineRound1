@@ -36,6 +36,9 @@
    font-family: NP;
    src: url(/public/sansation/Sansation_Regular.ttf);
 }
+html,body{
+   background: #000;
+}
 .heading{
    font-family: NH;
    overflow: hidden;
@@ -48,9 +51,12 @@
    font-family: NP;
   
 }
+
 .shadow{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
    text-shadow: 2px 1px #fff;
+}
+.font1{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .text_border{
   -webkit-text-stroke-width: 11px;
@@ -59,9 +65,6 @@
 .btn{
    box-shadow: 0px 0px 10px #fff;
 }
-
-
-
 
 .boxs-line{
    box-shadow: 0px 0px 10px #ffffff;

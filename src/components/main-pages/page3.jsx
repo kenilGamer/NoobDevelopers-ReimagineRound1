@@ -201,7 +201,7 @@ const Page3 = () => {
         </div>
         <Page4 cube={cube} />
       </div>
-      {/* <Page5 /> */}
+
     </div>
   );
 };
