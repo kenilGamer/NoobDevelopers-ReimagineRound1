@@ -7,7 +7,7 @@ import img4 from '/assets/black-volume.png';
 import img5 from '/Page_3_img/Rectangle 41.png';
 import img6 from '/assets/nothing_frame-removebg-preview.png';
 
-const Cube = ({ rotate, rotateZ, target }) => {
+const Cube = ({ rotate, rotateZ, target,video }) => {
   const [state, setState] = useState('0');
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const sceneRef = useRef(null);
@@ -93,9 +93,10 @@ const Cube = ({ rotate, rotateZ, target }) => {
           </div>
           <div className="face tp">
             <div className="photon-shader-tp" style={{ backgroundColor: '#afafaf' }}>
-              {/* <img src={"/public/game.mp4"} alt="" /> */}
-              <video className='-rotate-90 mt-[70%] scale-[2] w-full object-cover rounded-xl' muted autoPlay src='/game.mp4' type="video/mp4" >
-              </video>
+              {video == 0 ? <img src={img6} alt="" /> :  <video className='-rotate-90 mt-[70%] scale-[2] w-full object-cover rounded-xl' muted autoPlay src='/game.mp4' type="video/mp4" >
+              </video>}
+              
+             
             </div>
           </div>
           <div className="cr cr-0">

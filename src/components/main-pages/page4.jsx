@@ -17,6 +17,7 @@ function Page4() {
     }, []);
     const cube = useRef(null)
     const target = useRef(null)
+    const [video, setvideo] = useState(0)
     const target2 = useRef(null)
     const data1 = useScroll()
     const [rotate, setRotate] = useState("0");
@@ -102,7 +103,7 @@ function Page4() {
             viewport={{ once: true }}
 
             className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-50" >
-            <Cube rotate={rotate} target={target2} />
+            <Cube rotate={rotate} target={target2}  video={video} />
           </motion.div>
         </div>
             <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">

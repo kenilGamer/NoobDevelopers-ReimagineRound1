@@ -19,6 +19,7 @@ const Page3 = () => {
   const cube1 = useRef(null)
   const target = useRef(null)
   const target2 = useRef(null)
+  const [video, setvideo] = useState(0)
   const [rotate, setRotate] = useState("0");
   const [rotateZ, setRotateZ] = useState(null);
   const { scrollYProgress } = useScroll({
@@ -183,7 +184,7 @@ useGSAP(()=>{
           <div
             ref={cube1}
             className="cube w-full min-h-full absolute top-[70vh] -left-[55vw] rotate-45 " >
-            <Cube rotate={rotate} />
+            <Cube rotate={rotate}  video={video} />
           </div>
         </div>
         {/* page3 end */}

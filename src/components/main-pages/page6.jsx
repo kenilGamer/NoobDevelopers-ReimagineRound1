@@ -16,6 +16,7 @@ function Page6() {
     //   })
     //   return () => ctx.revert();
     //   })
+    const [video, setvideo] = useState(0)
     useGSAP(()=>{
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -42,7 +43,7 @@ function Page6() {
     <div ref={target2} className='w-full h-screen bg-black relative'>
        <div
             className="cube1 w-full h-full absolute top-[5vh] z-20  " >
-            <Cube rotate={rotate} target={target} />
+            <Cube rotate={rotate} target={target} video={video} />
         </div>
         <div className='flex items-center justify-center flex-col p-7 gap-5'>
         <h1 className='text-2xl heading w-96 text-center text-2 opacity-0'>Outshine the Ordinary 10 Bit AMOLED Display</h1>

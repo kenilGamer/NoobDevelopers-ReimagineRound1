@@ -44,6 +44,7 @@ function Page5() {
   // })
   // return () => ctx.revert();
   // })
+  const [video, setvideo] = useState(0)
   useGSAP(()=>{
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -80,7 +81,7 @@ function Page5() {
     <div ref={target2} className='w-full h-screen bg-black relative'>
        <div
             className="cube w-full h-full absolute -left-[10vw] " >
-            <Cube rotate={rotate} target={target} />
+            <Cube rotate={rotate} target={target}   video={video} />
         </div>
         <div className='camera-page'>
           <h1 className='absolute  z-[50] text-1 top-[14vh] left-[18.1vw] w-32 '>16 MP Sony IMX471 sensorr</h1>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Page2setup from '../partials/Page2-setup'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function Page2() {
   gsap.registerPlugin(useGSAP,ScrollTrigger);
-
+  const [video, setvideo] = useState(0)
   
   // useGSAP(() => {
   //   const tl = gsap.timeline({scrollTrigger: {
