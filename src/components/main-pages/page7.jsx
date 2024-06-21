@@ -44,13 +44,19 @@ function Page7() {
         })
     })
     return (
-        <div className='w-full page7 h-[100vh] bg-black relative'>
+        <div className='w-full page7 h-[100vh] bg-black relative  overflow-hidden'>
             <div
                 className="cube1 w-full h-full absolute  z-20  " >
                 <Cube rotate={rotate} target={target} video={video} />
             </div>
             <div className='absolute top-[40vh] left-[32vw] z-50 img-1 op'>
                 <img className='img-1' src="/Page_3_img/Rectangle 83.png" width={500} alt="" />
+            </div>
+
+            <div className='haedings flex items-center justify-center '>
+                <h1 className='text-center absolute top-[3vh] text-3xl heading w-[50vw]'>Experience the Ultimate Performance with Snapdragon 778G+ chipset</h1>
+                <h1 className='text-center absolute top-[25vh]  w-[50vw]'>596815 Antutu benchmar score</h1>
+                <h1 className='text-center absolute top-[25vh] text-[15vw] heading'>60mm</h1>
             </div>
         </div>
 

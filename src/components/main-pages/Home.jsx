@@ -13,7 +13,7 @@ function Home() {
     tl5.from(".logo-nav",{
       scale: 0,
       duration: 0.8,
-      stagger:0.5,
+      stagger:0.2,
     })
     tl5.to(".line1",{
       width: '11vw',
@@ -92,16 +92,16 @@ function Home() {
       width: '70vw',
       boxShadow: "0px 0px 20px #fff",
       duration:0.3,
-      // stagger: 1,
+      // stagger: 0.5,
     })
     tl5.from(".nav-c",{
       y: -500,
-      duration:1,
+      duration:0.5,
       stagger: 0.3,
     })
     tl5.from(".nav-r",{
       y: -500,
-      duration:1,
+      duration:0.5,
       stagger: 0.3,
     })
     tl5.from(".mobile2",{
@@ -116,21 +116,21 @@ function Home() {
     }) 
     tl5.from(".heading1",{
       y:400,
-      duration: 1,
+      duration: 0.5,
     })
     tl5.from(".heading2",{
       y:400,
-      duration: 1,
+      duration: 0.5,
     })
     tl5.from(".end2",{
       y:400,
-      duration: 1,
+      duration: 0.5,
     })
   })
   return (
     <div className='w-full h-full overflow-hidden page'>
       <Nav/>
-      <div className='w-full h-full pointer-events-none relative '>
+      <div className='w-full h-full overflow-hidden pointer-events-none relative '>
         <Homeline/>
       </div>
     </div>

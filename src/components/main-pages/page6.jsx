@@ -37,10 +37,11 @@ function Page6() {
         opacity: 1,
         duration: 2 ,
         ease: "power3.out",
+        stagger: 1
   })
     })
   return (
-    <div ref={target2} className='w-full h-screen bg-black relative'>
+    <div ref={target2} className='w-full h-screen bg-black relative overflow-hidden'>
        <div
             className="cube1 w-full h-full absolute top-[5vh] z-20  " >
             <Cube rotate={rotate} target={target} video={video} />

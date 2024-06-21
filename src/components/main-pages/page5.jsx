@@ -77,7 +77,7 @@ function Page5() {
   // })
   })
   return (
-    <div ref={target2} className='w-full h-screen bg-black relative'>
+    <div ref={target2} className='w-full h-screen bg-black relative overflow-hidden'>
        <div
             className="cube w-full h-full absolute -left-[10vw] " >
             <Cube rotate={rotate} target={target}   video={video} />
