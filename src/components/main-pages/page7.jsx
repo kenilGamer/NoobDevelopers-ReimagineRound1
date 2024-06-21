@@ -12,16 +12,16 @@ function Page7() {
     const target2 = useRef(null)
     // useLayoutEffect(() => {
     //     let ctx = gsap.context(() => {
-          
+
     //     })
     //     return () => ctx.revert();
     // })
-    useGSAP(()=>{
+    useGSAP(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: target2.current,
-                start: "top top",
-                end: "bottom top",
+                trigger: '.page7',
+                start: "top 0%",
+                end: "top -100%",
                 scrub: 3,
                 markers: true,
                 pin: true,
@@ -34,13 +34,21 @@ function Page7() {
             transform: "rotateX(-100deg) rotateY(-90deg) rotateZ(0deg)",
             duration: 2,
         })
+        tl.from(".img-1",{
+            opacity: 0,
+            y:500,
+            duration: 2,
+        })
     })
     return (
-        <div ref={target2} className='w-full h-[100vh] bg-black relative'>
-                <div
-                    className="cube1 w-full h-full absolute  z-20  " >
-                    <Cube rotate={rotate} target={target} />
-                </div>        
+        <div className='w-full page7 h-[100vh] bg-black relative'>
+            <div
+                className="cube1 w-full h-full absolute  z-20  " >
+                <Cube rotate={rotate} target={target} />
+            </div>
+            <div className='absolute top-[40vh] left-[32vw] z-50 img-1 op'>
+                <img className='img-1' src="/Page_3_img/Rectangle 83.png" width={500} alt="" />
+            </div>
         </div>
 
     )

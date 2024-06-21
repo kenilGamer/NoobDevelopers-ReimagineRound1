@@ -23,7 +23,7 @@ function Page6() {
           start: "top top",
           end: "bottom top",
           scrub: 3,
-          markers: true,
+          // markers: true,
           pin: true,
           toggleActions: "play none none reverse",
       }}) 

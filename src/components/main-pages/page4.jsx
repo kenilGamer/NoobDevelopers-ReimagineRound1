@@ -71,10 +71,27 @@ function Page4() {
               start: "top top",
               end: "bottom top",
               scrub: 3,
-              markers: true, 
+            //   markers: true, 
               pin: true,
-            },})
-         
+     },})
+         tl.from(".boxs2", {
+            opacity: 0,
+            // y: -300,
+            width: 0,
+            height: 0,
+            // scrollBehavior:smooth ,
+            stagger: 0.1
+        })
+        tl.from(".text-6", {
+            opacity: 0,
+            duration: 1,
+            stagger: 0.1
+        })
+        tl.from(".text-5", {
+            opacity: 0,
+            duration: 1
+        })
+       
     })  
     return (
         <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
