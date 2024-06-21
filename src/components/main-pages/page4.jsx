@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Cube from "../partials/Cube";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useGSAP } from '@gsap/react';
@@ -17,18 +17,19 @@ function Page4({ cube }) {
     }, []);
 
   gsap.registerPlugin(ScrollTrigger);
-    
-    useGSAP(() => {
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
         const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".page4",
-            // start: "top 0%",
-            // markers: true,
-            // end: "top 0%",
-            // scrub: 3,
-            pin: true,
-          },
-        });
+            snap:{snapTo: "labels", duration: 0.3, delay: 0.1, ease: "power1.inOut"},
+            scrollTrigger: {
+              trigger: ".page4",
+              start: "top top",
+              end: "bottom",
+              scrub: 3,
+              pin: true,
+            },
+          });
+           
         tl.from(".boxs2", {
             opacity: 0,
             // y: -300,
@@ -46,6 +47,11 @@ function Page4({ cube }) {
             opacity: 0,
             duration: 1
         })
+  })
+  return () => ctx.revert();
+})
+    useGSAP(() => {
+      
     })  
     return (
         <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">

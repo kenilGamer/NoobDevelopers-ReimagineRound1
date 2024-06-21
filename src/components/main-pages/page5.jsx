@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import Cube from '../partials/Cube'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -9,18 +9,19 @@ function Page5() {
   const [rotate, setRotate] = useState("0");
   const target = useRef(null)
   const target2 = useRef(null)
-    useGSAP(()=>{
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: target2.current,
-          start: "top  bottom",
+          start: "top top",
           end: "bottom top",
-          scrub: true,
-          markers: true,
+          scrub: 3,
+          // markers: true,
           pin: true,
-          pinSpacing: false,
-          toggleActions: "play none none none",
-      }})
+          pinSpacing: false, 
+          toggleActions: "play none none reverse",
+      }}) 
       tl.to(target.current,{
         // fontSize: "100%",
         transform: "rotateX(-100deg) rotateY(180deg) rotateZ(0deg)",
@@ -37,12 +38,16 @@ function Page5() {
         duration: 1,
         stagger: 0.1
     })
-
-    })
+    // tl.to(".cube", {
+    //   opacity: 0
+    // })
+  })
+  return () => ctx.revert();
+  })
   return (
     <div ref={target2} className='w-full h-screen bg-black relative'>
        <div
-            className="cube w-full min-h-full absolute -left-[10vw] " >
+            className="cube w-full h-full absolute -left-[10vw] " >
             <Cube rotate={rotate} target={target} />
         </div>
         <div className='camera-page'>

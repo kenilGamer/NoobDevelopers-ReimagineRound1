@@ -8,32 +8,42 @@ import Page2 from './components/main-pages/Page2';
 import LocomotiveScroll from 'locomotive-scroll';
 import Page3 from './components/main-pages/page3';
 import Page5 from './components/main-pages/page5';
+import Page6 from './components/main-pages/page6';
+import Page7 from './components/main-pages/page7';
 
 function App() {
 
   const scrollRef = useRef(null);
 
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      duration: 3,
-      multiplier: 1, // Adjust the scroll speed if needed
-    });
 
-    // Clean up on unmount
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
+    useEffect(() => {
+      const scrollEl = document.querySelector("#main-section");
+  
+      const locoScroll = new LocomotiveScroll({
+        el: scrollEl,
+        smooth: true,
+        multiplier: 1,
+        lerp: 0.06,
+        class: "is-reveal",
+        tablet: {
+          smooth: true
+        },
+        smartphone: {
+          smooth: true
+        }
+      });
+    }, []);
+
   
 
   return (
-    <div  id='main' className='w-full snap-y snap-mandatory h-screen text-white select-none bg-black ' >
+    <div  id='main-section' className='w-full snap-y snap-mandatory h-screen text-white select-none bg-black ' >
       <Home/>
       <Page2/>
       <Page3/>
       <Page5/>
+      <Page6/>
+      <Page7/>
     </div>
   )
 }
