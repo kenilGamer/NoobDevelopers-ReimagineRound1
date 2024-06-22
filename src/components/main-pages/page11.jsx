@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page11() {
   return (
-     <div className='w-full min-h-[150vh] bg-black page10 relative  p'>
+     <div className='w-full h-screen max-md:min-h-[190vh] bg-black page10 overflow-hidden relative  p'>
             <div className='w-full h-full '>
                 <div className='text-1 text-center heading text-5xl'>Design</div> 
                 <div className='flex max-md:flex-col w-full h-[90vh]'>

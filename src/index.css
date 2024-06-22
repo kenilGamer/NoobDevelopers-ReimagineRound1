@@ -41,7 +41,7 @@
    src: url(/Aclonica/Aclonica-Regular.ttf);
 }
 html,body{
-   /* background: #000; */
+   background: #000;
 }
 .heading{
    font-family: NH;
