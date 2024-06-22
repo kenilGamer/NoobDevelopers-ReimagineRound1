@@ -16,6 +16,7 @@ import Page9 from './components/main-pages/page9';
 import Page10 from './components/main-pages/page10';
 import Page11 from './components/main-pages/page11';
 import Page12 from './components/main-pages/Page12';
+import Footer from './components/main-pages/footer';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
       <Page10/>
       <Page11/>
       <Page12/>
+      <Footer/>
     </div>
   )
 }
