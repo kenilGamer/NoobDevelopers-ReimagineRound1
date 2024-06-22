@@ -14,6 +14,7 @@ import Page4 from './components/main-pages/page4';
 import Page8 from './components/main-pages/page8';
 import Page9 from './components/main-pages/page9';
 import Page10 from './components/main-pages/page10';
+import Page11 from './components/main-pages/page11';
 
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
 
   return (
     <div id='main-section' className='w-full h-screen text-white select-none  bg-black ' >
-      <Home />
+      <Home  />
       <Page2 />
       <Page3 />
       <Page4 />
@@ -52,7 +53,8 @@ function App() {
       <Page7 />
       <Page8 />
       <Page9 />
-      <Page10 />
+      <Page10/>
+      <Page11/>
     </div>
   )
 }

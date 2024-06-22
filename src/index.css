@@ -36,6 +36,10 @@
    font-family: NP;
    src: url(/public/sansation/Sansation_Regular.ttf);
 }
+@font-face {
+   font-family: Aclonica;
+   src: url(/Aclonica/Aclonica-Regular.ttf);
+}
 html,body{
    /* background: #000; */
 }
@@ -51,7 +55,9 @@ html,body{
    font-family: NP;
   
 }
-
+.aclonica{
+   font-family: Aclonica;
+}
 .shadow{
    text-shadow: 2px 1px #fff;
 }
