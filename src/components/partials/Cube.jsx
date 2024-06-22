@@ -5,7 +5,7 @@ import img2 from '/assets/963f4090-1cff-49ed-aa20-84f30c6068e2-removebg-preview.
 import img3 from '/assets/blackpowerbtn.png';
 import img4 from '/assets/black-volume.png';
 import img5 from '/Page_3_img/Rectangle 41.png';
-import img6 from '/assets/nothing_frame-removebg-preview.png';
+import img6 from '../../../public/assets/image.png';
 
 const Cube = ({ rotate, rotateZ, target,video }) => {
   const [state, setState] = useState('0');
@@ -95,8 +95,6 @@ const Cube = ({ rotate, rotateZ, target,video }) => {
             <div className="photon-shader-tp" style={{ backgroundColor: '#afafaf' }}>
               {video == 0 ? <img src={img6} alt="" /> :  <video className='-rotate-90 mt-[70%] scale-[2] w-full object-cover rounded-xl' muted autoPlay loop src='/game.mp4' type="video/mp4" >
               </video>}
-              
-             
             </div>
           </div>
           <div className="cr cr-0">

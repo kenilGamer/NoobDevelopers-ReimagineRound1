@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-function Page4() {
+function Page4({rotate}) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     useEffect(() => {
         const handleResize = () => {
@@ -20,7 +20,7 @@ function Page4() {
     const [video, setvideo] = useState(0)
     const target2 = useRef(null)
     const data1 = useScroll()
-    const [rotate, setRotate] = useState("0");
+    // const [rotate, setRotate] = useState("0");
     const { scrollYProgress } = useScroll({
         target: cube,
         offset: ["start end", "end end"]

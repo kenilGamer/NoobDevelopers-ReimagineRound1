@@ -12,7 +12,7 @@ import Page5 from "./page5";
 // import gsap from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const Page3 = () => {
+const Page3 = ({rotate}) => {
   // gsap.registerPlugin(ScrollTrigger);
   const sectionRef = useRef(null);
   const cube = useRef(null)
@@ -20,7 +20,7 @@ const Page3 = () => {
   const target = useRef(null)
   const target2 = useRef(null)
   const [video, setvideo] = useState(0)
-  const [rotate, setRotate] = useState("0");
+  // const [rotate, setRotate] = useState("0");
   const [rotateZ, setRotateZ] = useState(null);
   const { scrollYProgress } = useScroll({
     target: cube,
@@ -177,7 +177,6 @@ useGSAP(()=>{
               IP53
             </h1>
           </div>
-
           <div
             ref={cube1}
             className="cube w-full min-h-full absolute top-[70vh] -left-[55vw] rotate-45 " >

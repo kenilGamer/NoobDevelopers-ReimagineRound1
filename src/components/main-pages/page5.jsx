@@ -4,9 +4,9 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Page5() {
+function Page5({rotate}) {
   gsap.registerPlugin(ScrollTrigger);
-  const [rotate, setRotate] = useState("0");
+  // const [rotate, setRotate] = useState("0");
   const target = useRef(null)
   const target2 = useRef(null)
   // useLayoutEffect(() => {

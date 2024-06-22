@@ -19,7 +19,10 @@ import Page12 from './components/main-pages/Page12';
 import Footer from './components/main-pages/footer';
 
 function App() {
-
+  const [rotate, setRotate] = useState("0");
+  const showfront = () => {
+    setRotate(rotate === '1' ? '0' : '1');
+  };
   const scrollRef = useRef(null);
 
 
@@ -48,17 +51,19 @@ function App() {
     <div id='main-section' className='w-full h-screen text-white select-none  bg-black ' >
       <Home  />
       <Page2 />
-      <Page3 />
-      <Page4 />
-      <Page5 />
-      <Page6 />
-      <Page7 />
-      <Page8 />
-      <Page9 />
+      <Page3 rotate={rotate}/>
+      <Page4 rotate={rotate}/>
+      <Page5 rotate={rotate}/>
+      <Page6 rotate={rotate}/>
+      <Page7 rotate={rotate}/>
+      <Page8 rotate={rotate}/>
+      <Page9 rotate={rotate}/>
       <Page10/>
       <Page11/>
       <Page12/>
       <Footer/>
+      <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
+
     </div>
   )
 }
