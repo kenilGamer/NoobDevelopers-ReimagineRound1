@@ -15,8 +15,8 @@ function Page2() {
       trigger: ".page2",
       start: "top top",
       end: "top -50%",
-      markers: true,
-      scrub: 1,
+      // markers: true,
+      scrub: 2,
       pin: true,
       boxShadow: "0px 0px 20px #fff",
   }});

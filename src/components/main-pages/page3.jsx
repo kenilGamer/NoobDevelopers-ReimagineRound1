@@ -70,7 +70,7 @@ useGSAP(()=>{
         start: "top 0%",
         end: "top -100%",
         scrub: 3,
-        markers:true,
+        // markers:true,
         pin: true,
       },
     });

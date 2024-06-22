@@ -21,26 +21,36 @@ function Page7() {
             scrollTrigger: {
                 trigger: '.page7',
                 start: "top 0%",
-                end: "top -100%",
-                scrub: 3,
-                markers: true,
+                end: "top -150%",
+                scrub: 5,
+                // markers: true,
                 pin: true,
                 // pinSpacing: false,
                 // toggleActions: "play none none reverse",
             }
         })
+        tl.to(".text_border2", {
+            opacity: 1,
+            duration: 2,
+        })
         tl.to(target.current, {
             // fontSize: "100%",
             transform: "rotateX(-100deg) rotateY(-90deg) rotateZ(0deg)",
-            duration: 2,
+            duration: 3,
         })
-        tl.from(".img-1",{
-            onStart:()=>{
+
+        tl.from(".img-1", {
+            onStart: () => {
                 setvideo(1)
             },
             opacity: 0,
-            y:500,
+            y: 500,
             duration: 2,
+        })
+        tl.to(".text-23", {
+            opacity: 1,
+            duration: 2,
+            stagger: .5
         })
     })
     return (
@@ -54,9 +64,9 @@ function Page7() {
             </div>
 
             <div className='haedings flex items-center justify-center '>
-                <h1 className='text-center absolute top-[3vh] text-3xl heading w-[50vw]'>Experience the Ultimate Performance with Snapdragon 778G+ chipset</h1>
-                <h1 className='text-center absolute top-[25vh]  w-[50vw]'>596815 Antutu benchmar score</h1>
-                <h1 className='text-center absolute top-[25vh] text-[15vw] heading'>60mm</h1>
+                <h1 className='text-center absolute top-[3vh] text-3xl text-23 heading w-[50vw] opacity-0'>Experience the Ultimate Performance with Snapdragon 778G+ chipset</h1>
+                <h1 className='text-center absolute top-[25vh] text-23 w-[50vw] opacity-0'>596815 Antutu benchmar score</h1>
+                <h1 className='text-center absolute top-[25vh] text-[15vw] text_border2 text-black heading opacity-0'>60nm</h1>
             </div>
         </div>
 
