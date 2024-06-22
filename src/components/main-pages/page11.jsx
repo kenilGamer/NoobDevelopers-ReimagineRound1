@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page11() {
   return (
-     <div className='w-full min-h-[100vh] bg-black page10 relative overflow-hidden p-3'>
+     <div className='w-full min-h-[150vh] bg-black page10 relative  p'>
             <div className='w-full h-full '>
                 <div className='text-1 text-center heading text-5xl'>Design</div> 
                 <div className='flex max-md:flex-col w-full h-[90vh]'>
@@ -26,7 +26,7 @@ function Page11() {
                     
                     <div className='w-1/3 max-md:w-full p-3 '>
                         <div className='w-full h-full flex flex-col justify-around p-2 aclonica'>
-                            <div className='w-full h-[40vh] shadow1  rounded-3xl px-10'>
+                            <div className='w-full h-[40vh] max-md:h-full shadow1  rounded-3xl px-10'>
                                 <h1 className='heading text-center text-[2vw] p-3'>Capacity</h1>
                                 <div className='flex flex-col gap-3'>
                                     <p>8 RAM + 128 GB memory</p>
@@ -34,7 +34,7 @@ function Page11() {
                                     <p>12 RAM + 256GB memory</p>
                                 </div>
                             </div>
-                            <div className='w-full h-[40vh] shadow1  rounded-3xl px-10'>
+                            <div className='w-full h-[40vh] max-md:h-full shadow1  rounded-3xl px-10'>
                                 <h1 className='heading text-center text-[2vw] p-3'>Dimensions</h1>
                                 <div className='flex flex-col gap-3'>
                                     <p>Height: 159.2 mm</p>
@@ -48,7 +48,7 @@ function Page11() {
                     </div>
 
                     <div className='w-1/3 max-md:w-full p-3 '>
-                        <div className='w-full h-full rounded-3xl shadow1  px-10 aclonica'>
+                        <div className='w-full min-h-full rounded-3xl shadow1  px-10 aclonica'>
                             <h1 className='heading text-center text-[2vw] p-3'>In The Box</h1>
                             <div className='flex flex-col gap-10 '>
                             <p>Nothing Phone (1)</p>

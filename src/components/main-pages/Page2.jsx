@@ -14,7 +14,7 @@ function Page2() {
     const tl = gsap.timeline({scrollTrigger: {
       trigger: ".page2",
       start: "top top",
-      end: "top -50%",
+      end: "top -100%",
       // markers: true,
       scrub: 2,
       pin: true,

@@ -29,12 +29,12 @@ function Page8() {
   })
   return (
     <div className='w-full h-[100vh] bg-black page8 relative overflow-hidden '>
-      <div className="text absolute top-[10vh] left-[20vw] opacity-0 texts heading w-[55vw] text-2xl">
+      <div className="text absolute top-[10vh] left-[20vw] opacity-0 texts heading w-[55vw] text-2xl max-md:text-sm max-md:w-full max-md:left-0 ">
         <h1 className='text-center'>The symmetrical bezels and aluminium frame adds elegance, lightness and durability</h1>
       </div>
       <div className='imgs'>
-        <img className=' imgs1 absolute top-[15vh] -left-[50vw] w-[60vw]' src="/Page_3_img/Rectangle 93.png" alt="" />
-        <img className=' imgs2 absolute top-[50vh] -right-[50vw] w-[60vw]' src="/Page_3_img/Rectangle 94.png" alt="" />
+        <img className=' imgs1 absolute top-[15vh] -left-[50vw] w-[60vw] max-md:w-full max-md:top-[30vh] ' src="/Page_3_img/Rectangle 93.png" alt="" />
+        <img className=' imgs2 absolute top-[50vh] -right-[50vw] w-[60vw] max-md:w-full' src="/Page_3_img/Rectangle 94.png" alt="" />
       </div>
     </div>
   )
