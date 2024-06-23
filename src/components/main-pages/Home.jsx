@@ -4,6 +4,7 @@ import Homeline from '../partials/Homeline'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 function Home() {
+  
   const tl5 = gsap.timeline();
   useGSAP(() => {
     // tl5.from(".logo-img",{

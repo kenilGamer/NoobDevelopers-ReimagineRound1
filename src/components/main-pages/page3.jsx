@@ -156,35 +156,43 @@ useGSAP(()=>{
 
 
   return (
-    <div    ref={sectionRef} className="page3 my-section w-full min-h-[100vh] overflow-hidden relative bg-black">
-        
-          <div className="element4 w-[60vw] h-auto absolute top-[50%] left-[-20%] -translate-x-1/2 -translate-y-1/2 rotate-90 z-[12]">
-            <img
-              id="page_3_moin_img"
-              src={"../Page_3_img/water.png"}
-              className="w-full h-full object-fill"
-            />
-          </div>
-          <div className="element5 w-[60vw] h-auto absolute top-[50%] right-[-20%] translate-x-1/2 -translate-y-1/2 -rotate-90 z-[12]">
-            <img
-              id="page_3_moin_img"
-              src={"../Page_3_img/water.png"}
-              className="w-full h-full object-fill"
-            />
-          </div>
-          <div className="element6 w-[100vw] h-auto absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-row justify-center items-center scale-0 z-[0]">
-            <h1 className="heading text_border text-black  text-[22vw] font-medium">
-              IP53
-            </h1>
-          </div>
-          <div
-            ref={cube1}
-            className="cube w-full min-h-full absolute top-[70vh] -left-[55vw] rotate-45 " >
-            <Cube rotate={rotate}  video={video} />
-          </div>
+    <div ref={target} className="relative page w-full h-[200vh]">
+    <div className="page3 w-full min-h-[100vh] overflow-hidden ">
+      <div
+        ref={sectionRef}
+        className="my-section w-full h-full relative bg-black"
+      >
+        <div className="element4 w-[60vw] h-auto absolute top-[50%] left-[-20%] -translate-x-1/2 -translate-y-1/2 rotate-90 z-[12]">
+          <img
+            id="page_3_moin_img"
+            src={"../Page_3_img/water.png"}
+            className="w-full h-full object-fill"
+          />
+        </div>
+        <div className="element5 w-[60vw] h-auto absolute top-[50%] right-[-20%] translate-x-1/2 -translate-y-1/2 -rotate-90 z-[12]">
+          <img
+            id="page_3_moin_img"
+            src={"../Page_3_img/water.png"}
+            className="w-full h-full object-fill"
+          />
+        </div>
+        <div className="element6 w-[100vw] h-auto absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-row justify-center items-center scale-0 z-[0]">
+          <h1 className="heading text_border text-black  text-[22vw] font-medium">
+            IP53
+          </h1>
         </div>
 
+        <div
+          ref={cube1}
+          className="cube w-full max-md:text-xs min-h-full absolute top-[70vh] -left-[55vw] rotate-45 " >
+          <Cube rotate={rotate}  video={video} />
+        </div>
+      </div>
+      {/* page3 end */}
+    </div>
 
+
+  </div>
   );
 };
 

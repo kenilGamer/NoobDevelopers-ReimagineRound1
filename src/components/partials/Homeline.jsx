@@ -1,8 +1,21 @@
-import React from 'react'
+
+import React, { useRef, useEffect, useState, useLayoutEffect } from "react";
 
 function Homeline() {
-  return (
-    <div className='w-full h-full overflow-hidden'>
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+  
+  
+  return isMobile == false ? (
+        <div className='w-full h-full overflow-hidden'>
       {/* st lines */}
         <div  className='line1 h-[2px] w-[0vw] -rotate-[144.95deg] bg-white line1 absolute top-[2.9vw] left-[17.99vw] shadow-none'></div>
         <div className=' line2 h-[2px] line-2 w-[0vw] absolute top-[5.98vw] left-[27.89vw] bg-white'></div>
@@ -26,6 +39,32 @@ function Homeline() {
         <div className='heading absolute top-[18vw] left-[3vw] text-center w-[50vw]'>
           <h1 className='heading1 text-[3vw]'>NOTHING PHONE (1)</h1>
           <h1 className='heading2 text-[3vw]'>PURE INSTINCT</h1>
+        </div>
+        <div className='absolute top-[32vw] left-[6vw] overflow-hidden '>
+          <h5 className='logo end2 text-2xl tracking-wider opacity-80'>SNAPDRAGON 778g+ | 50 MP Dual camera</h5>
+        </div>
+        </div>
+    </div>
+  
+    
+    ):(
+    <div className='w-full min-h-full overflow-hidden'>
+      {/* st lines */}
+    
+        {/* mobile */}
+
+       <div><img className='mobile1 absolute w-[70vw]  top-[50vw] left-[25vw] z-20 ' src="/Rectangle_13-removebg-preview.png" alt="" /></div>
+       <div><img className='mobile2  absolute w-[190vw]  top-[30vw] left-[0vw] z-110 ' src="/Rectangle 11.svg" alt="" /></div> 
+
+        {/* end lines*/}
+        <div className=' line11 h-[2px] line-2 w-[0vw] absolute top-[35vw] left-[0vw] bg-white scale-0 '></div>
+        <div className=' line12 h-[2px] line-2 w-[0vw] absolute top-[33.59vw] left-[43.48vw] bg-white rotate-[144.8deg] scale-0'></div>
+        <div className=' line13 h-[2px] line-2 w-[0vw] absolute top-[32.2vw] left-[47.9vw] bg-white scale-0'></div>
+        {/* text */}
+        <div className='w-full h-full'>
+        <div className='heading absolute top-[10vw] left-[3vw] text-center w-[100vw]'>
+          <h1 className='heading1 text-[5vw]'>NOTHING PHONE (1)</h1>
+          <h1 className='heading2 text-[5vw]'>PURE INSTINCT</h1>
         </div>
         <div className='absolute top-[32vw] left-[6vw] overflow-hidden '>
           <h5 className='logo end2 text-2xl tracking-wider opacity-80'>SNAPDRAGON 778g+ | 50 MP Dual camera</h5>
