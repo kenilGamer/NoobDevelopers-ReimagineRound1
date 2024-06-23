@@ -62,7 +62,7 @@ function App() {
       <Page11/>
       <Page12/>
       <Footer/>
-      <button title="rotate a phone for a 3d model " className="px-7 py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
+      <button title="rotate a phone for a 3d model " className="px-7  max-md:hidden py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
 
     </div>
   )
