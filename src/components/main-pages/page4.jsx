@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Box_3 from "../partials/Box_3"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-function Page4({rotate}) {
+function Page4({ rotate }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     useEffect(() => {
         const handleResize = () => {
@@ -21,62 +21,63 @@ function Page4({rotate}) {
     const [video, setvideo] = useState(0)
     const target2 = useRef(null)
     const data1 = useScroll()
-  
+
     const { scrollYProgress } = useScroll({
         target: cube,
         offset: ["start end", "end end"]
-      })
-    
-      const { scrollY } = useScroll({
+    })
+
+    const { scrollY } = useScroll({
         target: target,
         offset: ["start end", "end end"]
-      })
-  gsap.registerPlugin(ScrollTrigger);
-//   useLayoutEffect(() => {
-//     // let ctx = gsap.context(() => {
-//         const tl = gsap.timeline({
-//             scrollTrigger: {
-//               trigger: ".page4",
-//               start: "top top",
-//               end: "bottom top",
-//               scrub: 3,
-//               markers: true, 
-//               pin: true,
-//             },
-//         //   });
-           
-//         // tl.from(".boxs22", {
-//         //     opacity: 0,
-//         //     // y: -300,
-//         //     width: 0,
-//         //     height: 0,
-//         //     // scrollBehavior:smooth ,
-//         //     stagger: 0.1
-//         // })
-//         // tl.from(".text-6", {
-//         //     opacity: 0,
-//         //     duration: 1,
-//         //     stagger: 0.1
-//         // })
-//         // tl.from(".text-5", {
-//         //     opacity: 0,
-//         //     duration: 1
-//         // })
-       
-//   })
-//   return () => ctx.revert();
-// })
+    })
+    gsap.registerPlugin(ScrollTrigger);
+    //   useLayoutEffect(() => {
+    //     // let ctx = gsap.context(() => {
+    //         const tl = gsap.timeline({
+    //             scrollTrigger: {
+    //               trigger: ".page4",
+    //               start: "top top",
+    //               end: "bottom top",
+    //               scrub: 3,
+    //               markers: true, 
+    //               pin: true,
+    //             },
+    //         //   });
+
+    //         // tl.from(".boxs22", {
+    //         //     opacity: 0,
+    //         //     // y: -300,
+    //         //     width: 0,
+    //         //     height: 0,
+    //         //     // scrollBehavior:smooth ,
+    //         //     stagger: 0.1
+    //         // })
+    //         // tl.from(".text-6", {
+    //         //     opacity: 0,
+    //         //     duration: 1,
+    //         //     stagger: 0.1
+    //         // })
+    //         // tl.from(".text-5", {
+    //         //     opacity: 0,
+    //         //     duration: 1
+    //         // })
+
+    //   })
+    //   return () => ctx.revert();
+    // })
     useGSAP(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
-              trigger: ".page4",
-              start: "top top",
-              end: "bottom top",
-              scrub: 3,
-            //   markers: true, 
-              pin: true,
-     },})
-         tl.from(".boxs22", {
+                trigger: ".page4",
+                start: "top top",
+                end: "bottom top",
+                scrub: 3,
+                //   markers: true, 
+                pin: true,
+            },
+        })
+        tl.from(".boxs22", {
             opacity: 0,
             // y: -300,
             width: 0,
@@ -93,20 +94,20 @@ function Page4({rotate}) {
             opacity: 0,
             duration: 1
         })
-       
-    })  
-    return isMobile == false ?  (   
-    <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
-        <div className="3d-modle absolute">
-          <motion.div style={{ scale: scrollYProgress }}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
 
-            className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-50" >
-            <Cube rotate={rotate} target={target2}  video={video} />
-          </motion.div>
-        </div>
+    })
+    return isMobile == false ? (
+        <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
+            <div className="3d-modle absolute">
+                <motion.div style={{ scale: scrollYProgress }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+
+                    className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-50" >
+                    <Cube rotate={rotate} target={target2} video={video} />
+                </motion.div>
+            </div>
             <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
                 <h1
                     className="text-[#2c2b2b] shadow text-6 ">Shoot Every Detail</h1>
@@ -116,8 +117,8 @@ function Page4({rotate}) {
 
 
             <div className="main-camera">
-            <div className="w-[5vw] h-[1px] bg-white boxs22 absolute top-[46vh] left-[38.9vw] z-50 "></div>
-            <div className="w-[3.5vw] h-[1px] bg-white boxs22 absolute top-[43.4vh] left-[35.8vw] z-50 rotate-[40deg] "></div>
+                <div className="w-[5vw] h-[1px] bg-white boxs22 absolute top-[46vh] left-[38.9vw] z-50 "></div>
+                <div className="w-[3.5vw] h-[1px] bg-white boxs22 absolute top-[43.4vh] left-[35.8vw] z-50 rotate-[40deg] "></div>
                 <h1 className="text-[13vw] absolute top-[30%] text-5 -left-36 font-semibold text-[#252525] shadow -rotate-[90deg]">50 MP</h1>
                 <div className="box w-full min-h-full ">
                     <h1 className="absolute text-3xl text-[#646363] shadow  top-[27vh] left-[24vw] text-6">Main Camera</h1>
@@ -189,53 +190,47 @@ function Page4({rotate}) {
             </div>
         </div>
     )
-    :(
-        <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
+        : (
+            <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
 
-<div className="absolute w-[140vw] -right-[48vw] top-[50vh]">
-<img className="w-full 0 h-full scale-[1.7] object-contain" src="Nothing-Phone-1-PNG-Free-Image.png" />
-</div>
+                <div className="absolute w-[140vw] -right-[48vw] top-[50vh]">
+                    <img className="w-full 0 h-full scale-[1.7] object-contain" src="Nothing-Phone-1-PNG-Free-Image.png" />
+                </div>
 
-            <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-2xl text_h1 ">
-                <h1
-                    className="text-[#2c2b2b] shadow text-6  ">Shoot Every Detail</h1>
-                <h1
-                    className="text-[#353333] shadow text-6"> Feel Every Emotion</h1>
+                <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-2xl text_h1 ">
+                    <h1
+                        className="text-[#2c2b2b] shadow text-6  ">Shoot Every Detail</h1>
+                    <h1
+                        className="text-[#353333] shadow text-6"> Feel Every Emotion</h1>
+                </div>
+
+                <h1 className="absolute text-5xl top-[20vh] left-1/2 -translate-x-1/2 text_h1_">50 MP</h1>
+
+
+
+
+                <div className=" relative top-[40%]">
+                    <div className="w-[30vw] relative">
+                        <Box_3 w="100%" type="type_3" />
+                        <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np">
+                        <h1>50 MP</h1> <h5 className="text-[2.5vw]">Sony IMX766 sensor </h5> 
+                        </div>
+                        <div className=" absolute -top-[5.2vw] -right-[10vw] w-[1px] h-[25vw] rotate-90 bg-amber-100"></div>
+                    </div>
+                </div>
+
+                <div className=" relative top-[40%]">
+                    <div className="w-[30vw] relative">
+                        <Box_3 w="100%" type="type_3" />
+                        <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np">
+                        <h1>50 Mp</h1> <h5 className="text-[2vw]">MP Samsung JN1 sensor </h5> 
+                        </div>
+                        <div className="absolute -top-[5.2vw] -right-[10vw] w-[1px] h-[25vw] rotate-90 bg-amber-100"></div>
+                        
+                    </div>
+                </div>
             </div>
-            
-            <h1 className="absolute text-5xl top-[20vh] left-1/2 -translate-x-1/2 text_h1_">50 MP</h1>
-          
-
-
-
-<div className=" relative top-[40%]">
-    <div className="w-[30vw] relative">
-             <Box_3 w="100%" type="type_3"   />
-        <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np"><h1>50mp</h1> <h5 className="text-[2.5vw]">sony imx766 scncer </h5> </div>
-         <div className=" absolute -top-[5.2vw] -right-[10vw] w-[1px] h-[25vw] rotate-90 bg-amber-100"></div>
-    
-    </div>
-    </div>
-
-
-
-<div className=" relative top-[40%]">
-    <div className="w-[30vw] relative">
-             <Box_3 w="100%" type="type_3"   />
-                <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np"><h1>50mp</h1> <h5 className="text-[2.5vw]">sony imx766 scncer </h5> </div>
-
-         <div className="absolute -top-[5.2vw] -right-[10vw] w-[1px] h-[25vw] rotate-90 bg-amber-100"></div>
-    
-    </div>
-    
-   
-            </div>
-
-
-
-          
-        </div>
-    )
+        )
 }
 
 export default Page4
