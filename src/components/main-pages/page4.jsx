@@ -203,8 +203,6 @@ function Page4({ rotate }) {
                     <h1
                         className="text-[#353333] shadow text-6"> Feel Every Emotion</h1>
                 </div>
-
-                <h1 className="absolute text-5xl top-[20vh] left-1/2 -translate-x-1/2 text_h1_">50 MP</h1>
                 <div className=" relative top-[40%]">
                     <div className="w-[30vw] relative">
                         <Box_3 w="100%" type="type_3" />
