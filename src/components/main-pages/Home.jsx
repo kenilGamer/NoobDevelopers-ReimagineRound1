@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Nav from '../partials/Nav'
 import Homeline from '../partials/Homeline'
 import { useGSAP } from '@gsap/react'
@@ -6,11 +6,13 @@ import gsap from 'gsap'
 function Home() {
   
   const tl5 = gsap.timeline();
+  
   useGSAP(() => {
     // tl5.from(".logo-img",{
     //   scale: 0,
     //   duration: 0.3,
     // })
+  if (isMobile === false) {
     tl5.from(".logo-nav",{
       scale: 0,
       duration: 0.8,
@@ -127,12 +129,46 @@ function Home() {
       y:400,
       duration: 0.5,
     })
+  } else {
+    tl5.from(".mobile2",{
+      y: 2000,
+      x:500,
+      duration: 0.8,
+    })
+    tl5.from(".mobile1",{
+      y: 2000,
+      x:500,
+      duration: 0.8,
+    }) 
+    tl5.from(".heading1",{
+      y:400,
+      duration: 0.5,
+    })
+    tl5.from(".heading2",{
+      y:400,
+      duration: 0.5,
+    })
+    tl5.from(".end2",{
+      y:400,
+      duration: 0.5,
+    })
+  }
   })
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+      const handleResize = () => {
+          setIsMobile(window.innerWidth <= 768);
+      };
+      window.addEventListener("resize", handleResize);
+      return () => {
+          window.removeEventListener("resize", handleResize);
+      };
+  }, []);
   return (
     <div className='w-full h-full overflow-hidden page'>
       <Nav/>
       <div className='w-full h-full overflow-hidden pointer-events-none relative '>
-        <Homeline/>
+        <Homeline isMobile={isMobile}/>
       </div>
     </div>
     

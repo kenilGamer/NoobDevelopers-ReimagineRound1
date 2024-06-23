@@ -59,11 +59,11 @@ function Page5({rotate}) {
         <Cube rotate={rotate} target={target} video={video} />
       </div>
       {isMobile == false ? (
-        <div className='camera-page'>
-          <h1 className='absolute z-[50] text-1 top-[14vh] left-[18.1vw] w-32'>16 MP Sony IMX471 sensor</h1>
-          <h1 className='absolute z-[50] text-1 top-[25vh] left-[17vw] heading'>Front camera</h1>
-          <p className='absolute z-[50] text-1 top-[25vh] left-[50vw] text-6xl font-black w-[40vw] text-[#1d1d1c] shadow font2'>Include yourself with every moment</p>
-          <p className='absolute z-[50] text-1 top-[70vh] left-[50vw] font-black text-4xl w-[40vw] heading'>Say nothing and have a click</p>
+        <div   className='camera-page'>
+          <h1  className='absolute z-[50] text-1 top-[14vh] left-[18.1vw] w-32'>16 MP Sony IMX471 sensor</h1>
+          <h1  className='absolute z-[50] text-1 top-[25vh] left-[17vw] heading'>Front camera</h1>
+          <p   className='absolute z-[50] text-1 top-[25vh] left-[50vw] text-6xl font-black w-[40vw] text-[#1d1d1c] shadow font2'>Include yourself with every moment</p>
+          <p   className='absolute z-[50] text-1 top-[70vh] left-[50vw] font-black text-4xl w-[40vw] heading'>Say nothing and have a click</p>
           <div className='absolute boxs1 z-[50] h-[1px] w-[6vw] top-[17.5vh] left-[27vw] bg-white'></div>
           <div className='absolute boxs1 z-[50] h-[2px] w-[7.5vw] top-[13.5vh] left-[18.5vw] bg-white'></div>
           <div className='absolute boxs1 z-[50] h-[2px] w-[1.5vw] top-[14.8vh] left-[25.7vw] bg-white rotate-[45deg]'></div>
@@ -74,12 +74,11 @@ function Page5({rotate}) {
           <div className='absolute boxs1 z-[50] h-[2px] w-[2vw] top-[15vh] left-[16.9vw] bg-white -rotate-[45deg]'></div>
         </div>
       ) : (
-        <div className='absolute top-[20%]'>
+        <div className='absolute top-[21vh]'>
           <div className='w-[30vw] relative'>
             <Box_3 w='100%' type='type_3' />
             <div className='absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np'>
-              <h1>50mp</h1>
-              <h5 className='text-[2.5vw]'>Sony IMX766 sensor</h5>
+              <h1 className='text-[1vh]'>16 MP Sony IMX471 sensor</h1>
             </div>
             <div className='absolute -top-[5.2vw] -right-[7vw] w-[1px] h-[18vw] rotate-90 bg-amber-100'></div>
           </div>
