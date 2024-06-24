@@ -44,9 +44,8 @@ function Homeline({isMobile}) {
     
         {/* mobile */}
 
-       <div><img className='mobile1 absolute w-[70vw]  top-[50vw] left-[25vw] z-20 ' src="/Rectangle_13-removebg-preview.png" alt="" /></div>
-       <div><img className='mobile2  absolute w-[190vw]  top-[30vw] left-[0vw] z-110 ' src="/Rectangle 11.svg" alt="" /></div> 
-
+        <div className="-rotate-[32deg] z-20 absolute top-[8vw] left-[65vw]"><img className='mobile1  w-[32vh]  z-20 ' src="/Page_3_img/BA_ABR_300_1001.png" alt="" /></div>
+        <div  className=' -rotate-[32deg] mobile2 absolute top-[5vw] left-[60vw] z-10'><img className='mobile1  w-[32vh]  z-10 ' src="/Page_3_img/Rectangle 41.png" alt="" /></div> 
         {/* end lines*/}
         <div className=' line11 h-[2px] line-2 w-[0vw] absolute top-[35vw] left-[0vw] bg-white scale-0 '></div>
         <div className=' line12 h-[2px] line-2 w-[0vw] absolute top-[33.59vw] left-[43.48vw] bg-white rotate-[144.8deg] scale-0'></div>
