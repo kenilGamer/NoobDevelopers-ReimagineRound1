@@ -86,7 +86,7 @@ function Page7({rotate}) {
           <div className="cube1 w-full h-full max-md:text-xs absolute z-20">
             <Cube rotate={rotate} target={target} video={video} />
           </div>
-          <div className='absolute top-[40vh] left-[5vw] z-50 img-1'>
+          <div className='absolute top-[45vh] left-[5vw] z-50 img-1'>
             <img className='img-1' src="/Page_3_img/Rectangle 83.png" width={510} alt="" />
           </div>
           <div className='headings flex items-center justify-center'>
