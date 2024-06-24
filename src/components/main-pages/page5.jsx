@@ -76,11 +76,11 @@ function Page5({rotate}) {
       ) : (
         <div className='absolute top-[21vh]'>
           <div className='w-[30vw] relative'>
-            <Box_3 w='100%' type='type_3' />
-            <div className='absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np'>
+            <Box_3 className='.boxs1' w='100%' type='type_3' />
+            <div className='absolute .boxs1 w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np'>
               <h1 className='text-[1vh]'>16 MP Sony IMX471 sensor</h1>
             </div>
-            <div className='absolute -top-[5.2vw] -right-[7vw] w-[1px] h-[18vw] rotate-90 bg-amber-100'></div>
+            <div className='absolute -top-[5.2vw] -right-[7vw] w-[1px] h-[18vw] rotate-90 bg-white'></div>
           </div>
         </div>
       )}

@@ -209,7 +209,7 @@ function Page4({ rotate }) {
                         <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np">
                         <h1>50 MP</h1> <h5 className="text-[2.5vw]">Sony IMX766 sensor </h5> 
                         </div>
-                        <div className=" absolute -top-[5.2vw] -right-[10vw] w-[1px] h-[25vw] rotate-90 bg-amber-100"></div>
+                        <div className=" absolute -top-[5.2vw] -right-[11vw] w-[1px] h-[25vw] rotate-90 bg-white"></div>
                     </div>
                 </div>
 
@@ -219,7 +219,7 @@ function Page4({ rotate }) {
                         <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 np">
                         <h1>50 Mp</h1> <h5 className="text-[2vw]">MP Samsung JN1 sensor </h5> 
                         </div>
-                        <div className="absolute -top-[5.2vw] -right-[10vw] w-[1px] h-[25vw] rotate-90 bg-amber-100"></div>
+                        <div className="absolute -top-[5.2vw] -right-[11vw] w-[1px] h-[25vw] rotate-90 bg-white"></div>
                         
                     </div>
                 </div>
