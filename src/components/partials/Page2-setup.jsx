@@ -134,7 +134,7 @@ function Page2setup() {
         className=" mySwiper w-[100vw] relative flex  gap-[2vw]  h-[80vh] text-white bg-white  "
       >
         <SwiperSlide className="relative h-full min-w-full flex items-center justify-center bg-black ">
-        <h1 className="text-2 top-0 left-[30%] text-5[1.5vw] absolute">Features</h1>
+        <h1 className="text-2  left-[35%] text-5 top-[5.5vw] text-4xl absolute">Features</h1>
           <div className="absolute top-[22.5vw] left-[15vw]">
             <div className="relative w-full h-full ">
               <Box w="40vw" type="type_1" />

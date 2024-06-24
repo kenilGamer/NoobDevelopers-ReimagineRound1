@@ -162,7 +162,7 @@ useGSAP(()=>{
         ref={sectionRef}
         className="my-section w-full h-full relative bg-black"
       >
-        <div className="element4 w-[60vw] max-md:w-full  h-auto absolute top-[50%] left-[-20%] max-md:-left-[50%] -translate-x-1/2 -translate-y-1/2 rotate-90 z-[12]">
+        <div className="element4 w-[60vw] max-md:w-full  h-auto absolute top-[50%] left-[-20%] max-md:-left-[60%] -translate-x-1/2 -translate-y-1/2 rotate-90 z-[12]">
           <img
             id="page_3_moin_img"
             src={"../Page_3_img/water.png"}

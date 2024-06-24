@@ -47,7 +47,7 @@ function Footer() {
                 <button type='submit' className='py-2 w-32 rounded-full bg-white text-black'>submit</button>
                 </div>
             </div>
-           
+           <div className=''></div>
             <div className=' flex items-center justify-center'>
                 <p className=' absolute bottom-0  text-[1vw] max-md:text-[3vw] text-center'>© 2021 All rights reserved</p>
             </div>
