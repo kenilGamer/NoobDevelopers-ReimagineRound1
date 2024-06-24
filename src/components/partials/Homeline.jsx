@@ -19,8 +19,8 @@ function Homeline({isMobile}) {
         <div className=' line9 h-[2px] line-2 w-[0vw] absolute top-[14.2vw] left-[73.4vw] bg-white rotate-[117.7deg]'></div>
         <div className=' line10 h-[2px] line-2 w-[0vw] absolute top-[12vw] left-[77vw] bg-white '></div>
         {/* mobile */}
-        <div className="-rotate-[32deg] z-20 absolute top-[8vw] left-[65vw]"><img className='mobile1  w-[32vh]  z-20 ' src="/public/Page_3_img/BA_ABR_300_1001.png" alt="" /></div>
-        <div  className=' -rotate-[32deg] mobile2 absolute top-[5vw] left-[60vw] z-10'><img className='mobile1  w-[32vh]  z-10 ' src="/public/Page_3_img/Rectangle 41.png" alt="" /></div> 
+        <div className="-rotate-[32deg] z-20 absolute top-[8vw] left-[65vw]"><img className='mobile1  w-[32vh]  z-20 ' src="/Page_3_img/BA_ABR_300_1001.png" alt="" /></div>
+        <div  className=' -rotate-[32deg] mobile2 absolute top-[5vw] left-[60vw] z-10'><img className='mobile1  w-[32vh]  z-10 ' src="/Page_3_img/Rectangle 41.png" alt="" /></div> 
         {/* end lines*/}
         <div className=' line11 h-[2px] line-2 w-[0vw] absolute top-[35vw] left-[0vw] bg-white '></div>
         <div className=' line12 h-[2px] line-2 w-[0vw] absolute top-[33.59vw] left-[43.48vw] bg-white rotate-[144.8deg]'></div>
