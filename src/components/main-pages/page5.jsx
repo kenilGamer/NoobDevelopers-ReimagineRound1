@@ -74,7 +74,7 @@ function Page5({rotate}) {
           <div className='absolute boxs1 z-[50] h-[2px] w-[2vw] top-[15vh] left-[16.9vw] bg-white -rotate-[45deg]'></div>
         </div>
       ) : (
-        <div className='absolute top-[18vh]'>
+        <div className='absolute top-[24.5vh]'>
           <div className='w-[30vw] relative boxs1'>
             <Box_3  t="-10px" w='100%' type='type_3' />
             <div className='absolute w-full text-center sn top-1'>

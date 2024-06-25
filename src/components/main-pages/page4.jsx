@@ -200,7 +200,7 @@ function Page4({ rotate }) {
                     whileInView="visible"
                     viewport={{ once: true }}
 
-                    className="cube w-full min-h-full fixed top-[26%] text-lg left-[20vw]  " >
+                    className="cube w-full min-h-full fixed top-[18%] text-lg left-[20vw]  " >
                     <Cube rotate={rotate} target={target2} video={video} />
                 </motion.div>
                 </div>
