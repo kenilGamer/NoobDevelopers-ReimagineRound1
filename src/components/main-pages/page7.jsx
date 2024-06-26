@@ -71,7 +71,7 @@ function Page7({rotate}) {
                 <Cube rotate={rotate} target={target} video={video} />
             </div>
             <div className='absolute top-[40vh] left-[31vw] z-50 img-1 op'>
-                <img className='img-1' src="/public/enter2-hand.png " width={500} alt="" />
+                <img className='img-1' src="/enter2-hand.png" width={500} alt="" />
             </div>
 
             <div className='haedings flex items-center justify-center '>
@@ -87,16 +87,16 @@ function Page7({rotate}) {
             <Cube rotate={rotate} target={target} video={video} />
           </div>
           <div className='absolute top-[45vh] left-[5vw] z-50 img-1'>
-            <img className='img-1' src="/Page_3_img/Rectangle 83.png" width={510} alt="" />
+            <img className='img-1' src="/enter2-hand.png" width={510} alt="" />
           </div>
           <div className='headings flex items-center justify-center'>
-            <h1 className='text-center  top-[3vh] text-xl text-23 heading w-[100vw] text-23 opacity-0' >
+            <h1 className='text-center absolute top-[10vh] text-2xl text-23 heading w-[100vw] text-23 opacity-0' >
               Experience the Ultimate Performance with Snapdragon 778G+ chipset
             </h1>
-            <h1 className='text-center absolute top-[25vh] text-23 w-[50vw] text-23 opacity-0'>
+            <h1 className='text-center absolute top-[30vh] text-23 text-xl heading opacity-0'>
               596815 Antutu benchmark score
             </h1>
-            <h1 className='text-center textww absolute top-[40vh] text-[15vw]  text-23 heading opacity-0'>
+            <h1 className='text-center textww absolute top-[40vh] text-[22vw]  text-23 heading opacity-0'>
               60nm
             </h1>
           </div>

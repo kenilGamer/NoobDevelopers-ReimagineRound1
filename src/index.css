@@ -125,8 +125,8 @@ html,body{
 .textyy{
    color: #999D9C;
     text-align: center;
-    font-size: 20vh;
-    font-weight: 100;
+    /* font-size: 20vh; */
+    /* font-weight: 100; */
     background: url(./assets/image.png);
     background-position: center;
     background-size: cover;
