@@ -22,6 +22,14 @@ function Page8() {
       duration: 1,
       right: "-10vw",
     }, 'a')
+    tl.to(".textui1", {
+      duration: 1,
+      left: "9vw",
+    }, 'a')
+    tl.to(".textui2", {
+      duration: 1,
+      right: "13vw",
+    }, 'a')
     tl.to(".texts", {
       opacity: 1,
       duration: 2
@@ -29,12 +37,13 @@ function Page8() {
   })
   return (
     <div className='w-full h-[100vh] bg-black page8 relative overflow-hidden '>
-      <div className="text absolute top-[10vh] left-[20vw] opacity-0 texts heading w-[55vw] text-2xl max-md:text-sm max-md:w-full max-md:left-0 ">
-        <h1 className='text-center'>The symmetrical bezels and aluminium frame adds elegance, lightness and durability</h1>
-      </div>
+    
+        <h1 className=' absolute textui1 top-[22vh] -left-[100vw]  max-md:top-[30vh] text-4xl heading  '>The symmetrical bezels and aluminium frame</h1>
+        <h1 className='absolute  textui2 top-[83vh] -right-[100vw]  max-md:w-full text-4xl heading '> adds elegance, lightness and durability</h1>
+   
       <div className='imgs'>
-        <img className=' imgs1 absolute top-[15vh] -left-[50vw] w-[60vw] max-md:w-full max-md:top-[30vh] ' src="/Page_3_img/Rectangle 93.png" alt="" />
-        <img className=' imgs2 absolute top-[50vh] -right-[50vw] w-[60vw] max-md:w-full' src="/Page_3_img/Rectangle 94.png" alt="" />
+        <img className=' imgs1 absolute top-[15vh] -left-[60vw] w-[60vw] max-md:w-full max-md:top-[30vh] ' src="/Page_3_img/Rectangle 93.png" alt="" />
+        <img className=' imgs2 absolute top-[50vh] -right-[60vw] w-[60vw] max-md:w-full' src="/Page_3_img/Rectangle 94.png" alt="" />
       </div>
     </div>
   )

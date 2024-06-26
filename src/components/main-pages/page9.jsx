@@ -47,8 +47,8 @@ function Page9() {
 
       </div>
       <div className='imgs'>
-        <img className=' imgs-1 absolute top-[20vh] max-md:top-[30vh] -left-[50vw] w-[60vw] max-md:w-full ' src="/Page_3_img/Rectangle 100.png" alt="" />
-        <img className=' imgs-2 absolute top-[50vh] -right-[50vw] w-[60vw] max-md:w-full' src="/Page_3_img/Rectangle 101.png" alt="" />
+        <img className=' imgs-1 absolute top-[20vh] max-md:top-[30vh] -left-[60vw] w-[60vw] max-md:w-full ' src="/Page_3_img/Rectangle 100.png" alt="" />
+        <img className=' imgs-2 absolute top-[50vh] -right-[60vw] w-[60vw] max-md:w-full' src="/Page_3_img/Rectangle 101.png" alt="" />
       </div>
     </div>
   )

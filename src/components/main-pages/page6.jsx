@@ -54,17 +54,18 @@ function Page6({rotate}) {
   return isMobile === false ? (
     <div ref={target2} className='w-full h-screen bg-black relative overflow-hidden'>
        <div
-            className="cube1 w-full h-full absolute top-[5vh] z-20  " >
+            className="cube1 w-full text-xl h-full absolute top-[5vh] z-20  " >
             <Cube rotate={rotate} target={target} video={video} />
         </div>
         <div className='flex items-center justify-center flex-col p-7 gap-5'>
-        <h1 className='text-2xl heading w-96 text-center text-2 opacity-0'>Outshine the Ordinary 10 Bit AMOLED Display</h1>
-        <h1 className='text-xl text-2 opacity-0'>1200nits Peak Brightness</h1>
+        <h1 className='text-3xl heading w-[50vw]  text-[#707070] text-center text-2 opacity-0'>Outshine the Ordinary 10 Bit AMOLED Display</h1>
+        <h1 className='text-xl text-2 heading opacity-0'>1200nits Peak Brightness</h1>
         </div>
         <div className=''>
-            <h1 className='text-[10vw] absolute top-[40vh] left-[17vw] heading text-black text_border2 tracking-widest text-2 opacity-0'>HDR10+</h1>
+            <h1 className='text-[13vw] absolute top-[35vh] left-[5vw] heading textww tracking-widest text-2 opacity-0'>HDR10+</h1>
         </div>
-            <img className='w-[40vw] absolute top-[70vh] left-[30vw] text-2 opacity-0 ' src="/Page_3_img/Rectangle 80.svg"  alt="" />
+            <h1 className=' absolute top-[75vh] heading left-[28vw] text-2 textyy opacity-0'>120hz</h1>
+            {/* <img className='w-[40vw] absolute top-[70vh] left-[30vw] text-2 opacity-0 ' src="/Page_3_img/Rectangle 80.svg"  alt="" /> */}
         <div>
         </div>
     </div>
@@ -81,7 +82,7 @@ function Page6({rotate}) {
         <h1 className='text-xl text-2 opacity-0'>1200nits Peak Brightness</h1>
       </div>
       <div>
-        <h1 className='text-[10vw] absolute top-[40vh] left-[17vw] heading text-black text_border2 tracking-widest text-2 opacity-0'>
+        <h1 className='text-[10vw] absolute top-[40vh] left-[17vw] textww tracking-widest text-2 opacity-0'>
           HDR10+
         </h1>
       </div>

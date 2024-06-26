@@ -96,3 +96,40 @@ html,body{
 .box:hover{
    box-shadow: 0px 0px 10px #cc71ff;
 }
+.textww{
+   -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #4d4d4d 0, rgb(255, 255, 255) 10%, #4d4d4d 20%);
+
+    /* font-size: 50vh; */
+    /* font-weight: 100; */
+    -webkit-background-clip: text;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    background-position: 0;
+    opacity: 0.3;
+    width: 100%;
+    white-space: nowrap;
+
+}
+@keyframes shine {
+   0% {
+      background-position: 0;
+  }
+  60% {
+      background-position: 500px;
+  }
+  100% {
+      background-position: 1000px;
+  }
+}
+.textyy{
+   color: #999D9C;
+    text-align: center;
+    font-size: 20vh;
+    font-weight: 100;
+    background: url(./assets/image.png);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+}

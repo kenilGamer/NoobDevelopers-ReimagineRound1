@@ -70,14 +70,14 @@ function Page7({rotate}) {
                 className="cube1 w-full h-full absolute  z-20  " >
                 <Cube rotate={rotate} target={target} video={video} />
             </div>
-            <div className='absolute top-[40vh] left-[32vw] z-50 img-1 op'>
-                <img className='img-1' src="/Page_3_img/Rectangle 83.png" width={500} alt="" />
+            <div className='absolute top-[40vh] left-[31vw] z-50 img-1 op'>
+                <img className='img-1' src="/public/enter2-hand.png " width={500} alt="" />
             </div>
 
             <div className='haedings flex items-center justify-center '>
                 <h1 className='text-center absolute top-[7vh] text-3xl text-23 heading w-[50vw] opacity-0'>Experience the Ultimate Performance with Snapdragon 778G+ chipset</h1>
-                <h1 className='text-center absolute top-[25vh] text-23 w-[50vw] opacity-0'>596815 Antutu benchmar score</h1>
-                <h1 className='text-center absolute top-[25vh] text-[15vw] text_border2 text-black heading opacity-0'>60nm</h1>
+                <h1 className='text-center absolute top-[25vh] text-23 w-[50vw] heading opacity-0'>596815 Antutu benchmar score</h1>
+                <h1 className='text-center absolute top-[20vh] text-[18vw]  textww  heading opacity-0'>60nm</h1>
             </div>
         </div>
 
@@ -96,7 +96,7 @@ function Page7({rotate}) {
             <h1 className='text-center absolute top-[25vh] text-23 w-[50vw] text-23 opacity-0'>
               596815 Antutu benchmark score
             </h1>
-            <h1 className='text-center absolute top-[40vh] text-[15vw] text_border2 text-23 text-black heading opacity-0'>
+            <h1 className='text-center textww absolute top-[40vh] text-[15vw]  text-23 heading opacity-0'>
               60nm
             </h1>
           </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='w-full h-[100vh] max-md:h-[110vh] bg-black  px-5 py-10 np relative overflow-hidden'>
+        <div className='w-full h-[100vh] max-md:h-[110vh] bg-black  px-5 py-10 sn relative overflow-hidden'>
             <div className='flex items-center justify-between max-md:flex-col '>
                 <div className=''>
                     <h1 className='heading text-[2vw] max-md:text-[4vw]'>Products</h1>

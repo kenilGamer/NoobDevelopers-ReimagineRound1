@@ -104,22 +104,22 @@ function Page4({ rotate }) {
                     whileInView="visible"
                     viewport={{ once: true }}
 
-                    className="cube w-full h-full fixed top-[26.5vh] text-lg -left-[0vw]  z-50" >
+                    className="cube w-full h-full fixed top-[30.5vh] text-lg -left-[0vw]  z-50" >
                     <Cube rotate={rotate} target={target2} video={video} />
                 </motion.div>
             </div>
             <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-5xl np">
                 <h1
-                    className="text-[#2c2b2b] shadow text-6 ">Shoot Every Detail</h1>
+                    className="text-[#dbdfde] text-6 heading">Shoot Every Detail</h1>
                 <h1
-                    className="text-[#353333] shadow text-6"> Feel Every Emotion</h1>
+                    className="text-[#dbdfde] heading text-6"> Feel Every Emotion</h1>
             </div>
 
 
             <div className="main-camera">
                 <div className="w-[5vw] h-[1px] bg-white boxs22 absolute top-[46vh] left-[38.9vw] z-50 "></div>
                 <div className="w-[3.5vw] h-[1px] bg-white boxs22 absolute top-[43.4vh] left-[35.8vw] z-50 rotate-[40deg] "></div>
-                <h1 className="text-[13vw] absolute top-[30%] text-5 -left-36 font-semibold text-[#252525] shadow -rotate-[90deg]">50 MP</h1>
+                <h1 className="text-[7vw] absolute top-[38%] text-5 -left-36 font-semibold text-[#252525] shadow heading -rotate-[90deg]">50 MP</h1>
                 <div className="box w-full min-h-full ">
                     <h1 className="absolute text-3xl text-[#646363] shadow  top-[27vh] left-[24vw] text-6">Main Camera</h1>
                     <h4 className="w-32 absolute top-[35vh] left-[27vw] text-6">50 MP Sony IMX766 sensor</h4>

@@ -93,7 +93,7 @@ const Cube = ({ rotate, rotateZ, target,video }) => {
           </div>
           <div className="face tp">
             <div className="photon-shader-tp" style={{ backgroundColor: '#afafaf' }}>
-              {video == 0 ? <img src={img6} alt="" /> :  <video className='-rotate-90 mt-[70%] scale-[2] w-full object-cover rounded-xl' muted autoPlay loop src='/game.mp4' type="video/mp4" >
+              {video == 0 ? <img src={img6} alt="" /> :  <video className='-rotate-90 mt-[70%] ml-2 scale-[2] w-full  object-cover rounded-xl' muted autoPlay loop src='/Untitled design.mp4' type="video/mp4" >
               </video>}
             </div>
           </div>
