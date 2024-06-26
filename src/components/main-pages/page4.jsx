@@ -104,7 +104,7 @@ function Page4({ rotate }) {
                     whileInView="visible"
                     viewport={{ once: true }}
 
-                    className="cube w-full min-h-full fixed top-[30%] text-lg -left-[0vw]  z-50" >
+                    className="cube w-full h-full fixed top-[26.5vh] text-lg -left-[0vw]  z-50" >
                     <Cube rotate={rotate} target={target2} video={video} />
                 </motion.div>
             </div>
@@ -191,9 +191,9 @@ function Page4({ rotate }) {
         </div>
     )
         : (
-            <div ref={cube} className="overflow-hidden page4 w-full min-h-[100vh] bg-black relative ">
+            <div ref={cube} className="overflow-hidden page4 w-full h-[100vh] bg-black relative ">
 
-                <div className="absolute w-[140vw] -right-[48vw] top-[50vh]">
+                <div className="absolute -right-[48vw] top-[50vh]">
                     {/* <img className="w-full 0 h-full scale-[1.7] object-contain" src="Nothing-Phone-1-PNG-Free-Image.png" /> */}
                     <motion.div style={{ scale: scrollYProgress }}
                     initial="hidden"
@@ -211,8 +211,8 @@ function Page4({ rotate }) {
                     <h1
                         className="text-[#353333] shadow text-6"> Feel Every Emotion</h1>
                 </div>
-                <div className=" relative top-[41%]">
-                    <div className="w-[30vw] relative boxs22">
+                <div className=" absolute top-[38vh]">
+                    <div className="w-[30vw] absolute boxs22">
                         <Box_3 w="100%" t="-10px" type="type_3" />
                         <div className="absolute w-full text-center top-0 np">
                         <h1>50 MP</h1> <h5 className="text-[2.5vw]">Sony IMX766 sensor </h5> 
@@ -221,8 +221,8 @@ function Page4({ rotate }) {
                     </div>
                 </div>
 
-                <div className=" relative top-[40%]">
-                    <div className="w-[30vw] relative boxs22">
+                <div className=" absolute top-[45vh]">
+                    <div className="w-[30vw] absolute boxs22">
                         <Box_3 w="100%" t="0px" type="type_3" />
                         <div className="absolute w-full text-center top-3 sn">
                         <h1>50 Mp</h1> <h5 className="text-[2vw]">MP Samsung JN1 sensor </h5> 
