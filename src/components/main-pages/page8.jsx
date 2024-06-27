@@ -38,8 +38,8 @@ function Page8() {
   return (
     <div className='w-full h-[100vh] bg-black page8 relative overflow-hidden '>
     
-        <h1 className=' absolute textui1 top-[22vh] -left-[100vw]  max-md:top-[30vh] text-4xl   heading max-md:text-xs  '>The symmetrical bezels and aluminium frame</h1>
-        <h1 className='absolute  textui2 top-[83vh] -right-[100vw]  text-4xl heading  max-md:text-xs'> adds elegance, lightness and durability</h1>
+        <h1 className=' absolute textui1 top-[22vh] -left-[100vw]  max-md:top-[30vh] text-4xl   heading max-md:text-xs  max-sm:text-[2.5vw]'>The symmetrical bezels and aluminium frame</h1>
+        <h1 className='absolute  textui2 top-[83vh] -right-[100vw]  text-4xl heading  max-md:text-xs max-sm:text-[2.5vw] max-sm:top-[65vh]'> adds elegance, lightness and durability</h1>
    
       <div className='imgs'>
         <img className=' imgs1 absolute top-[15vh] -left-[60vw] w-[60vw] max-md:w-full max-md:top-[30vh] ' src="/Page_3_img/Rectangle 93.png" alt="" />
