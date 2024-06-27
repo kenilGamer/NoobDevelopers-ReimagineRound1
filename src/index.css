@@ -102,7 +102,7 @@ html,body{
 
     /* font-size: 50vh; */
     /* font-weight: 100; */
-    -webkit-background-clip: text;
+    background-clip: text;
     animation: shine 3s infinite linear;
     animation-fill-mode: forwards;
     background-position: 0;
@@ -129,7 +129,8 @@ html,body{
     background-position: center;
     background-size: cover;
     color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
+
 }
 .textyy1{
    color: #999D9C;
@@ -138,5 +139,6 @@ html,body{
     background-position: center;
     background-size: cover;
     color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
+
 }
