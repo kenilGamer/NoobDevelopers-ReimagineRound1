@@ -27,14 +27,14 @@ function Nav() {
   };
 
   return isMobile == false ? (
-    <div className="w-full min-h-24 flex items-center justify-between relative overflow-hidden">
-      <div className="nav-l ">
+    <div className="w-full min-h-[15.3vh] flex items-center justify-between relative overflow-hidden">
+      <div className="nav-l">
         {/* <div className="absolute top-[1vw] left-6 logo-img"> */}
-          <img src="/Group5.svg" className="w-[20vw] absolute logo-nav top-[1vw] left-6 " alt="" />
+          <img src="/Group5.svg" className="w-[20vw] absolute logo-nav top-[2vh] left-7 " alt="" />
         {/* </div> */}
         {/* <div className="absolute top-[1.7vw] logo logo-nav left-[4.5vw]"> */}
           {/* <img src="/Rectangle 8.svg" className='w-92 top-0' alt="" /> */}
-          <h1 className="text-[3.5vw] absolute top-[1.7vw] logo logo-nav left-[4.5vw] ">NOTHING</h1>
+          <h1 className="text-[3.5vw] absolute top-[3.7vh] logo logo-nav left-[4.8vw] ">NOTHING</h1>
         {/* </div> */}
       </div>
       <div className=" flex gap-5 ml-20 items-center justify-center">
