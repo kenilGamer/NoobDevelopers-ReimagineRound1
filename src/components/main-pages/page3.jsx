@@ -102,7 +102,7 @@ useGSAP(()=>{
           top: "50%",
           left: "50%",
           transform: "translate(-50%,-50%) rotate(90deg)",
-          opacity: 0,
+          opacity: 0.3,
           duration: 3,
         },
         "a"
@@ -113,7 +113,7 @@ useGSAP(()=>{
           top: "50%",
           right: "50%",
           transform: "translate(50%,-50%) rotate(-90deg)",
-          opacity: 0,
+          opacity: 0.3,
           duration: 3,
         },
         "a"
@@ -124,7 +124,7 @@ useGSAP(()=>{
           top: "50%",
           right: "50%",
           transform: "translate(-50%,-50%) scale(1)",
-          opacity: 0,
+          opacity: 0.3,
           duration: 3,
           
         },

@@ -98,7 +98,7 @@ function Page2setup() {
         <div className="w-[2px] h-[5.7vw] absolute boxs bg-white boxs-line top-[4.96vw] left-[22.4vw] rotate-[-52deg]"></div>
       </div>
 
-      <div className="relative boxs hover:cursor-pointer hover:animate-pulse -top-[2vw]  left-[62.3vw]  w-80 rotate-180 ">
+      <div className="relative boxs hover:cursor-pointer hover:animate-pulse -top-[1vw]  left-[60.3vw]  w-80 rotate-180 ">
         <div className="absolute boxs top-[13vh] w-[16vw] h-[26vh] left-[1vw] text-3 z-30 flex flex-col gap-4 -rotate-180">
           <h1 className="text-[2.5vw] np">Chipset</h1>
           <p className="text-[1.5vw]">Snapdragon 778G+ accelerated by 5G</p>
@@ -110,7 +110,7 @@ function Page2setup() {
         <div className="w-[2px] h-[5.7vw] absolute boxs bg-white boxs-line top-[4.96vw] left-[18vw] rotate-[-52deg]"></div>
       </div>
 
-      <div className=" relative boxs hover:cursor-pointer hover:animate-pulse top-[32.3vh]  left-[67vw] bg-slate boxs-line-100 w-80 rotate-180 ">
+      <div className=" relative boxs hover:cursor-pointer hover:animate-pulse top-[30.3vh]  left-[65vw] bg-slate boxs-line-100 w-80 rotate-180 ">
         <div className="absolute boxs top-[15vh] w-[16vw] h-[26vh] bg-zinc-00 justify-center items-center left-[2vw] text-3 z-30 flex flex-col gap-4 -rotate-180">
           <h1 className="text-[2.5vw] np">Performance</h1>
           <p className="text-[1.5vw]">Essential power for speed and gaming</p>
