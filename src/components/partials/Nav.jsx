@@ -29,13 +29,8 @@ function Nav() {
   return isMobile == false ? (
     <div className="w-full min-h-[15.3vh] flex items-center justify-between relative overflow-hidden">
       <div className="nav-l">
-        {/* <div className="absolute top-[1vw] left-6 logo-img"> */}
           <img src="/Group5.svg" className="w-[20vw] absolute logo-nav top-[2vh] left-7 " alt="" />
-        {/* </div> */}
-        {/* <div className="absolute top-[1.7vw] logo logo-nav left-[4.5vw]"> */}
-          {/* <img src="/Rectangle 8.svg" className='w-92 top-0' alt="" /> */}
           <h1 className="text-[3.5vw] absolute top-[3.7vh] logo logo-nav left-[4.8vw] ">NOTHING</h1>
-        {/* </div> */}
       </div>
       <div className=" flex gap-5 ml-20 items-center justify-center">
         <div className="relative nav-c overflow-hidden mt-[.9vw] ml-[15vw] flex items-center ">
@@ -44,7 +39,7 @@ function Nav() {
           </div>
           <div className="absolute top-[.4vw] hover:animate-pulse left-[1vw] ">
             <input
-              className="bg-transparent border-none hover:animate-pulse outline-none rounded-full px-10 text-xl py-2 w-72"
+              className="bg-transparent border-none text-white hover:animate-pulse outline-none rounded-full px-10 text-xl py-2 w-72"
               color="transparent"
               placeholder="Search Here..."
               type="search"
@@ -84,8 +79,8 @@ function Nav() {
           <div key={k} className="relative nav-r hover:animate-pulse">
             <img src="/Group 1.svg" width={140} alt="" />
             <div
-              className={`absolute top-[0.46vw] text-lg  ${
-                k === 2 ? "left-[2vw]" : `left-[3.2vw]`
+              className={`absolute heading  text-md  ${
+                k === 2 ? "left-[1.2vw] top-[0.76vw]  text-sm" : `left-[2.5vw] top-[0.76vw]`
               }`}
             >
               <a href={`#${i}`}>{i}</a>

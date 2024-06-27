@@ -30,37 +30,37 @@ function App() {
 
     const scrollEl = document.querySelector("#main-section");
 
-    // const locoScroll = new LocomotiveScroll({
-    //   el: scrollEl,
-    //   smooth: true,
-    //   multiplier: 1,
-    //   lerp: 0.03,
-    //   class: "is-reveal",
-    //   tablet: {
-    //     smooth: true
-    //   },
-    //   smartphone: {
-    //     smooth: true
-    //   }
-    // });
-    const locomotiveScroll = new LocomotiveScroll({
-      lenisOptions: {
-        autoResize: true,
-        smoothScrolling: true,
-        wrapper: window,
-        content: document.documentElement,
-        lerp: 0.1,
-        duration: 4.5,
-        orientation: "vertical",
-        gestureOrientation: "vertical",
-        smoothWheel: true,
-        smoothTouch: true,
-        wheelMultiplier: 1,
-        touchMultiplier: 2,
-        normalizeWheel: true,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    const locoScroll = new LocomotiveScroll({
+      el: scrollEl,
+      smooth: true,
+      multiplier: 1,
+      lerp: 0.03,
+      class: "is-reveal",
+      tablet: {
+        smooth: true
       },
+      smartphone: {
+        smooth: true
+      }
     });
+    // const locomotiveScroll = new LocomotiveScroll({
+    //   lenisOptions: {
+    //     autoResize: true,
+    //     smoothScrolling: true,
+    //     wrapper: window,
+    //     content: document.documentElement,
+    //     lerp: 0.1,
+    //     duration: 4.5,
+    //     orientation: "vertical",
+    //     gestureOrientation: "vertical",
+    //     smoothWheel: true,
+    //     smoothTouch: true,
+    //     wheelMultiplier: 1,
+    //     touchMultiplier: 2,
+    //     normalizeWheel: true,
+    //     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    //   },
+    // });
   }, []);
 
 
