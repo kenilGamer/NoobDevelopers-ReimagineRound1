@@ -91,21 +91,21 @@ useGSAP(()=>{
         left: "50%",
         transform: "translate(-50%,-50%) rotate(90deg)",
       })
-      timeline.to(section.querySelector(".element3"), {
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%,-50%) rotate(0deg)",
-      })
+      // timeline.to(section.querySelector(".element3"), {
+      //   top: "50%",
+      //   left: "50%",
+      //   transform: "translate(-50%,-50%) rotate(0deg)",
+      // })
       timeline.to(
         section.querySelector(".element4"),
         {
           top: "50%",
           left: "50%",
           transform: "translate(-50%,-50%) rotate(90deg)",
-          opacity: 0.3,
+          opacity: 0.6,
           duration: 3,
         },
-        "a"
+        "1"
       )
       timeline.to(
         section.querySelector(".element5"),
@@ -113,10 +113,10 @@ useGSAP(()=>{
           top: "50%",
           right: "50%",
           transform: "translate(50%,-50%) rotate(-90deg)",
-          opacity: 0.3,
+          opacity: 0.6,
           duration: 3,
         },
-        "a"
+        "1"
       )
       timeline.to(
         section.querySelector(".element6"),
@@ -124,25 +124,19 @@ useGSAP(()=>{
           top: "50%",
           right: "50%",
           transform: "translate(-50%,-50%) scale(1)",
-          opacity: 0.3,
+          opacity: 0.6,
           duration: 3,
           
         },
-        "a"
+        "1"
       )
-      timeline.to(section.querySelector(".element3"), {
-        top: "80%",
-        left: "60%",
-        transform: "translate(-50%,-50%) rotate(0deg) scale(2)",
-      })
-      timeline.to(cube1.current, {
-        opacity: 0
-      })
-      timeline.to(section.querySelector(".element3"), {
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%,-50%) rotate(0deg) scale(1)",
-      })
+      // timeline.to(section.querySelector(".element3"), {
+      //   top: "80%",
+      //   left: "60%",
+      //   transform: "translate(-50%,-50%) rotate(0deg) scale(2)",
+      // })
+      
+     
     
 })
   const showfront = () => {
@@ -153,12 +147,19 @@ useGSAP(()=>{
 
   return (
     <div ref={target} className="relative page w-full h-[200vh]">
+      
     <div className="page3 w-full min-h-[100vh] overflow-hidden ">
       <div
         ref={sectionRef}
         className="my-section w-full h-full relative bg-black"
       >
-        <div className="element4 w-[60vw] max-md:w-full  h-auto absolute top-[50%] left-[-20%] max-md:-left-[60%] -translate-x-1/2 -translate-y-1/2 rotate-90 z-[12]">
+         <div
+          ref={cube1}
+          className="cube w-full max-md:text-xs min-h-full absolute top-[70vh] -left-[55vw] rotate-45 z-10 " >
+          <Cube rotate={rotate}  video={video} />
+        </div>
+  
+        <div className="element4 w-[60vw] max-md:w-full  h-auto absolute top-[50%] left-[-20%] max-md:-left-[60%] -translate-x-1/2 -translate-y-1/2 rotate-90 z-[8]">
           <img
             id="page_3_moin_img"
             src={"../Page_3_img/water.png"}
@@ -177,14 +178,7 @@ useGSAP(()=>{
             IP53
           </h1>
         </div>
-
-        <div
-          ref={cube1}
-          className="cube w-full max-md:text-xs min-h-full absolute top-[70vh] -left-[55vw] rotate-45 " >
-          <Cube rotate={rotate}  video={video} />
-        </div>
       </div>
-      {/* page3 end */}
     </div>
 
 
