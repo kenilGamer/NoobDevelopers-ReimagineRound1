@@ -64,7 +64,7 @@ function Page6({rotate}) {
         <div className=''>
             <h1 className='text-[13vw] absolute top-[35vh] left-[5vw] heading textww tracking-widest text-2 opacity-0'>HDR10+</h1>
         </div>
-            <h1 className=' absolute top-[75vh] heading left-[28vw] text-2 textyy opacity-0'>120hz</h1>
+            <h1 className=' absolute top-[75vh] heading left-[30vw] text-2 textyy text-[8vw] opacity-0'>120hz</h1>
             {/* <img className='w-[40vw] absolute top-[70vh] left-[30vw] text-2 opacity-0 ' src="/Page_3_img/Rectangle 80.svg"  alt="" /> */}
         <div>
         </div>
@@ -86,7 +86,7 @@ function Page6({rotate}) {
           HDR10+
         </h1>
       </div>
-      <h1 className=' absolute top-[67vh] left-[2vw] heading text-[20vw] textyy opacity-100'>120hz</h1>
+      <h1 className=' absolute top-[67vh] left-[2vw] heading text-[20vw] textyy opacity-100'>120HZ</h1>
       {/* <img className='w-[100vw] absolute top-[60vh] left-[50%] -translate-x-1/2 text-2 opacity-0' src="/Page_3_img/Rectangle 80.svg" alt="" /> */}
     </div>
   );
