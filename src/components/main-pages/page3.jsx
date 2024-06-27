@@ -45,7 +45,7 @@ const Page3 = ({rotate}) => {
     
 
     
-  //   // gsap.to(".cube", {
+  //   // gsaptimeline.to(".cube", {
   //   //   top: 200,
   //   //   fontSize: "120%",
   //   //   ease: "none",
@@ -69,29 +69,34 @@ useGSAP(()=>{
         trigger: ".page3",
         start: "top 0%",
         end: "top -100%",
-        scrub: 3,
+        scrub: 5,
         // markers:true,
         pin: true,
       },
     });
 
-    timeline
-      .to(".btn", {
+    timeline.to(cube1.current, {
+      top: 0,
+      rotate: 0,
+      left: 0,
+      duration: 3,
+    })
+      timeline.to(".btn", {
         opacity: 1,
         duration: 1,
         ease: "power3.out",
       })
-      .to(section.querySelector(".element3"), {
+      timeline.to(section.querySelector(".element3"), {
         top: "50%",
         left: "50%",
         transform: "translate(-50%,-50%) rotate(90deg)",
       })
-      .to(section.querySelector(".element3"), {
+      timeline.to(section.querySelector(".element3"), {
         top: "50%",
         left: "50%",
         transform: "translate(-50%,-50%) rotate(0deg)",
       })
-      .to(
+      timeline.to(
         section.querySelector(".element4"),
         {
           top: "50%",
@@ -102,7 +107,7 @@ useGSAP(()=>{
         },
         "a"
       )
-      .to(
+      timeline.to(
         section.querySelector(".element5"),
         {
           top: "50%",
@@ -113,7 +118,7 @@ useGSAP(()=>{
         },
         "a"
       )
-      .to(
+      timeline.to(
         section.querySelector(".element6"),
         {
           top: "50%",
@@ -125,30 +130,20 @@ useGSAP(()=>{
         },
         "a"
       )
-      .to(section.querySelector(".element3"), {
+      timeline.to(section.querySelector(".element3"), {
         top: "80%",
         left: "60%",
         transform: "translate(-50%,-50%) rotate(0deg) scale(2)",
       })
-      .to(cube1.current, {
+      timeline.to(cube1.current, {
         opacity: 0
       })
-      .to(section.querySelector(".element3"), {
+      timeline.to(section.querySelector(".element3"), {
         top: "50%",
         left: "50%",
         transform: "translate(-50%,-50%) rotate(0deg) scale(1)",
       })
-      gsap.to(cube1.current, {
-        top: 0,
-        rotate: 0,
-        left: 0,
-        scrollTrigger: {
-          trigger: ".page3",
-          start: "top 0%",
-          end: "top -100%",
-          scrub: 2,
-        },
-      });
+    
 })
   const showfront = () => {
     setRotate(rotate === '1' ? '0' : '1');
@@ -178,7 +173,7 @@ useGSAP(()=>{
           />
         </div>
         <div className="element6 w-[100vw] h-auto absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-row justify-center items-center scale-0 z-[0]">
-          <h1 className="heading text_border text-black  text-[22vw] font-medium">
+          <h1 className="heading textyy1  text-[22vw] font-medium">
             IP53
           </h1>
         </div>

@@ -131,3 +131,12 @@ html,body{
     color: transparent;
     -webkit-background-clip: text;
 }
+.textyy1{
+   color: #999D9C;
+    text-align: center;
+    background: url(/10628409-water-droplets-on-a-metal-surface.jpg);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+}
