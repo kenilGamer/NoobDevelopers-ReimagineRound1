@@ -7,6 +7,7 @@ import Box_3 from "../partials/Box_3"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 function Page4({ rotate }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile2, setIsMobile2] = useState(window.innerWidth <= 360);
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
@@ -191,28 +192,36 @@ function Page4({ rotate }) {
         </div>
     )
         : (
-            <div ref={cube} className="overflow-hidden page4 w-full h-[100vh] bg-black heading relative ">
+            <div ref={cube} className="overflow-hidden page4 w-full h-[100vh] bg-black  heading relative ">
 
-<motion.div style={{ scale: scrollYProgress }}
+               {isMobile2 === true ? (<motion.div style={{ scale: scrollYProgress }}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
 
-                    className="cube w-full min-h-full fixed top-[26.8vh] text-2xl left-[36vw]" >
+                    className="cube w-full min-h-full fixed top-[26.8vh] bg-red-700   text-2xl left-[36vw]" >
                     <Cube rotate={rotate} target={target2} video={video} />
-                </motion.div>
-                  
+                </motion.div> ): 
+                ( <motion.div style={{ scale: scrollYProgress }}
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true }}
+
+                 className="cube w-full min-h-full fixed top-[24.8vh] left-[34vw]  text-2xl " >
+                 <Cube rotate={rotate} target={target2} video={video} />
+             </motion.div>)}
+
                 <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-2xl text_h1">
                     <h1
                         className="text-[#dbdfde]  text-6  ">Shoot Every Detail</h1>
                     <h1
                         className="text-[#dbdfde] text-6"> Feel Every Emotion</h1>
                 </div>
-                <div className=" absolute top-[38vh] max-sm:top-[36vh] max-md:top-20">
+                <div className={`absolute ${isMobile2 === true ? "top-[38vh]": "top-[37vh]"}`} >
                     <div className="w-[30vw] absolute boxs22">
                         <Box_3 w="100%" t="-10px" type="type_3" />
                         <div className="absolute w-full text-center top-0 np">
-                        <h4 className="w-20 text-[2.8vw] ml-[4.1vw] text-6">50 MP Sony IMX766 sensor</h4>
+                            <h4 className="w-20 text-[2.8vw] ml-[4.1vw] text-6">50 MP Sony IMX766 sensor</h4>
                         </div>
                         <div className=" absolute -top-[5.4vw] -right-[10vw] w-[1px] h-[22vw] rotate-90 bg-white"></div>
                     </div>
@@ -222,7 +231,7 @@ function Page4({ rotate }) {
                     <div className="w-[30vw] absolute boxs22">
                         <Box_3 w="100%" t="0px" type="type_3" />
                         <div className="absolute w-full text-center top-2 sn">
-                        <h4 className="w-20 ml-[4.1vw] mt-1 text-[2.8vw] text-6">50 MP Samsung JN1 sensor</h4>
+                            <h4 className="w-20 ml-[4.1vw] mt-1 text-[2.8vw] text-6">50 MP Samsung JN1 sensor</h4>
                         </div>
                         <div className="absolute -top-[6vw] -right-[10vw] w-[1px] h-[22vw] rotate-90 bg-white"></div>
                     </div>

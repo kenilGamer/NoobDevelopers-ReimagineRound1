@@ -142,3 +142,9 @@ html,body{
     background-clip: text;
 
 }
+.shadow32{
+   box-shadow: 5px 5px  12px #636060;
+   background: #b1aaaa;
+   filter: blur(120px);
+   -webkit-filter: blur(120px);
+}
