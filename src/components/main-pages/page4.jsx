@@ -105,7 +105,7 @@ function Page4({ rotate }) {
                     whileInView="visible"
                     viewport={{ once: true }}
 
-                    className="cube w-full h-full fixed top-[30.5vh] text-xl -left-[0vw]  z-50" >
+                    className="cube w-full h-full fixed top-[30vh] text-lg -left-[0vw]  z-50" >
                     <Cube rotate={rotate} target={target2} video={video} />
                 </motion.div>
             </div>
@@ -199,7 +199,7 @@ function Page4({ rotate }) {
                     whileInView="visible"
                     viewport={{ once: true }}
 
-                    className="cube w-full min-h-full fixed top-[26.8vh] bg-red-700   text-2xl left-[36vw]" >
+                    className="cube w-full min-h-full fixed top-[26.8vh] text-2xl left-[36vw]" >
                     <Cube rotate={rotate} target={target2} video={video} />
                 </motion.div> ): 
                 ( <motion.div style={{ scale: scrollYProgress }}
@@ -207,7 +207,7 @@ function Page4({ rotate }) {
                  whileInView="visible"
                  viewport={{ once: true }}
 
-                 className="cube w-full min-h-full fixed top-[24.8vh] left-[34vw]  text-2xl " >
+                 className="cube w-full min-h-full fixed top-[31.8vh] left-[34vw]  text-2xl rs " >
                  <Cube rotate={rotate} target={target2} video={video} />
              </motion.div>)}
 
@@ -227,7 +227,7 @@ function Page4({ rotate }) {
                     </div>
                 </div>
 
-                <div className=" absolute top-[45vh]">
+                <div className={`absolute ${isMobile2 === true ? "top-[45vh]": "top-[47vh]"}`}>
                     <div className="w-[30vw] absolute boxs22">
                         <Box_3 w="100%" t="0px" type="type_3" />
                         <div className="absolute w-full text-center top-2 sn">

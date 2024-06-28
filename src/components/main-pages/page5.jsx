@@ -79,7 +79,7 @@ function Page5({rotate}) {
          </div>
         </div>
       ) : (
-        <div className={`absolute ${isMobile2 === true ? "top-[21.5vh]":"top-[22.7vh]"}`}>
+        <div className={`absolute ${isMobile2 === true ? "top-[21.5vh]":"top-[18vh]"}`}>
           <div className='w-[30vw] relative boxs1'>
             <Box_3   w='100%' t='-2vh' type='type_3' />
             <div className='absolute w-full text-center sn top-0'>

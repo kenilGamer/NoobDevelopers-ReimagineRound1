@@ -67,7 +67,7 @@ function App() {
 
 
   return (
-    <div id='main-section' className='w-full h-screen text-white select-none  bg-black ' >
+    <div id='main-section' className='w-full scroll-smooth h-screen text-white select-none  bg-black ' >
       <Home  />
       <Page2 />
       <Page3 rotate={rotate}/>
