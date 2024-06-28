@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../footer.css';
 import gsap from 'gsap';
 
-const Footer = () => {
+const Footer1 = () => {
   const [displayDetails, setDisplayDetails] = useState(false);
   const [capacityDetails, setCapacityDetails] = useState(false);
   const [dimensionsDetails, setDimensionsDetails] = useState(false);
@@ -22,6 +22,7 @@ const Footer = () => {
 
   const handleToggle = (setter, current) => {
     setter(!current);
+    console.log( current );
   };
 
   useEffect(() => {
@@ -427,4 +428,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer1;

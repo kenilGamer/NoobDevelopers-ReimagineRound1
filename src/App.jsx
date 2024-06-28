@@ -17,6 +17,7 @@ import Page10 from './components/main-pages/page10';
 import Page11 from './components/main-pages/page11';
 import Page12 from './components/main-pages/Page12';
 import Footer from './components/main-pages/footer';
+import Footer1 from './components/main-pages/footer';
 
 function App() {
   const [rotate, setRotate] = useState("0");
@@ -79,7 +80,8 @@ function App() {
       {/* <Page10/> */}
       {/* <Page11/>
       <Page12/> */}
-      <Footer/>
+      <Footer1/>
+      {/* <Footer/> */}
       <button title="rotate a phone for a 3d model " className="px-7  max-md:hidden py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
 
     </div>
