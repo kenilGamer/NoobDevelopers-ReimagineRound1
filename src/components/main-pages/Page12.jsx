@@ -19,7 +19,6 @@ function Page12() {
             <p className='w-48 ml-6 max-md:text-xs'> Slo-mo (120 fps) Night Mode  (720p/1080p at 30 fps) OIS and EIS image stabilisation</p>
           </div>
         </div>
-
       </div>
       <div className='w-1/2 max-md:w-full h-full'>
         {/* <h1 className=' text-center heading text-4xl max-md:text-xl'>Camera</h1> */}

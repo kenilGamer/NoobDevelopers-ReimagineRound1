@@ -1,10 +1,7 @@
 @font-face {
     font-family: sf-pro;
-    src: url(./korataki-rg-3cf0d889.ttf);
+    src: url(/korataki/korataki-rg-3cf0d889.ttf);
 }
-
-
-
 .foot-design-section>h1{
     font-size: 3vw;
     font-weight: 900;
@@ -41,8 +38,6 @@
 .foot-elem-box{
     border-bottom: 2px solid white;
 }
-
-/* camera section */
 .foot-camera-section{
     width: 100%;
     margin-top:5vw;
@@ -62,7 +57,6 @@
 }
 .foot-camera-details{
     display: flex;
-    /* justify-content: space-between; */
     gap: 10vw;
 }
 .foot-elem2 .foot-heading h1 {
@@ -81,7 +75,6 @@
 }
 .footer-top{
     width: 100%;
-    /* background: rgb(70, 110, 110); */
     display: grid;
     grid-template-columns: 20% 20% 20% 30% ;
     grid-row: 20% 20% 20% ;
@@ -152,15 +145,12 @@
     font-size: .8vw;
     font-weight: 100;
 }
-
-
 @media (max-width: 600px){
     .foot-bottom{
         overflow-x: hidden;
     }
     .foot-design-section{
         width: 100%;
-        /* background: red; */
     }
     .foot-design-section>h1{
         font-size: 5vh;

@@ -34,6 +34,7 @@ function Page2() {
     })
     
   })
+  
   return (
     <div  className='w-full  page2 h-[100vh] overflow-hidden bg-black flex items-center relative '>
         <Page2setup/>

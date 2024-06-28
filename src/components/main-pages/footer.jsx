@@ -32,16 +32,16 @@ const Footer = () => {
         const isOpen = details.style.height === 'auto';
         gsap.to(details, {
           height: isOpen ? '0vh' : 'auto',
-          duration: 0.3,
+          duration: 0.7,
         });
       });
     });
   }, []);
 
   return (
-    <div className="foot-bottom np">
+    <div className="foot-bottom heading">
       <div className="foot-design-section">
-        <h1>Design</h1>
+        <h1 className='heading'>Design</h1>
         <div className="foot-design-elem">
           <div className="foot-elem" onClick={() => handleToggle(setDisplayDetails, displayDetails)}>
             <div className="foot-heading">
