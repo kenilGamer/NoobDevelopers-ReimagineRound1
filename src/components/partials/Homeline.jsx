@@ -44,21 +44,20 @@ function Homeline({isMobile}) {
     
         {/* mobile */}
 
-       <div><img className='mobile1 absolute w-[70vw]  top-[50vw] left-[25vw] z-20 ' src="/Rectangle_13-removebg-preview.png" alt="" /></div>
-       <div><img className='mobile2  absolute w-[190vw]  top-[30vw] left-[0vw] z-110 ' src="/Rectangle 11.svg" alt="" /></div> 
-
+        <div className="-rotate-[32deg] z-20 absolute top-[90vw] left-[40vw]"><img className='mobile1  w-[32vw]  z-20 ' src="/Page_3_img/BA_ABR_300_1001.png" alt="" /></div>
+        <div  className=' -rotate-[32deg] mobile2 absolute top-[80vw] left-[28vw] z-10'><img className='mobile1  w-[32vw]  z-10 ' src="/Page_3_img/Rectangle 41.png" alt="" /></div> 
         {/* end lines*/}
         <div className=' line11 h-[2px] line-2 w-[0vw] absolute top-[35vw] left-[0vw] bg-white scale-0 '></div>
         <div className=' line12 h-[2px] line-2 w-[0vw] absolute top-[33.59vw] left-[43.48vw] bg-white rotate-[144.8deg] scale-0'></div>
         <div className=' line13 h-[2px] line-2 w-[0vw] absolute top-[32.2vw] left-[47.9vw] bg-white scale-0'></div>
         {/* text */}
         <div className='w-full h-full'>
-        <div className='heading absolute top-[10vw] left-[3vw] text-center w-[100vw]'>
+        <div className='heading absolute top-[15vw] left-[3vw] text-center w-[100vw]'>
           <h1 className='heading1 text-[5vw]'>NOTHING PHONE (1)</h1>
           <h1 className='heading2 text-[5vw]'>PURE INSTINCT</h1>
         </div>
-        <div className='absolute top-[32vw] left-[6vw] overflow-hidden '>
-          <h5 className='logo end2 text-2xl tracking-wider opacity-80'>SNAPDRAGON 778g+ | 50 MP Dual camera</h5>
+        <div className='absolute top-[42vw] left-[6vw] overflow-hidden '>
+          <h5 className='logo end2 text-2xl tracking-wider opacity-80 text-center'>SNAPDRAGON 778g+ | 50 MP Dual camera</h5>
         </div>
         </div>
     </div>

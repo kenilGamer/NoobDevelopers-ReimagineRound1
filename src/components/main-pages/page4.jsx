@@ -193,13 +193,15 @@ function Page4({ rotate }) {
         : (
             <div ref={cube} className="overflow-hidden page4 w-full h-[100vh] bg-black heading relative ">
 
-                <div className="absolute ">
-                    {/* <img className="w-full 0 h-full scale-[1.7] object-contain" src="Nothing-Phone-1-PNG-Free-Image.png" /> */}
-                    <div className="cube w-full min-h-full fixed top-[26.8vh] text-2xl left-[36vw]  " >
-                    <Cube rotate={rotate} target={target2} video={video} />
-                </div>
-                </div>
+<motion.div style={{ scale: scrollYProgress }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
 
+                    className="cube w-full min-h-full fixed top-[26.8vh] text-2xl left-[36vw]" >
+                    <Cube rotate={rotate} target={target2} video={video} />
+                </motion.div>
+                  
                 <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-2xl text_h1">
                     <h1
                         className="text-[#dbdfde]  text-6  ">Shoot Every Detail</h1>

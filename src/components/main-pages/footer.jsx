@@ -201,7 +201,7 @@ const Footer1 = () => {
         </div>
       </div>
 
-      <div className="Features foot-design-section">
+      <div className="Features foot-design-section mt-3">
         <h1>Features</h1>
         <div className="foot-design-elem">
           <div className="foot-elem" onClick={() => handleToggle(setBatteryDetails, batteryDetails)}>
@@ -250,7 +250,7 @@ const Footer1 = () => {
             </div>
           </div>
 
-          <div className="foot-elem foot-elem-box" onClick={() => handleToggle(setUnlockDetails, unlockDetails)}>
+          <div className="foot-elem " onClick={() => handleToggle(setUnlockDetails, unlockDetails)}>
             <div className="foot-heading">
               <h1>Unlock</h1>
             </div>
@@ -262,10 +262,8 @@ const Footer1 = () => {
             </div>
           </div>
         </div>
-      </div>  
-      <div className="footer">
-        <div className="foot-left">
-          <div className="foot-left-sect">
+
+         
             <div className="foot-elem" onClick={() => handleToggle(setAudioDetails, audioDetails)}>
               <div className="foot-heading">
                 <h1>Audio</h1>
@@ -319,8 +317,11 @@ const Footer1 = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
+          
+
+      </div>  
+      <div className="footer">
+       
 
         
         <div class="footer">
@@ -361,68 +362,23 @@ const Footer1 = () => {
           </div>
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-bottom relative">
           <h3><a href="">Privacy Policy</a></h3>
           <h3><a href="">Warranty Policy</a></h3>
           <h3><a href="">Acceptable Use Policy</a></h3>
           <h3><a href="">User Agreement</a></h3>
-          <div class="icons">
-            <a href=""><i class="ri-instagram-line"></i></a>
-            <a href=""><i class="ri-youtube-line"></i></a>
-            <a href=""><i class="ri-twitter-x-line"></i></a>
-            <a href=""><i class="ri-tiktok-fill"></i></a>
-            <a href=""><i class="ri-discord-fill"></i></a>
+          <div class="absolute top-16 left-[45vw] flex gap-4 ">
+            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-instagram-line"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-youtube-line"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-twitter-x-line"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-tiktok-fill"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-discord-fill"></i></a>
           </div>
-          <h4><a href="">India</a></h4>
+          <h4 className='absolute top-[25vh]  left-[50vw]'><a href="">India</a></h4>
         </div>
-        <h5>Redesign and Develop by Noob Developers Team</h5>
+        <h5 className='-mt-8'>Redesign and Develop by Noob Developers Team</h5>
       </div>
-        {/* <div className="foot-right">
-          <div className="foot-right-sect">
-            <div className="foot-right-heading">
-              <h1>Company</h1>
-            </div>
-            <ul>
-              <li>About</li>
-              <li>Newsroom</li>
-              <li>Careers</li>
-              <li>Nothing Community</li>
-            </ul>
-          </div>
-          <div className="foot-right-sect">
-            <div className="foot-right-heading">
-              <h1>Products</h1>
-            </div>
-            <ul>
-              <li>Phone (1)</li>
-              <li>Ear (1)</li>
-              <li>Accessories</li>
-            </ul>
-          </div>
-          <div className="foot-right-sect">
-            <div className="foot-right-heading">
-              <h1>Support</h1>
-            </div>
-            <ul>
-              <li>Help Center</li>
-              <li>Contact Us</li>
-              <li>Product Support</li>
-              <li>Warranty</li>
-              <li>Service Centers</li>
-            </ul>
-          </div>
-          <div className="foot-right-sect">
-            <div className="foot-right-heading">
-              <h1>Follow Us</h1>
-            </div>
-            <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>YouTube</li>
-            </ul>
-          </div>
-        </div> */}
+      
       </div>
     </div>
   );
