@@ -320,6 +320,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        
         <div class="footer">
         <div class="footer-top">
           <div class="links">

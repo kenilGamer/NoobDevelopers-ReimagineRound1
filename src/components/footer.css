@@ -221,11 +221,11 @@
     }
     .footer{
         width: 100%;
-        height: 100vh;
+        height: 140vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 5vh;
+        /* margin-top: 5vh; */
         background-color: #000;
     }
     .footer-top{
@@ -235,21 +235,22 @@
         grid-template-columns: 25% 25% 25% 30% ;
         grid-row: 25% 25% 25% ;
         gap: 12vw;
-        margin-top: 10vh;
+        padding: 0 2vh;
+        /* margin-top: 10vh; */
        
     }
     .footer .links h1{
         position: relative;
         color: white;
         font-size: 1.7vh;
-        margin-bottom: 1.2vw;   
+        /* margin-bottom: 1.2vw;    */
         font-weight: 100;
-       left:-20%;
+       /* left:-20%; */
         top: 60%;
     }
     .footer .email h1{
         position: relative;
-        left: -370%;
+        left: -330%;
         color: white;
         margin-bottom: 1.2vw;   
         font-weight: 100;
@@ -264,9 +265,9 @@
         font-weight: 100;
         font-size: 1vh;
         font-weight: 100;
-        top: 70%;
+        top: 60%;
         width: 100%;
-        left: -20%;
+        /* left: -20%; */
     }
     .footer .links h4 a{
         text-decoration: none;
@@ -288,8 +289,6 @@
         border-top: 2px solid #fff;
         display: flex;
         flex-direction: column;
-        padding: 7vh 2vw;
-        gap: 4vw;
         justify-content: space-between;
     }
     .footer-bottom h3{
