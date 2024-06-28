@@ -26,8 +26,9 @@
 }
 .foot-details{
     overflow: hidden;
-    background: #999d9c;
+    background: #000000;
     height: 0vh;
+    touch-action: cross-slide-x;
 }
 .foot-details p{
     line-height: 2vw;
@@ -176,13 +177,14 @@
     }
     .foot-details{
         overflow: hidden;
-        background: #999d9c;
+        background: #000000;
         height: 0vh;
+        /* transition: all 0.7s ease; */
     }
     .foot-details p{
         line-height: 5vw;
         padding: 2vw 18vw 0 3vw;
-        color: black;
+        color: rgb(255, 255, 255);
         height: fit-content;
         font-size: 2.2vw;
     }
