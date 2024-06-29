@@ -19,6 +19,7 @@ import Page12 from './components/main-pages/Page12';
 import Footer from './components/main-pages/footer';
 import Footer1 from './components/main-pages/footer';
 import Loader from './components/main-pages/loader';
+import Footer2 from './components/main-pages/footer2';
 
 function App() {
   const [rotate, setRotate] = useState("0");
@@ -26,46 +27,6 @@ function App() {
     setRotate(rotate === '1' ? '0' : '1');
   };
   const scrollRef = useRef(null);
-
-
-  useEffect(() => {
-
-    const scrollEl = document.querySelector("#main-section");
-
-    // const locoScroll = new LocomotiveScroll({
-    //   el: scrollEl,
-    //   smooth: true,
-    //   multiplier: 1,
-    //   lerp: 0.03,
-    //   class: "is-reveal",
-    //   tablet: {
-    //     smooth: true
-    //   },
-    //   smartphone: {
-    //     smooth: true
-    //   }
-    // });
-    const locomotiveScroll = new LocomotiveScroll({
-      lenisOptions: {
-        autoResize: true,
-        smoothScrolling: true,
-        wrapper: window,
-        content: document.documentElement,
-        lerp: 0.1,
-        duration: 4.5,
-        orientation: "vertical",
-        gestureOrientation: "vertical",
-        smoothWheel: true,
-        smoothTouch: true,
-        wheelMultiplier: 1,
-        touchMultiplier: 2,
-        normalizeWheel: true,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      },
-    });
-  }, []);
-
-
 
   return (
     <div id='main-section' className='w-full scroll-smooth h-screen text-white select-none  bg-black ' >
@@ -82,8 +43,9 @@ function App() {
       {/* <Page10/> */}
       {/* <Page11/>
       <Page12/> */}
-      <Footer1/>
+      {/* <Footer1/> */}
       {/* <Footer/> */}
+      <Footer2/>
       <button title="rotate a phone for a 3d model " className="px-7  max-md:hidden py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
 
     </div>
