@@ -201,3 +201,90 @@ html,body{
        opacity: 0;
    }
 }
+.page4-1{
+   top: 26.8vh;
+}
+@media only screen and (min-width: 375px){
+   .page4-1{
+      top: 26vh;
+   }
+   .page5-1{
+      top: 23vh;
+   } 
+}
+@media only screen and (min-width: 393px){
+   .page4-1{
+      top: 31vh;
+      left: 33vw;
+   }
+   .page5-1{
+      top: 20vh;
+      left: 1vw;
+   } 
+}
+@media only screen and (min-width: 390px){
+   .page4-1{
+      top: 22.8vh;
+      left: 33vw;
+   }
+   .page5-1{
+      top: 25vh;
+      left: 2vw;
+   } 
+   .page4-2{
+      /* width: 32vw; */
+      font-size: 2vw;
+      margin: 1vh 2.5vh;
+   }
+}
+@media only screen and (min-width: 430px){
+   .page4-1{
+      top: 21vh;
+      left: 30vw;
+   }
+   .page5-1{
+      top: 27vh;
+      left: 4vw;
+   } 
+   .page4-2{
+      /* width: 32vw; */
+      font-size: 2vw;
+      margin: 1vh 2.5vh;
+   }
+}
+@media only screen and (min-width: 412px){
+   .page4-1{
+      top: 21vh;
+      left: 30vw;
+   }
+   .page5-1{
+      top: 27vh;
+      left: 4vw;
+   } 
+   .page4-2{
+      /* width: 32vw; */
+      font-size: 2vw;
+      margin: 1vh 1.5vh;
+   }
+}
+@media only screen and (min-width: 716px){
+   .page4-1{
+      font-size: 4vw;
+      top: 27vh;
+      left: 22vw;
+   }
+   .page5-1{
+      top: 27vh;
+      left: 4vw;
+   } 
+   .page4-2{
+      width: 25vw;
+      font-size: 2vw;
+      margin: 2.5vh 1.5vh;
+   }
+   .page5-2{
+      font-size: 3vw;
+      top: 8vh;
+      left: -3vw;
+   }
+}

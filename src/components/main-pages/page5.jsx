@@ -56,7 +56,7 @@ function Page5({rotate}) {
   })
   return (
     <div ref={target2} className='w-full h-screen bg-black relative overflow-hidden'>
-      <div className={`cube w-full h-full absolute ${isMobile ? 'translate-x-[18vw]' : '-left-[10vw]'}`}>
+      <div className={`cube w-full h-full absolute ${isMobile ? 'translate-x-[18vw] page5-2' : '-left-[10vw]'}`}>
         <Cube rotate={rotate} target={target} video={video} />
       </div>
       {isMobile == false ? (
@@ -79,11 +79,11 @@ function Page5({rotate}) {
          </div>
         </div>
       ) : (
-        <div className={`absolute ${isMobile2 === true ? "top-[21.5vh]":"top-[18vh]"}`}>
+        <div className={`absolute page5-1 top-[21.5vh]`}>
           <div className='w-[30vw] relative boxs1'>
             <Box_3   w='100%' t='-2vh' type='type_3' />
             <div className='absolute w-full text-center sn top-0'>
-              <h1 className='text-[2.5vw]'>16 MP Sony IMX471 sensor</h1>
+              <h1 className='text-[2.5vw] page5-2'>16 MP Sony IMX471 sensor</h1>
             </div>
             <div className='absolute -top-[4.6vw] -right-[7vw] w-[1px] h-[16vw] rotate-90 bg-white'></div>
           </div>
