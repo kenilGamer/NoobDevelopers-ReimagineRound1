@@ -81,11 +81,11 @@ useGSAP(()=>{
       left: 0,
       duration: 3,
     })
-      timeline.to(".btn", {
-        opacity: 1,
-        duration: 1,
-        ease: "power3.out",
-      })
+      // timeline.to(".btn", {
+      //   opacity: 1,
+      //   duration: 1,
+      //   ease: "power3.out",
+      // })
       timeline.to(section.querySelector(".element3"), {
         top: "50%",
         left: "50%",

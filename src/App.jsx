@@ -27,7 +27,17 @@ function App() {
     setRotate(rotate === '1' ? '0' : '1');
   };
   const scrollRef = useRef(null);
-
+useGSAP(()=>{
+  gsap.to(".btn", {
+    opacity: 1,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".page3",
+      scrub: 2
+    },
+  })
+})
   return (
     <div id='main-section' className='w-full scroll-smooth h-screen text-white select-none  bg-black ' >
       <Loader/>
