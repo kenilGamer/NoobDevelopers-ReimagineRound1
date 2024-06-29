@@ -18,6 +18,7 @@ import Page11 from './components/main-pages/page11';
 import Page12 from './components/main-pages/Page12';
 import Footer from './components/main-pages/footer';
 import Footer1 from './components/main-pages/footer';
+import Loader from './components/main-pages/loader';
 
 function App() {
   const [rotate, setRotate] = useState("0");
@@ -68,6 +69,7 @@ function App() {
 
   return (
     <div id='main-section' className='w-full scroll-smooth h-screen text-white select-none  bg-black ' >
+      <Loader/>
       <Home  />
       <Page2 />
       <Page3 rotate={rotate}/>

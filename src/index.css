@@ -148,3 +148,57 @@ html,body{
    filter: blur(120px);
    -webkit-filter: blur(120px);
 }
+#loader{
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   z-index: 999;
+   position: fixed;
+   top: 0;
+   transition: all linear 0.3s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+#loader h1{
+   color: transparent;
+   font-family: kor;
+   font-size: 4vw;
+   letter-spacing: 1.5px;
+   position: absolute;
+   background-image: linear-gradient(to right, #d7d7d7 0%, #353535 74%);
+   -webkit-background-clip: text;
+   opacity: 0;
+   animation-name: load;
+   
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+   animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+   animation-delay: 3s;
+}
+#loader h1:nth-child(4){
+   animation-delay: 4s;
+}
+#loader h1:nth-child(5){
+   animation-delay: 5s;
+}
+@keyframes load {
+   0%{
+       opacity: 0;
+   }
+   10%{
+       opacity: 1;
+   }
+   90%{
+       opacity: 1;
+   }
+   100%{
+       opacity: 0;
+   }
+}

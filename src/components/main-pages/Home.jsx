@@ -5,7 +5,9 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 function Home() {
   
-  const tl5 = gsap.timeline();
+  const tl5 = gsap.timeline({
+    delay: "5400ms"
+  });
   
   useGSAP(() => {
     // tl5.from(".logo-img",{
