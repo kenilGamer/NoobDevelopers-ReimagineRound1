@@ -37,6 +37,15 @@ useGSAP(()=>{
       scrub: 2
     },
   })
+  gsap.to(".btn", {
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".page9",
+      scrub: 2
+    },
+  })
 })
   return (
     <div id='main-section' className='w-full scroll-smooth h-screen text-white select-none  bg-black ' >
