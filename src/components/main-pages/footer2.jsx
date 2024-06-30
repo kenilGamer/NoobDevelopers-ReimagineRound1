@@ -243,33 +243,33 @@ const Footer2 = () => {
         <div class="footer-top">
           <div class="links">
             <h1>Products</h1>
-            <h4><a href="">Phone (2a)</a></h4>
-            <h4><a href="">Phone (2)</a></h4>
-            <h4><a href="">Ear (a)</a></h4>
-            <h4><a href="">Ear</a></h4>
-            <h4><a href="">Accessories</a></h4>
-            <h4><a href="">Apparel</a></h4>
+            <h4><a href="https://nl.nothing.tech/products/phone-2a">Phone (2a)</a></h4>
+            <h4><a href="https://nl.nothing.tech/products/phone-2">Phone (2)</a></h4>
+            <h4><a href="https://nl.nothing.tech/products/ear-a">Ear (a)</a></h4>
+            <h4><a href="https://nl.nothing.tech/products/ear">Ear</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/store">Accessories</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/apparel">Apparel</a></h4>
           </div>
           <div class="links">
             <h1>Company</h1>
-            <h4><a href="">About US</a></h4>
-            <h4><a href="">Careers</a></h4>
-            <h4><a href="">Community</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/about">About US</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/careers">Careers</a></h4>
+            <h4><a href="https://nothing.community/">Community</a></h4>
             <h4><a href="">Newsroom</a></h4>
-            <h4><a href="">Sustainability</a></h4>
-            <h4><a href="">Business enquiry</a></h4>
-            <h4><a href="">Press Contact</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/student-program">Sustainability</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/business-enquiry">Business enquiry</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/press-contact">Press Contact</a></h4>
           </div>
           <div class="links">
             <h1>Support</h1>
-            <h4><a href="">Support Center</a></h4>
-            <h4><a href="">Contact US</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/support-centre">Support Center</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/contact-support">Contact US</a></h4>
             <h4><a href="">Contact US via Whatsapp</a></h4>
             <h4><a href="">Service Centre</a></h4>
             <h4><a href="">E-waste management</a></h4>
-            <h4><a href="">Find a store</a></h4>
-            <h4><a href="">Security Vulnerability</a></h4>
-            <h4><a href="">Report</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/store-locator">Find a store</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/vulnerability-report">Security Vulnerability</a></h4>
+            <h4><a href="https://nl.nothing.tech/pages/vulnerability-report">Report</a></h4>
           </div>
           <div class="email">
             <h1>JOIN OUR MAILING LIST</h1>
@@ -278,16 +278,16 @@ const Footer2 = () => {
         </div>
 
         <div class="footer-bottom relative">
-          <h3><a href="">Privacy Policy</a></h3>
-          <h3><a href="">Warranty Policy</a></h3>
-          <h3><a href="">Acceptable Use Policy</a></h3>
-          <h3><a href="">User Agreement</a></h3>
+          <h3><a href="https://nl.nothing.tech/pages/privacy-policy">Privacy Policy</a></h3>
+          <h3><a href="https://nl.nothing.tech/pages/terms-of-sales">Warranty Policy</a></h3>
+          <h3><a href="https://nl.nothing.tech/pages/nothing-website-acceptable-use-policy">Acceptable Use Policy</a></h3>
+          <h3><a href="https://nl.nothing.tech/pages/user-agreement">User Agreement</a></h3>
           <div class="absolute top-16 left-[45vw] flex gap-4 ">
-            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-instagram-line"></i></a>
-            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-youtube-line"></i></a>
-            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-twitter-x-line"></i></a>
-            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-tiktok-fill"></i></a>
-            <a class='bg-white px-1 rounded-full text-black' href=""><i class="ri-discord-fill"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fnothing%2F%3Fhl%3Den&is_from_rle"><i class="ri-instagram-line"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href="https://www.youtube.com/c/NothingTechnology"><i class="ri-youtube-line"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href="https://x.com/nothing"><i class="ri-twitter-x-line"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href="https://www.tiktok.com/@nothing"><i class="ri-tiktok-fill"></i></a>
+            <a class='bg-white px-1 rounded-full text-black' href="https://discord.com/invite/nothingtech"><i class="ri-discord-fill"></i></a>
           </div>
           <h4 className='absolute top-[19vh] max-md:top-[27vh]  left-[50vw]'><a href="">India</a></h4>
         </div>
