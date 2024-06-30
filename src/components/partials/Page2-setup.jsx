@@ -211,7 +211,7 @@ function Page2setup() {
               <div className="absolute  boxs top-[3vw] w-full h-full left-[4vw] text-3 z-30 flex flex-col gap-6 ">
                 <h1 className="text-[3vw] ">Performance</h1>
               <div className="w-32">
-              <p className="text-[2vw] ml-5">
+              <p className="text-[2vw] ml-7">
                   Essential power for speed and gaming
                 </p>
               </div>
