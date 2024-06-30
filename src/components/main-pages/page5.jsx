@@ -22,7 +22,7 @@ function Page5({rotate}) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const [video, setvideo] = useState(0)
+  const [video, setvideo] = useState(0);
   useGSAP(()=>{
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -62,7 +62,7 @@ function Page5({rotate}) {
       {isMobile == false ? (
         <div   className='camera-page'>
           
-          <p   className='absolute z-[50] text-1 top-[22vh] left-[50vw] text-5xl font-black w-[40vw]  heading font2'>Include yourself with every moment</p>
+          <p   className='absolute z-[50] text-1 top-[22vh] left-[50vw] text-5xl font-black w-[40vw] text-[#d3caca]  heading font2'>Include yourself with every moment</p>
           <p   className='absolute z-[50] text-1 top-[75vh] left-[50vw] font-black text-3xl w-[40vw] text-white font-mono tracking-tighter'>Say nothing and have a click</p>
          
          <div className='absolute left-2  w-full'>
@@ -79,7 +79,9 @@ function Page5({rotate}) {
          </div>
         </div>
       ) : (
-        <div className={`absolute page5-1 top-[21.5vh]`}>
+       <div className='p-3'>
+        <p   className='absolute z-[50] top-[5vh] text-[6vw] text-center font-black heading font2'>Include yourself with every moment</p>
+         <div className={`absolute page5-1 top-[21.5vh]`}>
           <div className='w-[30vw] relative boxs1'>
             <Box_3   w='100%' t='-2vh' type='type_3' />
             <div className='absolute w-full text-center sn top-0'>
@@ -88,6 +90,7 @@ function Page5({rotate}) {
             <div className='absolute -top-[4.6vw] -right-[7vw] w-[1px] h-[16vw] rotate-90 bg-white'></div>
           </div>
         </div>
+       </div>
       )}
     </div>
   )

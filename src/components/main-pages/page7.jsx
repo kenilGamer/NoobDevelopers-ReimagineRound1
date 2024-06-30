@@ -97,7 +97,7 @@ function Page7({rotate}) {
               596815 Antutu benchmark score
             </h1>
             <h1 className='text-center textww absolute top-[40vh] text-[22vw]  text-23 heading opacity-0'>
-              60nm
+              6nm
             </h1>
           </div>
         </div>
