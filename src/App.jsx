@@ -28,6 +28,7 @@ function App() {
   };
   const scrollRef = useRef(null);
 useGSAP(()=>{
+  window.scrollTo(0, 0);
   gsap.to(".btn", {
     opacity: 1,
     duration: 1,

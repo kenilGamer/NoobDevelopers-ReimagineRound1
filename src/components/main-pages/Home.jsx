@@ -6,7 +6,7 @@ import gsap from 'gsap'
 function Home() {
   
   const tl5 = gsap.timeline({
-    delay: "6s"
+    delay: 5
   });
   
   useGSAP(() => {

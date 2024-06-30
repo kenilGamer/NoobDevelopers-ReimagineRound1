@@ -82,7 +82,7 @@ function Page7({rotate}) {
         </div>
 
     ): (
-        <div ref={target2} className='w-full page7 h-[100vh] bg-black relative overflow-hidden'>
+        <div ref={target2} className='w-full page7 h-[100vh] bg-black relative overflow-hidden px-2'>
           <div className="cube1 w-full h-full max-md:text-xs absolute z-20">
             <Cube rotate={rotate} target={target} video={video} />
           </div>
