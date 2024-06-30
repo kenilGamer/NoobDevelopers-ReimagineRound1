@@ -29,8 +29,8 @@ function Homeline({ isMobile }) {
       {/* text */}
       <div className='w-full h-full'>
         <div className='heading absolute top-[18vw] left-[3vw] text-center w-[50vw]'>
-          <h1 className='heading1 text-[3vw] text-[#d3caca] '>NOTHING PHONE (1)</h1>
-          <h1 className='heading2 text-[3vw] text-[#d3caca]'>PURE INSTINCT</h1>
+          <h1 className='heading1 text-[3vw] text-[#999d9c] '>NOTHING PHONE (1)</h1>
+          <h1 className='heading2 text-[3vw] text-[#999d9c]'>PURE INSTINCT</h1>
         </div>
         <div className='absolute top-[32vw] left-[6vw] overflow-hidden '>
           <h5 className='logo end2 text-2xl tracking-wider opacity-80'>SNAPDRAGON 778g+ | 50 MP Dual camera</h5>
@@ -57,8 +57,8 @@ function Homeline({ isMobile }) {
       {/* text */}
       <div className='w-full h-full'>
         <div className='heading absolute top-[15vw] left-[3vw] text-center w-[100vw]'>
-          <h1 className='heading1 text-[5vw] text-[#d3caca]'>NOTHING PHONE (1)</h1>
-          <h1 className='heading2 text-[5vw] text-[#d3caca]'>PURE INSTINCT</h1>
+          <h1 className='heading1 text-[5vw] text-[#999d9c]'>NOTHING PHONE (1)</h1>
+          <h1 className='heading2 text-[5vw] text-[#999d9c]'>PURE INSTINCT</h1>
         </div>
         <div className='absolute top-[75vh] left-[6vw] overflow-hidden '>
           <h5 className='logo end2 text-2xl tracking-wider opacity-80 text-center'>SNAPDRAGON 778g+ | 50 MP Dual camera</h5>
