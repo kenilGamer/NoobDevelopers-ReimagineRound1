@@ -42,6 +42,8 @@ Join us at [Your Website Name] as we redefine the competitive landscape, setting
 4. **Explore the Site:**
    Open your browser and navigate to `http://localhost:5173` to see the site in action.
 
+## Created by
+Redesigned and Developed by Noob Developers Team😎
 ## Contributing
 
 We welcome contributions to enhance the functionality and design of our website. Please follow these steps:
