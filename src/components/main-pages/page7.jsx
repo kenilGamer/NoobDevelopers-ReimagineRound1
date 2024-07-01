@@ -73,17 +73,17 @@ function Page7({rotate}) {
     return isMobile === false ?  (
         <div className='w-full page7 h-[100vh] bg-black relative  overflow-hidden'>
             <div
-                className="cube1 w-full h-full absolute  z-20  " >
+                className="cube1 w-full h-full absolute top-[10vh]  z-20  " >
                 <Cube rotate={rotate} target={target} video={video} />
             </div>
-            <div className='absolute top-[40vh] left-[31vw] z-50 img-1 op'>
+            <div className='absolute top-[50vh] left-[31vw] z-50 img-1 op'>
                 <img className='img-1' src="/enter2-hand.png" width={500} alt="" />
             </div>
 
             <div className='haedings flex items-center justify-center '>
                 <h1 className='text-center absolute top-[7vh] text-3xl text-23-1 heading w-[50vw]'>Experience the Ultimate Performance with Snapdragon 778G+ chipset</h1>
-                <h1 className='text-center absolute top-[25vh] text-23 w-[50vw] heading opacity-0'>596815 Antutu benchmar score</h1>
-                <h1 className='text-center absolute top-[20vh] text-[18vw]  textww  heading opacity-0'>6nm</h1>
+                <h1 className='text-center absolute top-[30vh] text-23 w-[50vw] heading opacity-0'>596815 Antutu benchmar score</h1>
+                <h1 className='text-center absolute top-[30vh] text-[18vw]  textww  heading opacity-0'>6nm</h1>
             </div>
         </div>
 
@@ -99,7 +99,7 @@ function Page7({rotate}) {
             <h1 className='text-center absolute top-[10vh] text-2xl text-23-1 heading w-[100vw] text-[#707070]' >
               Experience the Ultimate Performance with Snapdragon 778G+ chipset
             </h1>
-            <h1 className='text-center absolute top-[30vh] text-23 text-[#707070]  text-xl heading opacity-0'>
+            <h1 className='text-center absolute top-[30vh] text-23 text-xl heading opacity-0'>
               596815 Antutu benchmark score
             </h1>
             <h1 className='text-center textww absolute top-[40vh] text-[22vw]  text-23 heading opacity-0'>

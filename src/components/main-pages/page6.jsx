@@ -87,7 +87,7 @@ function Page6({ rotate }) {
         <h1 className='text-2xl absolute top-[10vh] heading w-96 text-center text-2-2 text-[#707070] p-1'>
           Outshine the Ordinary 10 Bit AMOLED Display
         </h1>
-        <h1 className='text-md absolute top-[30vh] text-nowrap heading text-2 text-[#707070]  opacity-0'>1200nits Peak Brightness</h1>
+        <h1 className='text-md absolute top-[30vh] text-nowrap heading text-2 opacity-0'>1200nits Peak Brightness</h1>
       </div>
       <div>
         <h1 className='text-[15vw] absolute top-[45vh]  textww heading tracking-widest text-2 opacity-0'>

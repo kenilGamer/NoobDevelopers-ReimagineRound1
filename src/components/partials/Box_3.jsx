@@ -38,7 +38,7 @@ function Box_3(size) {
     <div className={`relative border-0`} style={{width:size.w,height:find_h(size), transform:type(size.type),top:size.t,left:size.l}}>
          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
           <polygon className="fill-black" points="20,60 380,60 380,140 20,140" />
-          <polyline className="stroke-white" points="20,60 60,20 340,20 380,60 380,140 340,180 60,180 20,140 20,60" strokeWidth="8" />
+          <polyline className="stroke-[#999d9c] " points="20,60 60,20 340,20 380,60 380,140 340,180 60,180 20,140 20,60" strokeWidth="8" />
           <polyline className="stroke-lightgreen" points="20,60 60,20 340,20 380,60" strokeWidth="8" />
         </svg>
    </div>
