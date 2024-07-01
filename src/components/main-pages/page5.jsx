@@ -80,12 +80,12 @@ function Page5({rotate}) {
         </div>
       ) : (
        <div className='p-3'>
-        <p   className='absolute z-[50] top-[5vh] text-[6vw] text-center font-black heading text-[#999d9c] font2'>Include yourself with every moment</p>
+        <p   className='absolute z-[50] top-[5vh] text-[6vw] text-center font-black heading text-[#999d9c] font2 text-1'>Include yourself with every moment</p>
          <div className={`absolute page5-1 top-[21.5vh]`}>
           <div className='w-[30vw] relative boxs1'>
             <Box_3   w='100%' t='-2vh' type='type_3' />
             <div className='absolute w-full text-center sn top-0'>
-              <h1 className='text-[2.5vw] page5-2'>16 MP Sony IMX471 sensor</h1>
+              <h1 className='text-[2.5vw] page5-2 text-1'>16 MP Sony IMX471 sensor</h1>
             </div>
             <div className='absolute -top-[4.6vw] -right-[7vw] w-[1px] h-[16vw] rotate-90 bg-white'></div>
           </div>
