@@ -207,9 +207,12 @@ const Footer2 = () => {
             <h4><a href="https://nl.nothing.tech/pages/vulnerability-report">Security Vulnerability</a></h4>
             <h4><a href="https://nl.nothing.tech/pages/vulnerability-report">Report</a></h4>
           </div>
-          <div class="email">
-            <h1>JOIN OUR MAILING LIST</h1>
-            <input type="text" placeholder="EMAIL ADDRESS" />
+          <div class="email np  ">
+            <h1 className='heading'>JOIN OUR MAILING LIST</h1>
+            <div className='flex items-center relative left-10 max-sm:left-20'>
+            <input className='np' type="text" placeholder="EMAIL ADDRESS" />
+            <button type='submit' className='w-12 h-[9vh] left-[18vw] max-sm:left-0 absolute rounded-lg bg-white'><i class="ri-arrow-right-up-line text-black text-2xl"></i></button>
+            </div>
           </div>
         </div>
 
