@@ -67,12 +67,12 @@ function Page6({ rotate }) {
       </div>
       <div className='flex items-center justify-center flex-col p-7 gap-5'>
         <h1 className='text-3xl heading w-[50vw]  text-[#707070] text-center text-2-2'>Outshine the Ordinary 10 Bit AMOLED Display</h1>
-        <h1 className='text-xl text-2 heading opacity-0 text-[#707070] '><samp className='text-white'>1200nits</samp> Peak Brightness</h1>
+        <h1 className='text-xl text-2 heading opacity-0 text-[#707070] '><samp className='text-white heading'>1200nits</samp> Peak Brightness</h1>
       </div>
       <div className=''>
         <h1 className='text-[13vw] absolute top-[35vh] left-[5vw] heading textww tracking-widest text-2 opacity-0'>HDR10+</h1>
       </div>
-      <h1 className=' absolute top-[75vh] heading left-[30vw] text-2 textyy text-[8vw] opacity-0'>120hz</h1>
+      <h1 className=' absolute top-[75vh] heading left-[30vw] text-2 textyy text-[8vw] opacity-0'>120HZ</h1>
       {/* <img className='w-[40vw] absolute top-[70vh] left-[30vw] text-2 opacity-0 ' src="/Page_3_img/Rectangle 80.svg"  alt="" /> */}
       <div>
       </div>
@@ -87,7 +87,7 @@ function Page6({ rotate }) {
         <h1 className='text-2xl absolute top-[10vh] heading w-96 text-center text-2-2 text-[#707070] p-1'>
           Outshine the Ordinary 10 Bit AMOLED Display
         </h1>
-        <h1 className='text-md absolute top-[30vh] text-nowrap heading text-2 text-[#707070] opacity-0'><span className='text-white'>1200nits</span> Peak Brightness</h1>
+        <h1 className='text-md absolute top-[30vh] text-nowrap heading text-2 text-[#707070] opacity-0'><span className='text-white heading'>1200nits</span> Peak Brightness</h1>
       </div>
       <div>
         <h1 className='text-[15vw] absolute top-[45vh]  textww heading tracking-widest text-2 opacity-0'>

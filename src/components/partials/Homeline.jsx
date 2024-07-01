@@ -33,7 +33,7 @@ function Homeline({ isMobile }) {
           <h1 className='heading2 text-[3vw] text-[#999d9c]'>PURE INSTINCT</h1>
         </div>
         <div className='absolute top-[32vw] left-[6vw] overflow-hidden '>
-          <h5 className='logo end2 text-2xl tracking-wider opacity-80'>SNAPDRAGON 778g+ | 50 MP Dual camera</h5>
+          <h5 className='logo end2 text-2xl tracking-wider opacity-80'>SNAPDRAGON 778G+ | 50 MP Dual Camera</h5>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@ function Homeline({ isMobile }) {
           <h1 className='heading2 text-[5vw] text-[#999d9c]'>PURE INSTINCT</h1>
         </div>
         <div className='absolute top-[72vh] left-[17vw] overflow-hidden flex items-center justify-center'>
-          <h5 className='logo end2 text-2xl tracking-wider opacity-80 text-center'>SNAPDRAGON 778g+ <br /> 50 MP Dual camera</h5>
+          <h5 className='logo end2 text-2xl tracking-wider opacity-80 text-center'>SNAPDRAGON 778G+ <br /> 50 MP Dual Camera</h5>
         </div>
       </div>
     </div>
