@@ -56,7 +56,7 @@ function Page5({rotate}) {
   })
   return (
     <div ref={target2} className='w-full h-screen bg-black relative overflow-hidden'>
-      <div className={`cube w-full h-full absolute ${isMobile ? 'translate-x-[18vw] page5-2' : '-left-[10vw]'}`}>
+      <div className={`cube w-full h-full absolute ${isMobile ? 'translate-x-[18vw] left-[5vw] page5-2' : '-left-[10vw]'}`}>
         <Cube rotate={rotate} target={target} video={video} />
       </div>
       {isMobile == false ? (

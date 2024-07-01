@@ -295,6 +295,9 @@ html,body{
       font-size: 2vw;
       margin: 1vh 2.5vh;
    }
+   .page5-2{
+      left: 1vw;
+   }
 }
 @media only screen and (min-width: 430px){
    .page4-1{
@@ -317,8 +320,8 @@ html,body{
       left: 30vw;
    }
    .page5-1{
-      top: 27vh;
-      left: 4vw;
+      top: 26.1vh;
+      left: 3vw;
    } 
    .page4-2{
       /* width: 32vw; */
