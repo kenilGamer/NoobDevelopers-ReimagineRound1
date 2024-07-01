@@ -77,7 +77,7 @@ function Page7({rotate}) {
             <div className='haedings flex items-center justify-center '>
                 <h1 className='text-center absolute top-[7vh] text-3xl text-23 heading w-[50vw] opacity-0'>Experience the Ultimate Performance with Snapdragon 778G+ chipset</h1>
                 <h1 className='text-center absolute top-[25vh] text-23 w-[50vw] heading opacity-0'>596815 Antutu benchmar score</h1>
-                <h1 className='text-center absolute top-[20vh] text-[18vw]  textww  heading opacity-0'>60nm</h1>
+                <h1 className='text-center absolute top-[20vh] text-[18vw]  textww  heading opacity-0'>6nm</h1>
             </div>
         </div>
 
