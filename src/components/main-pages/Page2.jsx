@@ -56,7 +56,7 @@ function Page2() {
     }});
       tl.from(".text-2",{
         opacity:0,
-        duration: 0.8
+        duration: 0.5
       })
       tl.from(".boxs",{
         opacity: 0,

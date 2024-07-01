@@ -82,7 +82,7 @@ function Page7({rotate}) {
 
             <div className='haedings flex items-center justify-center '>
                 <h1 className='text-center absolute top-[7vh] text-3xl text-23-1 heading w-[50vw]'>Experience the Ultimate Performance with Snapdragon 778G+ chipset</h1>
-                <h1 className='text-center absolute top-[30vh] text-23 w-[50vw] heading opacity-0'>596815 Antutu benchmar score</h1>
+                <h1 className='text-center absolute top-[30vh] text-23 w-[50vw] heading text-[#999d9c] opacity-0'><samp className='text-white'>596815</samp> Antutu benchmar score</h1>
                 <h1 className='text-center absolute top-[30vh] text-[18vw]  textww  heading opacity-0'>6nm</h1>
             </div>
         </div>
@@ -99,8 +99,8 @@ function Page7({rotate}) {
             <h1 className='text-center absolute top-[10vh] text-2xl text-23-1 heading w-[100vw] ' >
               Experience the Ultimate Performance with Snapdragon 778G+ chipset
             </h1>
-            <h1 className='text-center absolute top-[30vh] text-23 text-xl heading opacity-0'>
-              596815 Antutu benchmark score
+            <h1 className='text-center absolute top-[30vh] text-[#999d9c] text-23 text-xl heading opacity-0'>
+            <samp className='text-white heading'>596815</samp>  Antutu benchmark score
             </h1>
             <h1 className='text-center textww absolute top-[40vh] text-[22vw]  text-23 heading opacity-0'>
               6nm
