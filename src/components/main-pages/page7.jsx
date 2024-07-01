@@ -96,7 +96,7 @@ function Page7({rotate}) {
             <img className='img-1' src="/enter2-hand.png" width={510} alt="" />
           </div>
           <div className='headings flex items-center justify-center'>
-            <h1 className='text-center absolute top-[10vh] text-2xl text-23-1 heading w-[100vw] ' >
+            <h1 className='text-center absolute top-[10vh] text-2xl text-23-1 text-[#999d9c] heading w-[100vw] ' >
               Experience the Ultimate Performance with Snapdragon 778G+ chipset
             </h1>
             <h1 className='text-center absolute top-[30vh] text-[#999d9c] text-23 text-xl heading opacity-0'>
