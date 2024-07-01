@@ -8,7 +8,7 @@ function Page7({rotate}) {
     gsap.registerPlugin(ScrollTrigger);
     // const [rotate, setRotate] = useState("0");
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    const [video, setvideo] = useState(0)
+    const [video, setvideo] = useState(2)
     const target = useRef(null)
     const target2 = useRef(null)
     // useLayoutEffect(() => {
@@ -51,9 +51,9 @@ function Page7({rotate}) {
         })
 
         tl.from(".img-1", {
-            onStart: () => {
-                setvideo(1)
-            },
+            // onStart: () => {
+            //     setvideo(1)
+            // },
             opacity: 0,
             y: 500,
             duration: 2,

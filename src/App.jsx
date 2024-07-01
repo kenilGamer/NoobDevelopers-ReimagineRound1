@@ -49,7 +49,7 @@ useGSAP(()=>{
   })
 })
   return (
-    <div id='main-section' className='w-full scroll-smooth h-screen text-white select-none  bg-black ' >
+    <div id='main-section' className='w-full h-screen text-white select-none  bg-black ' >
       <Loader/>
       <Home  />
       <Page2 />
