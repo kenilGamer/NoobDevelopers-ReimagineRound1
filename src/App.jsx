@@ -66,7 +66,8 @@ useGSAP(()=>{
       {/* <Footer1/> */}
       {/* <Footer/> */}
       <Footer2/>
-      <button title="rotate a phone for a 3d model " className="px-7  max-md:hidden py-2 rounded-full fixed top-10 right-10 border-2 opacity-0 z-50 btn" onClick={showfront}>Rotate</button>
+      <img src="/public/Group 2 (1).png" className='fixed top-10 right-7 w-32   max-md:hidden opacity-0 btn' alt="" />
+      <button title="rotate a phone for a 3d model " className="px-7  max-md:hidden py-2 rounded-full fixed top-10 right-10 opacity-0 z-50 np btn" onClick={showfront}>Rotate</button>
 
     </div>
   )

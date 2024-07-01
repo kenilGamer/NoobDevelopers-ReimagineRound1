@@ -45,11 +45,17 @@ function Page5({rotate}) {
       width: 0,
       height: 0,
   })
+  tl.from(".text-2-1", {
+    opacity: 0,
+    y:100,
+    duration: 1,
+    stagger: 0.1
+},'a')
   tl.from(".text-1", {
       opacity: 0,
       duration: 1,
       stagger: 0.1
-  })
+  },'a')
   // tl.to(".cube", {
   //   opacity: 0
   // })
@@ -62,8 +68,8 @@ function Page5({rotate}) {
       {isMobile == false ? (
         <div   className='camera-page'>
           
-          <p   className='absolute z-[50] text-1 top-[22vh] left-[50vw] text-5xl font-black w-[40vw] text-[#d3caca]  heading font2'>Include yourself with every moment</p>
-          <p   className='absolute z-[50] text-1 top-[75vh] left-[50vw] font-black text-3xl w-[40vw] text-white font-mono tracking-tighter'>Say nothing and have a click</p>
+          <p   className='absolute z-[50] text-2-1 top-[22vh] left-[50vw] text-5xl font-black w-[40vw] text-white  heading font2'>Include yourself with every moment</p>
+          <p   className='absolute z-[50] text-2-1 top-[75vh] left-[50vw] font-black text-3xl w-[40vw] text-white font-mono tracking-tighter'>Say nothing and have a click</p>
          
          <div className='absolute left-2  w-full'>
          <h1  className='absolute z-[50] text-1 top-[14vh] left-[18.5vw] w-32'>16 MP Sony IMX471 sensor</h1>

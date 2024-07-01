@@ -3,30 +3,13 @@ import '../footer.css';
 import { useTransition, animated } from 'react-spring';
 
 const Footer2 = () => {
-  const [details, setDetails] = useState({
-    displayDetails: false,
-    capacityDetails: false,
-    dimensionsDetails: false,
-    inTheBoxDetails: false,
-    mainCameraDetails: false,
-    videoDetails: false,
-    frontCameraDetails: false,
-    ultraWideDetails: false,
-    batteryDetails: false,
-    sensorsDetails: false,
-    memoryDetails: false,
-    unlockDetails: false,
-    audioDetails: false,
-    simCardDetails: false,
-    chipsetDetails: false,
-    resistanceDetails: false
-  });
+  const [openSection, setOpenSection] = useState(null);
 
   const handleToggle = (key) => {
-    setDetails((prevDetails) => ({ ...prevDetails, [key]: !prevDetails[key] }));
+    setOpenSection(prevKey => (prevKey === key ? null : key));
   };
 
-  const transition = useTransition(Object.keys(details).filter(key => details[key]), {
+  const transition = useTransition(openSection, {
     from: { height: 0, opacity: 0 },
     enter: { height: 'auto', opacity: 1 },
     leave: { height: 0, opacity: 0 },
@@ -53,7 +36,7 @@ const Footer2 = () => {
       <div className="foot-design-section">
         <h1 className='heading'>Design</h1>
         <div className="foot-design-elem">
-          {renderDetails('displayDetails', `
+          {renderDetails('DisplayDetails', `
             6.55” flexible AMOLED display <br />
             Corning® Gorilla® Glass <br />
             HDR10+ <br />
@@ -66,20 +49,20 @@ const Footer2 = () => {
             Haptic touch motors
           `)}
 
-          {renderDetails('capacityDetails', `
+          {renderDetails('CapacityDetails', `
             8 RAM + 128 GB memory <br />
             8 RAM + 256 GB memory <br />
             12 RAM + 256 GB memory
           `)}
 
-          {renderDetails('dimensionsDetails', `
+          {renderDetails('DimensionsDetails', `
             Height: 159.2 mm <br />
             Width: 75.8 mm <br />
             Depth: 8.3 mm <br />
             Weight: 193.5 g
           `)}
 
-          {renderDetails('inTheBoxDetails', `
+          {renderDetails('InTheBoxDetails', `
             Nothing Phone (1) <br />
             Type-C cable <br />
             Safety information and warranty card <br />
@@ -93,7 +76,7 @@ const Footer2 = () => {
       <div className="foot-camera-section">
         <h1>Camera</h1>
         <div className="foot-camera-elem">
-          {renderDetails('mainCameraDetails', `
+          {renderDetails('MainCameraDetails', `
             50 MP <br />
             Sony IMX766 sensor<br />Focal length: 24 mm <br />
             OIS and EIS image stabilisation <br />Panorama Night Mode <br />
@@ -102,13 +85,13 @@ const Footer2 = () => {
             Bokeh HDR
           `)}
 
-          {renderDetails('videoDetails', `
+          {renderDetails('VideoDetails', `
             4K recording at 30 fps <br />
             1080p recording at 30 or 60 fps <br />
             Live HDR at 30 fps
           `)}
 
-          {renderDetails('frontCameraDetails', `
+          {renderDetails('FrontCameraDetails', `
             16 MP <br />
             Sony IMX471 sensor <br />
             ƒ/2.45 aperture <br />
@@ -117,7 +100,7 @@ const Footer2 = () => {
             HD Portrait
           `)}
 
-          {renderDetails('ultraWideDetails', `
+          {renderDetails('UltraWideDetails', `
             50 MP <br />
             Samsung JN1 sensor <br />
             ƒ/2.2 aperture <br />
@@ -134,7 +117,7 @@ const Footer2 = () => {
       <div className="Features foot-design-section mt-3">
         <h1>Features</h1>
         <div className="foot-design-elem">
-          {renderDetails('batteryDetails', `
+          {renderDetails('BatteryDetails', `
             4500 mAh battery size <br />
             33W PD3.0 wired charging: full charge in 70 mins <br />
             15W Qi wireless charging: full charge in 120 mins <br />
@@ -142,7 +125,7 @@ const Footer2 = () => {
             Non-removable battery
           `)}
 
-          {renderDetails('sensorsDetails', `
+          {renderDetails('SensorsDetails', `
             In-display fingerprint sensor <br />
             Accelerometer <br />
             Electronic compass <br />
@@ -154,29 +137,29 @@ const Footer2 = () => {
             Grip sensor
           `)}
 
-          {renderDetails('memoryDetails', `
+          {renderDetails('MemoryDetails', `
             LPDDR5 RAM <br />
             UFS3.1 storage
           `)}
 
-          {renderDetails('unlockDetails', `
+          {renderDetails('UnlockDetails', `
             In-display fingerprint sensor <br />
             Face unlock
           `)}
 
-          {renderDetails('audioDetails', `
+          {renderDetails('AudioDetails', `
             Stereo speakers <br />
             Noise cancellation <br />
             Dual mic <br />
             Dolby Atmos
           `)}
 
-          {renderDetails('simCardDetails', `
+          {renderDetails('SimCardDetails', `
             Dual SIM: nano SIM + nano SIM <br />
             (dual 5G support)
           `)}
 
-          {renderDetails('chipsetDetails', `
+          {renderDetails('ShipsetDetails', `
             Qualcomm Snapdragon 778G+ <br />
             (customized for Nothing) <br />
             Octa-core (1x 2.5GHz Cortex-A78 <br />
@@ -186,60 +169,13 @@ const Footer2 = () => {
             6nm process technology
           `)}
 
-          {renderDetails('resistanceDetails', `
+          {renderDetails('ResistanceDetails', `
             IP53 rating for splash, water, and dust resistance
           `)}
         </div>
       </div>
 
-      {/* <div className="footer">
-        <div className="footer-top">
-          <div className="links">
-            <h1>Products</h1>
-            <h4><a href="">Phone (2a)</a></h4>
-            <h4><a href="">Phone (2)</a></h4>
-            <h4><a href="">Ear (a)</a></h4>
-            <h4><a href="">Ear</a></h4>
-            <h4><a href="">Accessories</a></h4>
-            <h4><a href="">Apparel</a></h4>
-          </div>
-          <div className="links">
-            <h1>Company</h1>
-            <h4><a href="">About US</a></h4>
-            <h4><a href="">Careers</a></h4>
-            <h4><a href="">Community</a></h4>
-            <h4><a href="">Newsroom</a></h4>
-            <h4><a href="">Sustainability</a></h4>
-            <h4><a href="">Business enquiry</a></h4>
-            <h4><a href="">Press Contact</a></h4>
-          </div>
-          <div className="links">
-            <h1>Support</h1>
-            <h4><a href="">Support Center</a></h4>
-            <h4><a href="">Contact US</a></h4>
-            <h4><a href="">Contact US via Whatsapp</a></h4>
-            <h4><a href="">Service Centre</a></h4>
-            <h4><a href="">E-waste management</a></h4>
-            <h4><a href="">Find a store</a></h4>
-            <h4><a href="">Security Vulnerability</a></h4>
-            <h4><a href="">Report</a></h4>
-          </div>
-          <div className="email">
-            <h1>JOIN OUR MAILING LIST</h1>
-            <input type="text" placeholder="EMAIL ADDRESS" />
-          </div>
-        </div>
-
-        <div className="footer-bottom relative">
-          <h3>© 2024 Nothing. All rights reserved.</h3>
-          <div className="footer-bottom-links">
-            <h3><a href="">Privacy Policy</a></h3>
-            <h3><a href="">Cookie Policy</a></h3>
-            <h3><a href="">Terms & Conditions</a></h3>
-          </div>
-        </div>
-      </div> */}
-        <div class="footer">
+      <div class="footer">
         <div class="footer-top">
           <div class="links">
             <h1>Products</h1>

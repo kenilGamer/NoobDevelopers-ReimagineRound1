@@ -93,7 +93,7 @@ const Cube = ({ rotate, rotateZ, target,video }) => {
           </div>
           <div className="face tp">
             <div className="photon-shader-tp" style={{ backgroundColor: '#afafaf' }}>
-              {video == 0 ? <img src={img6} alt="" /> :  <video className='-rotate-90 mt-[70.5%] -ml-1 scale-[1.97] object-fill w-full   rounded-xl' muted autoPlay loop src='/Untitled video - Made with Clipchamp.mp4' type="video/mp4" >
+              {video == 0 ? <img src={img6} alt="" /> :  <video className='-rotate-90 mt-[70.5%] -ml-1 scale-[2] object-fill w-full   rounded-xl' muted autoPlay loop src='/WhatsApp Video 2024-07-01 at 14.30.17_6aa52115.mp4' type="video/mp4" >
               </video>}
             </div>
           </div>

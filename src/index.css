@@ -84,9 +84,7 @@ html,body{
    -webkit-text-stroke-color: white;
  }
 
-.btn{
-   box-shadow: 0px 0px 10px #fff;
-}
+
 
 .boxs-line{
    box-shadow: 0px 0px 10px #ffffff;
@@ -108,7 +106,6 @@ html,body{
     animation-fill-mode: forwards;
     background-position: 0;
     opacity: 0.3;
-    width: 100%;
     white-space: nowrap;
 
 }
