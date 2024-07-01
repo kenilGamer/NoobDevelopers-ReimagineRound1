@@ -84,7 +84,7 @@ function Page6({ rotate }) {
         <Cube rotate={rotate} target={target} video={video} />
       </div>
       <div className='flex items-center justify-center flex-col p-7 gap-5'>
-        <h1 className='text-2xl absolute top-[10vh] heading w-96 text-center text-2 text-[#707070] opacity-0 p-1'>
+        <h1 className='text-2xl absolute top-[10vh] heading w-96 text-center text-2-2 text-[#707070] p-1'>
           Outshine the Ordinary 10 Bit AMOLED Display
         </h1>
         <h1 className='text-md absolute top-[30vh] text-nowrap heading text-2 text-[#707070]  opacity-0'>1200nits Peak Brightness</h1>

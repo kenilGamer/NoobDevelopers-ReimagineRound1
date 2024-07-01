@@ -209,9 +209,9 @@ function Page4({ rotate }) {
 
                 <div className="absolute top-10 left-0 flex flex-col gap-2 items-center justify-center w-full text-2xl text_h1">
                     <h1
-                        className="text-[#999d9c] text-6  ">Shoot Every Detail</h1>
+                        className="text-[#999d9c] text-7 ">Shoot Every Detail</h1>
                     <h1
-                        className="text-[#999d9c] text-6"> Feel Every Emotion</h1>
+                        className="text-[#999d9c] text-7"> Feel Every Emotion</h1>
                 </div>
                 <div className={`absolute ${isMobile2 === true ? "top-[38vh]" : "top-[37vh]"}`} >
                     <div className="w-[30vw] absolute boxs22">
