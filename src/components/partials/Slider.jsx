@@ -51,8 +51,8 @@ function Slider(on) {
       </div>
       {/*_____________________*/}
       <div className="w-full  flex flex-col gap-9 py-28 px-10 h-full ">
-        {["store", "suport", "community"].map((e, i) => (
-          <Nav_box key={i} color="white" width={207} text={e} />
+        {["Store", "Suport", "Community"].map((e, i) => (
+         <a href={`https://nl.nothing.tech/pages/${i}`} key={i} > <Nav_box key={i} color="white" width={207} text={e} /></a>
         ))}
       </div>
     </div>

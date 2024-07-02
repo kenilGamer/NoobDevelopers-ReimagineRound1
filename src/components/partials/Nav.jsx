@@ -75,7 +75,7 @@ function Nav() {
       </div>
 
       <div className=" flex gap-10">
-        {["store", "suport", "community"].map((i, k) => (
+        {["Store", "Support", "Community"].map((i, k) => (
           <div key={k} className="relative nav-r hover:animate-pulse">
             <img src="/Group 1.svg" width={140} alt="" />
             <div
@@ -83,7 +83,7 @@ function Nav() {
                 k === 2 ? "left-[1.2vw] top-[0.76vw]  text-sm" : `left-[2.5vw] top-[0.76vw]`
               }`}
             >
-              <a href={`#${i}`}>{i}</a>
+              <a >{i}</a>
             </div>
           </div>
         ))}
@@ -102,15 +102,7 @@ function Nav() {
         </div>
         <div className="h-full flex gap-4">
           <div className=" relative h-full  w-[10vw] ">
-            {/* <img
-              src="/button/Group 23.svg"
-              className="w-full h-full object-fill"
-            />
-            <img
-              onClick={theme}
-              src={dark_theme ? "/sun_PNG13425.webp" : "moon.svg"}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-fill fill-white scale-50"
-            /> */}
+         
           </div>
           <div className=" relative h-full  w-[10vw]">
             <img
