@@ -80,8 +80,8 @@ html,body{
 }
 
 .text_border2{
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
+   -webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: #999D9C;
  }
 
 

@@ -19,8 +19,8 @@ function Homeline({ isMobile }) {
       <div className="-rotate-[32deg] z-20 absolute top-[8vw] left-[65vw]">
         <img className='mobile1  w-[32vh]  z-20 ' src="/Page_3_img/BA_ABR_300_1001.png" alt="" />
       </div>
-      <div className=' -rotate-[32deg] mobile2 absolute top-[5vw] left-[60vw] z-10'>
-        <img className='mobile1  w-[32vh]  z-10 ' src="/Page_3_img/Rectangle 41.png" alt="" />
+      <div className=' -rotate-[32deg] absolute top-[5vw] left-[60vw] z-10'>
+        <img className='mobile2  w-[32vh]  z-10 ' src="/Page_3_img/Rectangle 41.png" alt="" />
       </div>
       {/* end lines*/}
       <div className=' line11 h-[2px] line-2 w-[0vw] absolute top-[35vw] left-[0vw] bg-white '></div>
@@ -44,11 +44,11 @@ function Homeline({ isMobile }) {
       {/* st lines */}
 
       {/* mobile */}
-      <div className="-rotate-[32deg] z-20 absolute top-[55vw] left-[40vw]">
+      <div className="-rotate-[32deg] z-20  mobile1 absolute top-[55vw] left-[40vw]">
         <img className='mobile1  w-[32vw]  z-20 ' src="/Page_3_img/BA_ABR_300_1001.png" alt="" />
       </div>
-      <div className=' -rotate-[32deg] mobile2 absolute top-[45vw] left-[28vw] z-10'>
-        <img className='mobile1  w-[32vw]  z-10 ' src="/Page_3_img/Rectangle 41.png" alt="" />
+      <div className=' -rotate-[32deg] absolute top-[45vw] left-[28vw] z-10'>
+        <img className='mobile2  w-[32vw]  z-10 ' src="/Page_3_img/Rectangle 41.png" alt="" />
       </div>
       {/* end lines*/}
       <div className=' line11 h-[2px] line-2 w-[0vw] absolute top-[35vw] left-[0vw] bg-white scale-0 '></div>

@@ -80,7 +80,7 @@ function Nav() {
             <img src="/Group 1.svg" width={140} alt="" />
             <div
               className={`absolute heading  text-md  ${
-                k === 2 ? "left-[1.2vw] top-[0.76vw]  text-sm" : `left-[2.5vw] top-[0.76vw]`
+                k === 2 ? "left-[1.2vw] top-[0.76vw]  text-sm" : `left-[2.1vw] top-[0.76vw]`
               }`}
             >
               <a >{i}</a>

@@ -40,11 +40,10 @@ function Page9() {
       <div className="text flex items-center justify-center flex-col w-full opacity-0 textsing heading ">
         <h1 className='absolute top-[10vh] texts1 text-2xl max-md:text-sm
          text-black text_border2 '>Shining White and Shining Black</h1>
-        <h1 className='absolute top-[10vh] text-2xl max-md:text-sm
+        <h1 className='absolute top-[10vh] text-[#999d9c] text-2xl max-md:text-sm
          '>Shining White and Shining Black</h1>
         <h1 className='absolute top-[10vh] texts2 text-2xl max-md:text-sm
          text-black text_border2 '>Shining White and Shining Black</h1>
-
       </div>
       <div className='imgs'>
         <img className=' imgs-1 absolute top-[20vh] max-md:top-[30vh] -left-[60vw] w-[60vw] max-md:w-full ' src="/Page_3_img/Rectangle 100.png" alt="" />

@@ -80,7 +80,7 @@ function Page7({rotate}) {
                 <img className='img-1' src="/enter2-hand.png" width={500} alt="" />
             </div>
             <div className='haedings flex items-center justify-center '>
-                <h1 className='text-center absolute top-[7vh] text-3xl text-23-1 heading w-[50vw]'>Experience the Ultimate Performance with Snapdragon 778G+ Chipset</h1>
+                <h1 className='text-center absolute top-[7vh] text-3xl text-23-1 text-[#999d9c] heading w-[50vw]'>Experience the Ultimate Performance with Snapdragon 778G+ Chipset</h1>
                 <h1 className='text-center absolute top-[30vh] text-23 w-[50vw] heading text-[#999d9c] opacity-0'><samp className='text-white heading'>596815</samp> Antutu benchmark Score</h1>
                 <h1 className='text-center absolute top-[30vh] text-[18vw]  textww  heading opacity-0'>6nm</h1>
             </div>
