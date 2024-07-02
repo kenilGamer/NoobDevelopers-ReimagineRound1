@@ -159,7 +159,7 @@ const Footer2 = () => {
             (dual 5G support)
           `)}
 
-          {renderDetails('ShipsetDetails', `
+          {renderDetails('ChipsetDetails', `
             Qualcomm Snapdragon 778G+ <br />
             (customized for Nothing) <br />
             Octa-core (1x 2.5GHz Cortex-A78 <br />
