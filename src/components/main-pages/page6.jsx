@@ -34,7 +34,7 @@ function Page6({ rotate }) {
         trigger: target2.current,
         start: "top top",
         end: "bottom top",
-        scrub: 3,
+        scrub: 2,
         // markers: true,
         pin: true,
         toggleActions: "play none none reverse",

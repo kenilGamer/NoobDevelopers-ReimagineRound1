@@ -29,7 +29,7 @@ function Page5({rotate}) {
         trigger: target2.current,
         start: "top top",
         end: "top -100%",
-        scrub: 3,
+        scrub: 2,
         // markers: true,
         pin: true,
         // pinSpacing: false, 

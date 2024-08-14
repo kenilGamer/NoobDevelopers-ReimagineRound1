@@ -42,7 +42,7 @@ function Page2() {
         width: 0,
         height: 0,
         // scrollBehavior:smooth ,
-        stagger: 1
+        stagger: 0.1
       })
 
     }else{

@@ -69,7 +69,7 @@ useGSAP(()=>{
         trigger: ".page3",
         start: "top 0%",
         end: "top -100%",
-        scrub: 5,
+        scrub: 2,
         // markers:true,
         pin: true,
       },
