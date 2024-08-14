@@ -75,18 +75,39 @@ function Nav() {
       </div>
 
       <div className=" flex gap-10">
-        {["Store", "Support", "Community"].map((i, k) => (
+        {/* {["Store", "Support", "Community"].map((i, k) => (
           <div key={k} className="relative nav-r hover:animate-pulse">
             <img src="/Group 1.svg" width={140} alt="" />
             <div
               className={`absolute heading  text-md  ${
-                k === 2 ? "left-[1.2vw] top-[0.76vw]  text-sm" : `left-[2.1vw] top-[0.76vw]`
+              k === 2 ? "left-[1.2vw] top-[0.76vw]  text-sm" : `left-[2vw] top-[0.76vw]`
               }`}
             >
               <a >{i}</a>
             </div>
           </div>
-        ))}
+        ))} */}
+        <div className="relative nav-r hover:animate-pulse flex gap-10">
+            <img src="/Group 1.svg" width={150} alt="" />
+            <div
+              className={`absolute heading  text-md left-[2.7em] top-[0.7vw] `}
+            >
+              <a>Store</a>
+            </div>
+            <img src="/Group 1.svg" width={150} alt="" />
+            <div
+              className={`absolute heading  text-md left-[13.6em] top-[0.7vw] `}
+            >
+              <a>Support</a>
+            </div>
+            <img src="/Group 1.svg" width={150} alt="" />
+            <div
+              className={`absolute heading  text-sm left-[28.5em] top-[0.9em] `}
+            >
+              <a>Community</a>
+            </div>
+        </div>
+          
       </div>
     </div>
   ) : (
