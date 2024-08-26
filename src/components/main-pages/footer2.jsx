@@ -211,7 +211,7 @@ const Footer2 = () => {
             <h1 className='heading'>JOIN OUR MAILING LIST</h1>
             <div className='flex items-center relative left-10 max-sm:left-20'>
             <input className='np' type="text" placeholder="EMAIL ADDRESS" />
-            <button type='submit' className='w-12 h-[9vh] left-[18vw] max-sm:left-0 absolute rounded-r-lg bg-white'><i class="ri-arrow-right-up-line text-black text-2xl"></i></button>
+            <button type='submit' className='w-12 h-[3.6em] left-[16em] max-sm:left-0 absolute rounded-r-lg bg-white'>  <i class="ri-arrow-right-up-line text-black text-2xl"></i></button>
             </div>
           </div>
         </div>
