@@ -1,0 +1,2308 @@
+@font-face {
+    font-family: kor;
+    src: url(./fonts/korataki-rg-3cf0d889.ttf);
+}
+@font-face {
+    font-family: Sansation;
+    src: url(./fonts/Sansation_Regular.ttf);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    transition: all linear 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#loader h1{
+    color: transparent;
+    font-family: kor;
+    font-size: 4vw;
+    letter-spacing: 1.5px;
+    position: absolute;
+    background-image: linear-gradient(to right, #d7d7d7 0%, #353535 74%);
+    -webkit-background-clip: text;
+    opacity: 0;
+    animation-name: load;
+    
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+#loader h1:nth-child(4){
+    animation-delay: 4s;
+}
+#loader h1:nth-child(5){
+    animation-delay: 5s;
+}
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#main{
+    background-color: #000;
+    position: relative;
+}
+
+#home-page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#header{
+    height: 12%;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    
+}
+#nothing{
+    height: 100%;
+    width: 20vw;
+    background-image: url(./NothingPhoneImages/Group\ 2\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-top: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 4vh;
+    font-family: kor;
+    color: white;
+    
+}
+
+#rest{
+    
+    height: 100%;
+    width: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    position: relative;
+    margin-right: -30%;
+    /* justify-content: space-around; */
+    margin-top: 10px;
+   
+}
+#men{
+    font-size: 4vh;
+    opacity:0;
+    color: white;
+    
+}
+#page-0 #up{
+    font-size: 4vh;
+    opacity:1;
+    color: white;
+    margin-top: 10%;
+    left: 50%;
+    
+}
+#page-0{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 99;
+    top:-100%;
+}
+#page-0 #list{
+    font-size: 5vh;
+    font-family: kor;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    top: 20%;
+    left: 5%;
+    list-style-type: none;
+    
+}
+.el{
+    height: 100%;
+    width: 22%;
+    background-image: url(./NothingPhoneImages/Group\ 2\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 2.8vh;
+   
+    font-family: kor;
+    color: white;
+}
+#bodyel{
+    height: 100%;
+    width: 100%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.on{
+    height:100%;
+    width: 100%;
+    margin-left: 16%;
+    margin-bottom: 6%;
+    background-image: url(./NothingPhoneImages/Group\ 6\ \(1\).png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.ont{
+    height: 100%;
+    width: 100%;
+    background-image: url(./NothingPhoneImages/Group\ 8\ \(1\).png);
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    
+}#snap{
+    position: absolute;
+    height: 10%;
+    width: 40%;
+
+    top: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: kor;
+    font-size: 1em;
+    color: #999D9C;
+    left: 5%;
+}
+#text-box{
+    height:40%;
+    width: 50%;
+    position: relative;
+    top: -10%;
+    font-family: kor;
+    letter-spacing: 1.5px;
+    font-size: 3vh;
+    line-height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.txt-Features{
+    color: white; 
+    font-size: 4.5em; 
+    font-family: kor; 
+    font-weight: 400; 
+    word-wrap: break-word; 
+    position: absolute; 
+    left: 65vh; 
+    top: 9vh; 
+    opacity: 1;
+}
+
+#phone1{
+    position: absolute;
+    background-image: url(./NothingPhoneImages/BA_ABR_310_1001.png);
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 40%;
+    top: 8%;
+    rotate: -25deg;
+    right:10%;
+    background-repeat: no-repeat;
+}
+#phone2{
+    position: absolute;
+    background-image: url(./NothingPhoneImages/BA_ABR_300_1001.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 35%;
+    top: 8%;
+    rotate: -25deg;
+    right: 7%;
+}
+#feature-box{
+    height: 87%;
+    width: 95%;
+    background-image: url(./NothingPhoneImages/Group\ 60.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 10%;
+    left: 2%;
+    opacity: 0;
+}
+#pag{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    
+}
+#page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+#page #imgdiv{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    background-image: url(./NothingPhoneImages/BA_ABR_310_1001.png);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+}
+#page h2{
+    
+    background: url(./NothingPhoneImages/10628409-water-droplets-on-a-metal-surface.jpg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    font-size: 7vh;
+    font-weight: 900;
+    opacity: 0;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    background-position: center;
+    background-size: cover;
+    
+}
+#page #splash1{
+    height: 100%;
+    width: 30%;
+    background-image: url(./NothingPhoneImages/splash2.png);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 5%;
+    left: -50%;
+    z-index:3;
+    opacity: 0;
+    
+
+}
+#page #splash2{
+    height: 100%;
+    width: 30%;
+    background-image: url(./NothingPhoneImages/splash1.png);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    right: -50%;
+    z-index:3;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+#page1 #imgdiv{
+    height: 100%;
+    width: 30%;
+    position: relative;
+    background-image: url(./NothingPhoneImages/BA_ABR_310_1001.png);
+    background-position: center;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+}
+#page00{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+#page00 #imgdiv00{
+    height: 100%;
+    width: 30%;
+    position: relative;
+    background-image: url(./NothingPhoneImages/BA_ABR_310_1031.png);
+    background-position: center;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+}
+#page00 .Group50::before{
+    content: "Front Camera";
+    position: absolute;
+    top: -5vh;
+    left:4vh;
+    font-family: kor;
+    color: #999D9C;
+    font-size: 2.7vh;
+    width: 40vh;
+    letter-spacing: 1.5px;
+}
+#page00 h1{
+    color: #999D9C;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: kor;
+    font-size: 7vh;
+    font-weight: 100;
+    opacity: 0;
+}
+#page00 h2{
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:#999D9C;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    right: -10%;
+    rotate: 90deg;
+    font-family: kor;
+    font-size: 18vh;
+    font-weight: 900;
+    opacity: 0;
+    
+}
+.Group50 p{
+    position: absolute;
+    color: white;
+    font-size: 2.7vh;
+    width: 100%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 30%;
+    font-family: Sansation;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+#page2 #imgdiv2{
+    height: 100%;
+    width: 40vh;
+    position: relative;
+    background-image: url(./NothingPhoneImages/BA_ABR_310_1031.png);
+    background-position: center;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    
+    
+}
+/* #page2 #imgdiv3{
+    height: 71.5%;
+    width: 15%;
+    position: absolute;
+    background-image: url(./NothingPhoneImages/nothing-phone-wallpaper-img-2-transformed.jpeg);
+    background-position: center;
+    background-size: cover;
+    top: 14.5%;
+    left: 42.5%;
+    
+    border-radius: 25px;
+    opacity: 1;
+    z-index: 99;
+    opacity:1;
+} */
+#page1 h1{
+    color: #999D9C;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: kor;
+    font-size: 7vh;
+    font-weight: 100;
+    opacity: 0;
+}
+#page1 h2{
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:#999D9C;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    right: -10%;
+    rotate: 90deg;
+    font-family: kor;
+    font-size: 18vh;
+    font-weight: 900;
+    opacity: 0;
+    
+}
+.Group4::after{
+    content: "Ultra Wide";
+    position: absolute;
+    bottom: -30px;
+    left: 25px;
+    font-family: kor;
+    color: #999D9C;
+    font-size: 2.7vh;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+.Group3::before{
+    content: "Main Camera";
+    position: absolute;
+    top: -30px;
+    left: 25px;
+    font-family: kor;
+    color: #999D9C;
+    font-size: 2.7vh;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+.Group3 p{
+    position: absolute;
+    color: white;
+    font-size: 2.7vh;
+    width: 100%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: gil;
+}
+.Group4 p{
+    position: absolute;
+    color: white;
+    font-size: 2.7vh;
+    width: 100%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: gil;
+}
+#page2 h1{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(to right, #4d4d4d 0, rgb(255, 255, 255) 10%, #4d4d4d 20%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    font-size: 30vh;
+    font-weight: 100;
+    -webkit-background-clip: text;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    background-position: 0;
+    opacity: 0.3;
+}
+@keyframes shine{
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 500px;
+  }
+  100%{
+    background-position: 1000px;
+  }
+}
+#page2 h3{
+    color: #999D9C;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: kor;
+    font-size: 7vh;
+    font-weight: 100;
+    opacity: 0;
+    width: 100%;
+}
+#page2 h4{
+    color: #999D9C;
+    
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: kor;
+    font-size: 20vh;
+    font-weight: 100;
+    opacity: 1;
+    background:url(./NothingPhoneImages/nothing-phone-wallpaper-img-2-transformed.jpeg);
+    background-position:center;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+#page2 p{
+    color: #999D9C;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: kor;
+    font-size: 3vh;
+    font-weight: 100;
+    opacity:0;
+    width: 100%;
+
+}
+#page2 span{
+    color: white;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+#page3 #imgdiv4{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    background-image: url(./NothingPhoneImages/BA_ABR_310_1031.png);
+    background-position: center;
+    background-size: cover;
+    left: 53%;
+    top: -37%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    rotate: -90deg;
+    
+}
+#page3 #imgdiv5{
+    height: 65%;
+    width: 45%;
+    position: absolute;
+    background-image: url(./NothingPhoneImages/enter2-hand.png);
+    background-position: center;
+    background-size: cover;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 3; 
+    
+    opacity: 0;
+}
+#page3 h1{
+    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(to right, #4d4d4d 0, rgb(255, 255, 255) 10%, #4d4d4d 20%);
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    font-size:50vh;
+    font-weight: 100;
+    -webkit-background-clip: text;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    background-position: 0;
+    opacity: 0.3;
+    width: 100%;
+    white-space: nowrap;
+}
+#page3 h3{
+    color: #999D9C;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: kor;
+    font-size: 7vh;
+    font-weight: 100;
+    opacity: 0;
+    width: 100%;
+    
+}
+#page3 p{
+    color: #999D9C;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: kor;
+    font-size: 3vh;
+    font-weight: 100;
+    opacity:0;
+    width: 100%;
+
+}
+#page3 span{
+    color: white;
+}
+#page3 video{
+    position: absolute;
+    z-index: 2;
+    border-radius: 25px;
+    height: 43%;
+    top: 58.4%;
+    left: 49.9%;
+    transform: translate(-50%,-50%);
+    width:39%;
+    object-fit: cover;
+   
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+#page4 #imgdiv6{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-image: url(./NothingPhoneImages/new.png);
+    background-position: center;
+    background-size: cover;
+    left: -30%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    
+    
+}
+#page4 #imgdiv7{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-image: url(./NothingPhoneImages/new2.png);
+    background-position: center;
+    background-size: cover;
+    right:-80%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    
+}
+#page4 #txt1{
+    position: absolute;
+    top: 25%;
+    left: -80%;
+    letter-spacing: 1.5px;
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    color: #999D9C;
+    font-size: 6vh;
+    font-weight: 100;
+    background-position: 0;
+    opacity: 0;
+    width: 10vh;
+    white-space: nowrap;
+}
+#page4 #txt2{
+    position: absolute;
+    top: 83%;
+    left: 100%;
+    letter-spacing: 1.5px;
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    color: #999D9C;
+    font-size: 6vh;
+    font-weight: 100;
+    background-position: 0;
+    opacity: 0;
+    width: 10vh;
+    white-space: nowrap;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+#page5 #imgdiv8{
+    height: 100%;
+    width: 105vh;
+    position: relative;
+    background-image: url(./NothingPhoneImages/new3.png);
+    background-position: center;
+    background-size: cover;
+    left: -30%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    
+    
+}
+#page5 #imgdiv9{
+    height: 100%;
+    width: 105vh;
+    position: absolute;
+    background-image: url(./NothingPhoneImages/new4.png);
+    background-position: center;
+    background-size: cover;
+    right:-80%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    
+}
+#page5 p{
+    position: absolute;
+    top: 17%;
+    left: 65%;
+    letter-spacing: 1.5px;
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    color: #999D9C;
+    font-size: 6vh;
+    font-weight: 100;
+    background-position: 0;
+    opacity: 0;
+    width: 100%;
+    white-space: nowrap;
+}
+#page5 #up{
+    position: absolute;
+    top: 17%;
+    left: 65%;
+    letter-spacing: 1.5px;
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    color: #999D9C;
+    font-size: 6vh;
+    font-weight: 100;
+    background-position: 0;
+    opacity: 0;
+    width: 100%;
+    
+    white-space: nowrap;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-color: #999D9C;
+    -webkit-text-stroke-width: 1.5px;
+}
+#page5 #down{
+    position: absolute;
+    top: 17%;
+    left: 65%;
+    letter-spacing: 1.5px;
+    transform: translate(-50%,-50%);
+    font-family: kor;
+    font-size: 6vh;
+    font-weight: 100;
+    background-position: 0;
+    opacity: 0;
+    width: 100%;
+    white-space: nowrap;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-color: #999D9C;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+
+.design-section{
+    padding-top: 3vh;
+    width: 100%;
+    
+    background: #000;
+    
+}
+.design-section>h1{
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: kor;
+    -webkit-text-stroke: #999D9C .1px;
+    color: transparent;
+    letter-spacing: .25vw;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+.elem , .elem2{
+    width: 100%;
+    /* background: red; */
+    border-top: 2px solid white;
+    cursor: pointer;
+    font-family: kor;
+    font-weight: 100;
+}
+.elem .heading h1 {
+    color: #999d9c;
+    font-size: 2.5vw;
+    letter-spacing: .3vw;
+    padding: 2vw 3vw ;
+    font-family: kor;
+    font-weight: 100;
+}
+.details{
+    overflow: hidden;
+    background: #999d9c;
+    height: 0vh;
+}
+.details p{
+    line-height: 2vw;
+    padding: 2vw 3vw;
+    color: #000;
+    height: fit-content;
+}
+.elem-box{
+    border-bottom: 2px solid white;
+}
+
+/* camera section */
+.camera-section{
+    padding-top: 3vh;
+    width: 100%;
+   padding-top: 4vh;
+    background-color: #000;
+    
+}
+.camera-section>h1{
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: kor;
+    -webkit-text-stroke: #999D9C .1px;
+    color: transparent;
+    letter-spacing: .25vw;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+.camera-elem{
+    width: 100%;
+}
+.camera-details{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10vw;
+}
+.elem2 .heading h1 {
+    color: #999d9c;
+    font-size: 2.5vw;
+    letter-spacing: .3vw;
+    padding: 2vw 3vw ;
+}
+.footer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10vh;
+    background-color: #000;
+    position: relative;
+}
+.footer-top{
+    width: 100%;
+    /* background: rgb(70, 110, 110); */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 30% ;
+    grid-row: 20% 20% 20% ;
+    gap: 3vw;
+    margin-top: 10vh;
+    padding: 0 5vh;
+}
+.footer .links h1{
+    color: white;
+    font-size: 1.3vw;
+    margin-bottom: 1.2vw;   
+    font-family: kor;
+    font-weight: 100;
+}
+.footer .join h1{
+    color: white;
+    font-size: 1.3vw;
+    margin-bottom: 1.2vw;   
+    font-family: kor;
+    font-weight: 100;
+}
+.footer .links h4{
+    line-height: 2vw;
+    color: white;
+    font-weight: 100;
+    font-size: .8vw;
+    font-family: kor;
+    font-weight: 100;
+}
+.footer .links h4 a{
+    text-decoration: none;
+    color: white;
+}
+.footer-top .join input{
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 1vw .5vw;
+    color: #fff;
+    font-family: kor;
+    font-weight: 100;
+    padding-left: 20%;
+}
+.footer-bottom{
+    border-top: 2px solid #fff;
+    display: flex;
+    padding: 4vh 2vw;
+    gap: 4vw;
+    
+    justify-content: space-between;
+}
+.footer-bottom h3 a{
+    font-size: 1vh;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    font-family: kor;
+    letter-spacing: 1.5px;
+}
+.footer-bottom h4 a{
+    text-decoration: none;
+    color: white;
+    font-family: kor;
+    font-weight: 100;
+    font-size: 1vw;
+}
+.footer-bottom .icons a{
+    font-size: 1.7vw;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 0.3vw;
+    border-radius: 50%;
+}
+.Group3{
+    width: 207px; 
+    height: 61px; 
+    position: relative; 
+    top:-50vh; 
+    left:10vh; 
+    opacity:0;
+}
+.Group4{
+    width: 207px; 
+    height: 61px; 
+    position: relative; 
+    top:-40vh; 
+    left:10vh; 
+    opacity:0;
+}
+.Group4::before{
+    opacity: 0;
+}
+.Group50{
+    width: 20vh;
+    height: 20vh; 
+    position: relative; 
+    top:-59vh; 
+    left:10vh; 
+    opacity:0;
+}
+.Group3 .Line8{
+    width: 145.16px; height: 0px;  left: 205.76px; top:12px; position: absolute; background: #999D9C; border: 1px #999D9C solid
+}
+.Group3 .Line1{
+    width: 170.16px; height: 0px; left: 25.76px; top: 0px; position: absolute; background: #999D9C; border: 1px #999D9C solid
+}
+.Group3 .Line4{
+    width: 183.77px; height: 0px; left: 0px; top: 61px; position: absolute; background: #999D9C; border: 1px #999D9C solid
+}
+.Group3 .Line5{
+    width: 31.5px; height: 0px; left: 182.77px; top: 61px; position: absolute; transform: rotate(-37.76deg); transform-origin: 0 0; background: #999D9C; border: 1px #999D9C solid
+}
+.Group3 .Line6{
+    width: 29px; height: 0px; left: 207px; top: 42.23px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; background: #999D9C; border: 1px #999D9C solid;
+}
+.Group3 .Line7{
+    width: 18.68px; height: 0px; left: 208px; top: 15px; position: absolute; transform: rotate(-136.57deg); transform-origin: 0 0; background: #999D9C; border: 1px #999D9C solid
+}
+.Group50 .Line8{
+    width: 120px;
+}
+@media screen and (min-width: 1536px){
+    
+    #phone1{
+        height: 600px;
+        width: 480px;
+        top: 70px;
+        rotate: -25deg;
+        right: 20%;
+    }
+    #phone2{
+       
+        height: 600px;
+        width: 480px;
+        top: 70px;
+        rotate: -25deg;
+        right: 15%;
+    }
+    .Group3{
+       
+        left:20vh; 
+       
+    }
+    .Group4{
+        left:20vh; 
+        
+    }
+    .Group50{
+        left:20vh; 
+       
+    }
+    
+    #page3 #imgdiv5{
+        left: 52%;
+        
+    }
+    .on{
+        position: relative;
+        left: 5.3%;
+        top: 1%;
+        
+    }
+    #nothing{
+        margin-left: 4.7%;
+        margin-top: 1.4%;
+    }
+    
+}
+@media only screen and (min-width: 1440px){
+    
+    #rest{
+        position: relative;
+        left: 0%;
+        
+    }
+    .on{
+        margin-left: 12.8%;
+        margin-top: 0.1%;
+      
+    }
+    #feature-box{
+        height: 86%;
+        width: 87%;
+        left: 7%;
+    }
+    .txt-Features{
+        left: 34%;
+    }
+    #page3 video{
+        height: 45vh;
+        width:91vh;
+        left: 51.5%;
+        top: 59.6%;
+    }
+    #page3 #imgdiv5{
+        height: 68.5%;
+        top:120%;
+        left: 52%;
+    }
+    #phone1{
+        height: 100%;
+        width: 40%;
+        top: 8%;
+        rotate: -25deg;
+        right: 10%;
+    }
+    #phone2{
+       
+        height: 100%;
+        width: 40%;
+        top: 8%;
+        rotate: -25deg;
+        right: 5%;
+    }
+    .Group3{
+       
+        left:20vh; 
+       
+    }
+    .Group4{
+        left:20vh; 
+        
+    }
+    .Group50{
+        left:20vh; 
+       
+    }
+    .Group50 p{
+        width: 200%;
+        left: -45%;
+    }
+    #page5 p{
+        left: 60%;
+    }
+    #page3 h1{
+        left: 55%;
+    }
+}
+@media screen and (max-width:600px) {
+    #main{
+        overflow: hidden;
+        position: relative;
+    }
+    #home-page{
+        width: 100%;
+    }
+    
+    #nothing{
+        height: 100%;
+        width: 40%;
+        
+        background-image: url(./NothingPhoneImages/Group\ 2\ \(1\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-size: 2vh;
+        font-family: kor;
+        color: white;
+        
+    }
+    
+    #rest{
+        opacity: 0;
+        height: 100%;
+        width: 60%;
+        display: flex; 
+        align-items: center; 
+        justify-content: space-around;
+        opacity: 0;
+        margin-top: 10px;
+        position: relative;
+        
+       
+    }
+    .el{
+        height: 100%;
+        width: 20%;
+        background-image: url(./NothingPhoneImages/Group\ 2\ \(1\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        opacity: 0;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-size: 1.3em;
+        margin-left: 20px;
+        font-family: kor;
+        color: white;
+        opacity: 0;
+    }
+    #bodyel{
+        height: 100%;
+        width: 100%;
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .on{
+        height: 30dvh;
+        width: 100dvh;
+        background-repeat: no-repeat;
+        position: relative;
+        top:-17dvh;
+        left: 21dvw;
+        background-image: url(./NothingPhoneImages/Group\ 6\ \(1\).png);
+        background-position: bottom;
+        background-size: contain;
+        
+    }
+    .ont{
+        height: 30%;
+        width: 100%;
+        background-image: url(./NothingPhoneImages/Group\ 8\ \(1\).png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 20%;
+        
+        
+    }#snap{
+        position: absolute;
+        height: 10%;
+        width: 40%;
+    
+        top: 87%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: kor;
+        font-size: 1em;
+        color: #999D9C;
+        left: 5%;
+    }
+    #text-box{
+        height:30%;
+        width: auto;
+        text-align: center;
+        font-family: kor;
+        letter-spacing: 1.5px;
+        font-size: 1vh;
+        line-height: 60px;
+        color: white;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .txt-Features{
+        color: white; 
+        font-size: 4.5em; 
+        font-family: kor; 
+        font-weight: 400; 
+        word-wrap: break-word; 
+        position: absolute; 
+        left: 65%; 
+        top: 9px; 
+        opacity: 1;
+    }
+    #phone1{
+        position: absolute;
+        background-image: url(./NothingPhoneImages/BA_ABR_310_1001.png);
+        background-size: contain;
+        background-position: center;
+        height:100%;
+        width:70%;
+        top: 20%;
+        rotate: -25deg;
+        right: 17%;
+    }
+    #phone2{
+        position: absolute;
+        background-image: url(./NothingPhoneImages/BA_ABR_300_1001.png);
+        background-size: contain;
+        background-position: center;
+        height: 100%;
+        background-repeat: no-repeat;
+        width: 70%;
+        top: 20%;
+        rotate: -25deg;
+        right: 5%;
+    }
+    #snap{
+        top: 40%;
+        width: 100%;
+        font-size: 1.3vh;
+        left: 0;
+        text-align: center;
+    }
+    #text-box{
+        height:40%;
+        width: 100%;
+        position: relative;
+        top: -30%;
+        font-family: kor;
+        letter-spacing: 1.5px;
+        font-size: 1.5vh;
+        line-height: 40px;
+        color: white;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+       
+    }
+    #feature-box{
+        height:100%;
+        width:180%;
+        background-repeat: no-repeat;
+        background-image: url(./NothingPhoneImages/Group\ 60.png);
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        top: -5dvh;
+        left: -190px;
+        rotate: 90deg;
+        opacity: 0;
+        
+    }
+    #page{
+        height: 100dvh;
+    }
+    #page1{
+        height: 100dvh;
+    }
+    #page2{
+        height: 100dvh;
+    }
+    #page3{
+        height: 100dvh;
+    }
+    #page4{
+        height: 100dvh;
+    }
+    #page5{
+        height: 100dvh;
+    }
+    #page #imgdiv{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url(./NothingPhoneImages/BA_ABR_310_1001.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    
+    }
+    #page h2{
+        
+        background: url(./NothingPhoneImages/10628409-water-droplets-on-a-metal-surface.jpg);
+        position: absolute;
+        top: 15%;
+        left: 46%;
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        font-size: 1.7vh;
+        font-weight: 900;
+        opacity: 0;
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text;
+        background-position: center;
+        background-size: contain;
+        
+    }
+    #page #splash1{
+        height: 100%;
+        width: 70%;
+        background-image: url(./NothingPhoneImages/splash2.png);
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 5%;
+        left: -100%;
+        z-index:3;
+        opacity: 0;
+        
+    
+    }
+    #page #splash2{
+        height: 100%;
+        width: 70%;
+        background-image: url(./NothingPhoneImages/splash1.png);
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 50%;
+        right: -100%;
+        z-index:3;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+    }
+    #page00 #imgdiv00{
+        height: 100%;
+        width: 70%;
+        position: relative;
+        background-image: url(./NothingPhoneImages/BA_ABR_310_1031.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        
+    }
+    #page00 h1{
+        color: #999D9C;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: kor;
+        font-size: 4vh;
+        font-weight: 100;
+        opacity: 0;
+        width: 100%;
+    }
+    #page00 h2{
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:#999D9C;
+        text-align: center;
+        position: absolute;
+        top: 25dvh;
+        right:5dvw;
+        rotate: 0deg;
+        font-family: kor;
+        font-size: 9vh;
+        font-weight: 900;
+        opacity: 0;
+        rotate: 0deg;
+    }
+    #page1 h1{
+        color: #999D9C;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: kor;
+        font-size: 3vh;
+        font-weight: 100;
+        width: 100dvw;
+        opacity: 0;
+    }
+    #page1 h2{
+        
+        text-align: center;
+        position: absolute;
+        top: 45dvw;
+        right: 4dvw;
+        rotate: 0deg;
+        font-family: kor;
+        font-size: 18dvw;
+        
+        font-weight: 900;
+        opacity: 0;
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color:#999D9C;
+        
+    }
+    .Group4::after{
+        content: "Ultra Wide";
+        position: absolute;
+        bottom: -30px;
+        left: 25px;
+        font-family: kor;
+        color: #999D9C;
+        font-size: 2.7vh;
+        width: 100%;
+        letter-spacing: 1.5px;
+    }
+    .Group3::before{
+        content: "Main Camera";
+        position: absolute;
+        top: -30px;
+        left: 25px;
+        font-family: kor;
+        color: #999D9C;
+        font-size: 2.7vh;
+        width: 100%;
+        letter-spacing: 1.5px;
+    }
+    .Group3 p{
+        position: absolute;
+        color: white;
+        font-size: 2.7vh;
+        width: 100%;
+        letter-spacing: 1.5px;
+        text-align: center;
+        margin-top: 10px;
+        font-family: gil;
+    }
+    .Group4 p{
+        position: absolute;
+        color: white;
+        font-size: 2.7vh;
+        width: 100%;
+        letter-spacing: 1.5px;
+        text-align: center;
+        margin-top: 10px;
+        font-family: gil;
+    }
+    
+    #page1 #imgdiv{
+        height: 100dvh;
+        width: 90dvw;
+        position: relative;
+        background-image: url(./NothingPhoneImages/BA_ABR_310_1001.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        
+    }
+    #page2 h3{
+        color: #999D9C;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: kor;
+        font-size: 5vh;
+        font-weight: 100;
+        opacity: 0;
+        width: 100%;
+    
+    }
+    #page2 h4{
+        color: #999D9C;
+        
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: kor;
+        font-size: 8vh;
+        font-weight: 100;
+        opacity: 1;
+        background:url(./NothingPhoneImages/nothing-phone-wallpaper-img-2-transformed.jpeg);
+        background-position:center;
+        background-size: cover;
+        color: transparent;
+        -webkit-background-clip: text;
+        
+    }
+    #page2 p{
+        color: #999D9C;
+        text-align: center;
+        position: absolute;
+        margin-top: 30%;
+        transform: translate(-50%);
+        font-family: kor;
+        font-size: 2vh;
+        font-weight: 100;
+        opacity:0;
+        width: 100%;
+    
+    }
+    #page2 span{
+        color: white;
+    }
+    #page2 #imgdiv2{
+        height: 100%;
+        width: 65%;
+        position: relative;
+        background-image: url(./NothingPhoneImages/BA_ABR_310_1031.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        
+        
+    }
+    #page2 h1{
+        -webkit-text-fill-color: transparent; 
+        background: linear-gradient(to right, #4d4d4d 0, rgb(255, 255, 255) 10%, #4d4d4d 20%);
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        font-size: 6vh;
+        font-weight: 100;
+        -webkit-background-clip: text;
+        animation: shine 3s infinite linear;
+        animation-fill-mode: forwards;
+        background-position: 0;
+        opacity: 0.3;
+    }
+    #page3 #imgdiv4{
+        height: 100%;
+        width: 80%;
+        position: absolute;
+        background-image: url(./NothingPhoneImages/BA_ABR_310_1031.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left:115%;
+        top:1%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        rotate: -90deg;
+        
+    }
+    #page3 #imgdiv5{
+        height: 65%;
+        width: 95%;
+        position: absolute;
+        background-image: url(./NothingPhoneImages/enter2-hand.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 48%;
+        top: 100%;
+        transform: translate(-50%,-50%);
+        z-index: 3; 
+        
+        opacity: 0;
+    }
+    #page3 h1{
+        -webkit-text-fill-color: transparent; 
+        background: linear-gradient(to right, #4d4d4d 0, rgb(255, 255, 255) 10%, #4d4d4d 20%);
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        font-size:7vh;
+        font-weight: 100;
+        -webkit-background-clip: text;
+        animation: shine 3s infinite linear;
+        animation-fill-mode: forwards;
+        background-position: 0;
+        opacity: 0.3;
+        width: 100%;
+        white-space: nowrap;
+    }
+    #page3 h3{
+        color: #999D9C;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: kor;
+        font-size: 3.6vh;
+        font-weight: 100;
+        opacity: 0;
+        width: 100%;
+        
+    }
+    #page3 p{
+        color: #999D9C;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: kor;
+        font-size: 2vh;
+        font-weight: 100;
+        opacity:0;
+        width: 100%;
+    
+    }
+    #page3 span{
+        color: white;
+    }
+    #page3 video{
+        position: absolute;
+        z-index: 2;
+        border-radius: 20px;
+        height: 18.9%;
+        top: 69.5%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+        width:79.5%;
+        object-fit: cover;
+       
+    }
+    #page4 #imgdiv6{
+        height: 100dvw;
+        width: 100dvw;
+        position: absolute;
+        background-image: url(./NothingPhoneImages/new.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -100%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        
+        
+    }
+    #page4 #imgdiv7{
+        height: 100dvw;
+        width:100dvw;
+        position: absolute;
+        background-image: url(./NothingPhoneImages/new2.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        right:-100%;
+        top: 70%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        
+    }
+    #page4 #txt1{
+        position: absolute;
+        top: 25%;
+        left: -80%;
+        letter-spacing: 1.5px;
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        color: #999D9C;
+        font-size: 2.5dvw;
+        font-weight: 100;
+        background-position: 0;
+        opacity: 0;
+        width: 10vh;
+        white-space: nowrap;
+    }
+    #page4 #txt2{
+        position: absolute;
+        top: 83%;
+        left: 100%;
+        letter-spacing: 1.5px;
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        color: #999D9C;
+        font-size: 2.5dvw;
+        font-weight: 100;
+        background-position: 0;
+        opacity: 0;
+        width: 10vh;
+        white-space: nowrap;
+    }
+    #page5{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: #000;
+        position: relative;
+    }
+    #page5 #imgdiv8{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-image: url(./NothingPhoneImages/new3.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -30%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        
+        
+    }
+    #page5 #imgdiv9{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url(./NothingPhoneImages/new4.png);
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        right:-100%;
+        top: 75%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        
+    }
+    #page5 p{
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        letter-spacing: 1px;
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        color: #999D9C;
+        font-size: 3.5dvw;
+        font-weight: 100;
+        background-position: 0;
+        opacity: 0;
+        width: 100%;
+        
+        text-align: center;
+    }
+    #page5 #up{
+        position: relative;
+        top: 17%;
+        left: 54%;
+        letter-spacing: 1.5px;
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        color: #999D9C;
+        font-size: 3.5dvw;
+        font-weight: 100;
+        background-position: 0;
+        opacity: 0;
+        width: 100%;
+        
+        white-space: nowrap;
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke-color: #999D9C;
+        -webkit-text-stroke-width: 0.5px;
+    }
+    #page5 #down{
+        position: absolute;
+        top: 17%;
+        left: 55%;
+        letter-spacing: 1.5px;
+        transform: translate(-50%,-50%);
+        font-family: kor;
+        font-size: 3.5dvw;
+        font-weight: 100;
+        background-position: 0;
+        opacity: 0;
+        width: 100%;
+        white-space: nowrap;
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke-color: #999D9C;
+        -webkit-text-stroke-width: 0.5px;
+    }
+    .design-section{
+        padding-top: 3vh;
+        width: 100%;
+        
+        background: #000;
+        
+    }
+    .design-section>h1{
+        font-size: 5vh;
+        font-weight: 900;
+        font-family: kor;
+        -webkit-text-stroke: #999D9C 1px;
+        color: transparent;
+        letter-spacing: .25vw;
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+    .elem , .elem2{
+        width: 100%;
+        /* background: red; */
+        border-top: 2px solid white;
+        cursor: pointer;
+        font-family: kor;
+        font-weight: 100;
+    }
+    .elem .heading h1 {
+        color: #999d9c;
+        font-size: 2.5vh;
+        letter-spacing: .3vw;
+        padding: 2vw 3vw ;
+        font-family: kor;
+        font-weight: 100;
+    }
+    .details{
+        overflow: hidden;
+        background: #999d9c;
+        height: 0vh;
+    }
+    .details p{
+        font-size: 1vh;
+        line-height: 25px;
+        color: #000;
+        height: fit-content;
+        width: 100%;
+    }
+    .elem-box{
+        border-bottom: 2px solid white;
+    }
+    
+    /* camera section */
+    .camera-section{
+        padding-top: 3vh;
+        width: 100%;
+       padding-top: 4vh;
+        background-color: #000;
+        
+    }
+    .camera-section>h1{
+        font-size: 5vh;
+        font-weight: 900;
+        font-family: kor;
+        -webkit-text-stroke: #999D9C 1px;
+        color: transparent;
+        letter-spacing: .25vw;
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+    .camera-elem{
+        width: 100%;
+    }
+    .camera-details{
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 10vw;
+    }
+    .elem2 .heading h1 {
+        color: #999d9c;
+        font-size: 2.5vh;
+        letter-spacing: .3vw;
+        padding: 2vw 3vw ;
+    }
+    .footer{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5vh;
+        background-color: #000;
+    }
+    .footer-top{
+        width: 100%;
+        /* background: rgb(70, 110, 110); */
+        display: grid;
+        grid-template-columns: 25% 25% 25% 30% ;
+        grid-row: 25% 25% 25% ;
+        gap: 12vw;
+        margin-top: 10vh;
+       
+    }
+    .footer .links h1{
+        position: relative;
+        
+        color: white;
+        font-size: 1.7vh;
+        margin-bottom: 1.2vw;   
+        font-family: kor;
+        font-weight: 100;
+       left:-20%;
+        top: 60%;
+    }
+    .footer .join h1{
+        position: relative;
+        left: -370%;
+        color: white;
+        margin-bottom: 1.2vw;   
+        font-family: kor;
+        font-weight: 100;
+        font-size: 1.5vh;
+        width: 300%;
+    
+    }
+    .footer .links h4{
+        position: relative;
+        line-height: 2vh;
+        color: white;
+        font-weight: 100;
+        font-size: 1vh;
+        font-family: kor;
+        font-weight: 100;
+        top: 70%;
+        width: 100%;
+        left: -20%;
+    }
+    .footer .links h4 a{
+        text-decoration: none;
+        color: white;
+    }
+    .footer-top .join input{
+        position: relative;
+        left: -380%;
+        background: #000;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        padding: .5vw .5vw;
+        color: #fff;
+        text-align: center;
+        font-family: kor;
+        font-weight: 100;
+        padding: 5%;
+    }
+    .footer-bottom{
+        border-top: 2px solid #fff;
+        display: flex;
+
+        flex-direction: column;
+        padding: 7vh 2vw;
+        gap: 4vw;
+        justify-content: space-between;
+    }
+    .footer-bottom h3{
+        font-size: 2vw;
+        font-weight: 100;
+        
+    }
+    .footer-bottom h4 a{
+        text-decoration: none;
+        color: white;
+        font-family: kor;
+        font-weight: 100;
+        margin-bottom: 0;
+        margin-left: 45%;
+
+        font-size: 3vw;
+    }
+    .footer-bottom .icons a{
+        position: relative;
+        font-size: 6vw;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        padding: 1vw;
+        border-radius: 50%;
+        
+    }
+    .icons{
+        position: relative;
+        right: -50%;
+        top: -50%;
+        
+    }
+    .Group3{
+        width: 207px; 
+        height: 61px; 
+        position: relative; 
+        top:-97dvw; 
+        left:2dvh; 
+        opacity:0;
+        
+    }
+    .Group3 p{
+        font-size: 1.3vh;
+        left: -16%;
+    }
+    .Group3 .Line1{
+        width: 97px;
+    }
+    .Group3 .Line4{
+        width: 110px;
+    }
+    .Group3 .Line5{
+        left: 110px;
+    }
+    .Group3 .Line6{
+        left: 135px;
+    }
+    .Group3 .Line7{
+        left:135px
+    }
+    .Group3 .Line8{
+        left: 65%;
+        width: 115px;
+    }
+    .Group3::before{
+        font-size: 1.3vh;
+    }
+    .Group4{
+        width: 207px; 
+        height: 61px; 
+        position: relative; 
+        top:-87dvw; 
+        left:2vh; 
+        opacity:0;
+    }
+    .Group4::before{
+        opacity: 0;
+    }
+    .Group4::after{
+        font-size: 1.4vh;
+    }
+    .Group50{
+        width: 10dvw;
+        height: 10dvw; 
+        position: relative; 
+        top:-80dvw; 
+        left:2dvh; 
+        opacity:0;
+    }
+    .Group50 p{
+        top: 5%;
+        left: -35dvw;
+        width: 100dvw;
+    }
+    .Group50 .Line8{
+        left:34dvw;
+        width: 95px;
+    }
+    #page00 .Group50::before{
+        font-size: 1.3vh;
+        top: -8dvw;
+        left: 20%;
+    
+    }
+    .txt-Features{
+        top: 43dvh;
+        font-size: 5vh;
+        left: 37dvw;
+
+        rotate: 90deg;
+    }
+    #men{
+        opacity: 1;
+        position: relative;
+        right: 5%;
+        z-index: 99;
+    }
+    #page-0 #up{
+        font-size: 6vh;
+        opacity:1;
+        color: white;
+        top: 2%;
+        position: relative;
+        left: 45%;
+        
+        
+    }
+    #page-0{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: #999D9C;
+        z-index: 99;
+        top:-100%;
+        transition: all ease 1s;
+    }
+}
+/* @media screen and (min-width: 1280px){
+    .on{
+        margin-left: 10.5%;
+        margin-top: 0.1%;
+    }
+    .txt-Features{
+        left: 31%;
+    }
+    #page3 #imgdiv5{
+        height:69%;
+    }
+    #page3 video{
+        height: 46vh;
+    }
+    #page5 p{
+        left: 77%;
+    }
+} */
+/* @media screen and (min-width:1024px){
+    #snap{
+        width: 47%;
+        margin-left: -4%;
+    }
+    .txt-Features{
+        left: 29%;
+        font-size: 12vh;
+    }
+    #page1 #imgdiv{
+        left: 60%;
+    }
+    #page00 #imgdiv00{
+        left: 60%;
+    }
+    #page5 p{
+        left: 90%;
+    }
+    .footer-bottom h3 a{
+        font-size: 1vh;
+    }
+    .footer-bottom .icons a{
+        font-size: 1vw;      
+    }
+    #page4 #txt1{
+        font-size: 5vh;
+    }
+    #page4 #txt2{
+        font-size: 5vh;
+    }
+   .Group3{
+    left:2%;
+    margin-top: -1%;
+   }
+} */
+/* @media screen and (max-width:400px){
+    .on{
+        margin-top: 3%;
+        margin-left: 16.5%;
+    }
+    .txt-Features{
+        left: 40%;
+        top: 42%;
+    }
+    #feature-box{
+        top: -3%;
+    }
+    #page1 h2{
+        right: 7%;
+        top: 20%;
+    }
+    .Group3{
+        top: -49%;
+    }
+    .Group4{
+        top: -44%;
+    }
+    .Group50{
+        top: -40%;
+    }
+    .Group50 .Line8{
+        left:170%;
+    }
+    #page4 #txt1{
+        font-size: 1.2vh;
+    }
+    #page4 #txt2{
+        font-size: 1.2vh;
+    }
+    #page5 p{
+        font-size: 1.5vh;
+    }
+} */

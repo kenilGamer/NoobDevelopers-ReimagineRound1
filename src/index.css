@@ -1,0 +1,349 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* *{
+   border: 1px solid red;
+} */
+ 
+::selection{
+   display: none  ;
+}
+html,body{
+   scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+   background: #000000;
+   width: 10px;
+ }
+ ::-webkit-scrollbar-thumb{
+   background: linear-gradient(transparent,#c5c5c59f);
+   border-radius: 500px;
+   width: 10px;
+   height: 20px;
+   /* box-shadow: 0px 0px 10px #cc71ff; */
+ }
+ ::-webkit-scrollbar-thumb:hover{
+   background: linear-gradient(transparent,#d082fd);
+ }
+@font-face {
+   font-family: ndot;
+   src: url(/public/nothingfont/Ndot-55.ttf);
+}
+@font-face {
+   font-family: NH;
+   src: url(/public/korataki/korataki-rg-3cf0d889.ttf);
+}
+@font-face {
+   font-family: NP;
+   src: url(/public/sansation/Sansation_Regular.ttf);
+}
+@font-face {
+   font-family: Aclonica;
+   src: url(/Aclonica/Aclonica-Regular.ttf);
+}
+@font-face {
+   font-family: sn;
+   src: url(/sansation/Sansation_Regular.ttf);
+}
+html,body{
+   background: #000;
+}
+.sn{
+   font-family: sn;
+}
+.heading{
+   font-family: NH;
+   overflow: hidden;
+}
+.logo{
+   font-family: ndot;
+   /* box-shadow: 0; */
+}
+.np{
+   font-family: NP;
+}
+.aclonica{
+   font-family: Aclonica;
+}
+.shadow{
+   text-shadow: 2px 1px #fff;
+}
+.shadow1{
+   box-shadow: 5px 5px  12px #636060;
+}
+.font1{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text_border{
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: white;
+}
+
+.text_border2{
+   -webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: #999D9C;
+ }
+
+
+
+.boxs-line{
+   box-shadow: 0px 0px 10px #ffffff;
+}
+.shadows{
+  text-shadow: 0px 0px 10px #ffffffc7;
+}
+.box:hover{
+   box-shadow: 0px 0px 10px #cc71ff;
+}
+.textww{
+   -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #4d4d4d 0, rgb(255, 255, 255) 10%, #4d4d4d 20%);
+
+    /* font-size: 50vh; */
+    /* font-weight: 100; */
+    background-clip: text;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    background-position: 0;
+    opacity: 0.3;
+    white-space: nowrap;
+
+}
+@keyframes shine {
+   0% {
+      background-position: 0;
+  }
+  60% {
+      background-position: 500px;
+  }
+  100% {
+      background-position: 1000px;
+  }
+}
+.textyy{
+   color: #999D9C;
+    text-align: center;
+    background: url(/assets/image.png);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+
+}
+.textyy1{
+   color: #999D9C;
+    text-align: center;
+    background: url(/10628409-water-droplets-on-a-metal-surface.jpg);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+
+}
+.shadow32{
+   box-shadow: 5px 5px  12px #636060;
+   background: #b1aaaa;
+   filter: blur(120px);
+   -webkit-filter: blur(120px);
+}
+#loader {
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   z-index: 999;
+   position: fixed;
+   top: 0;
+   transition: all linear 0.3s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ #loader h1 {
+   color: transparent;
+   font-size: 4vw;
+   letter-spacing: 1.5px;
+   position: absolute;
+   background-image: linear-gradient(to right, #d7d7d7 0%, #353535 74%);
+   -webkit-background-clip: text;
+   opacity: 0;
+   animation-name: load;
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-timing-function: linear;
+ }
+ 
+ #loader h1:nth-child(2) {
+   animation-delay: 2s;
+ }
+ 
+ #loader h1:nth-child(3) {
+   animation-delay: 3s;
+ }
+ 
+ #loader h1:nth-child(4) {
+   animation-delay: 4s;
+ }
+ 
+ #loader h1:nth-child(5) {
+   animation-delay: 5s;
+ }
+ 
+ @keyframes load {
+   0% {
+     opacity: 0;
+   }
+   10% {
+     opacity: 1;
+   }
+   90% {
+     opacity: 1;
+   }
+   100% {
+     opacity: 0;
+   }
+ }
+ 
+/* #loader{
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   z-index: 999;
+   position: fixed;
+   top: 0;
+   transition: all linear 0.3s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+#loader h1{
+   color: transparent;
+   font-size: 4vw;
+   letter-spacing: 1.5px;
+   position: absolute;
+   background-image: linear-gradient(to right, #d7d7d7 0%, #353535 74%);
+   -webkit-background-clip: text;
+   opacity: 0;
+   animation-name: load;
+   
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+   animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+   animation-delay: 3s;
+}
+#loader h1:nth-child(4){
+   animation-delay: 4s;
+}
+#loader h1:nth-child(5){
+   animation-delay: 5s;
+}
+@keyframes load {
+   0%{
+       opacity: 0;
+   }
+   10%{
+       opacity: 1;
+   }
+   90%{
+       opacity: 1;
+   }
+   100%{
+       opacity: 0;
+   }
+} */
+.page4-1{
+   top: 26.8vh;
+}
+@media only screen and (min-width: 375px){
+   .page4-1{
+      top: 26vh;
+   }
+   .page5-1{
+      top: 23vh;
+   } 
+}
+@media only screen and (min-width: 393px){
+   .page4-1{
+      top: 31vh;
+      left: 33vw;
+   }
+   .page5-1{
+      top: 20vh;
+      left: 1vw;
+   } 
+}
+@media only screen and (min-width: 390px){
+   .page4-1{
+      top: 22.8vh;
+      left: 33vw;
+   }
+   .page5-1{
+      top: 25vh;
+      left: 2vw;
+   } 
+   .page4-2{
+      /* width: 32vw; */
+      font-size: 2vw;
+      margin: 1vh 2.5vh;
+   }
+   .page5-2{
+      left: 1vw;
+   }
+}
+@media only screen and (min-width: 430px){
+   .page4-1{
+      top: 21vh;
+      left: 30vw;
+   }
+   .page5-1{
+      top: 27vh;
+      left: 4vw;
+   } 
+   .page4-2{
+      /* width: 32vw; */
+      font-size: 2vw;
+      margin: 1vh 2.5vh;
+   }
+}
+@media only screen and (min-width: 412px){
+   .page4-1{
+      top: 21vh;
+      left: 30vw;
+   }
+   .page5-1{
+      top: 26.1vh;
+      left: 3vw;
+   } 
+   .page4-2{
+      /* width: 32vw; */
+      font-size: 2vw;
+      margin: 1vh 1.5vh;
+   }
+}
+@media only screen and (min-width: 716px){
+   .page4-1{
+      font-size: 4vw;
+      top: 27vh;
+      left: 22vw;
+   }
+   .page5-1{
+      top: 27vh;
+      left: 4vw;
+   } 
+   .page4-2{
+      width: 25vw;
+      font-size: 2vw;
+      margin: 2.5vh 1.5vh;
+   }
+   .page5-2{
+      font-size: 3vw;
+      top: 8vh;
+      left: -3vw;
+   }
+}
